@@ -98,6 +98,14 @@
     #declare function api:data_get/xp_p                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/xp_p.mcfunction#L1
     #declare function api:data_get/xp_seed                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/xp_seed.mcfunction#L1
     #declare function api:data_get/xp_total                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/xp_total.mcfunction#L1
+    #declare function api:entity/mob/effect/get/all                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/all.mcfunction#L1
+    #declare function api:entity/mob/effect/get/from_id                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/from_id.mcfunction#L1
+    #declare function api:entity/mob/effect/get/size/all                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/size/all.mcfunction#L1
+    #declare function api:entity/mob/effect/get/size/bad                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/size/bad.mcfunction#L1
+    #declare function api:entity/mob/effect/get/size/good                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/size/good.mcfunction#L1
+    #declare function api:entity/mob/effect/give                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/give.mcfunction#L1
+    #declare function api:entity/mob/effect/remove/from_id                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_id.mcfunction#L1
+    #declare function api:entity/mob/effect/remove/from_level                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_level.mcfunction#L1
     #declare function api:global_vars/get_difficulty                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/global_vars/get_difficulty.mcfunction#L1
     #declare function api:heal/                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/heal/.mcfunction#L1
     #declare function api:heal/modifier                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/heal/modifier.mcfunction#L1
@@ -153,6 +161,12 @@
     #declare function api:modifier/heal/add                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/heal/add.mcfunction#L1
     #declare function api:modifier/heal/get                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/heal/get.mcfunction#L1
     #declare function api:modifier/heal/remove                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/heal/remove.mcfunction#L1
+    #declare function api:modifier/max_health/add                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/max_health/add.mcfunction#L1
+    #declare function api:modifier/max_health/get                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/max_health/get.mcfunction#L1
+    #declare function api:modifier/max_health/remove                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/max_health/remove.mcfunction#L1
+    #declare function api:modifier/max_mp/add                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/max_mp/add.mcfunction#L1
+    #declare function api:modifier/max_mp/get                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/max_mp/get.mcfunction#L1
+    #declare function api:modifier/max_mp/remove                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/max_mp/remove.mcfunction#L1
     #declare function api:modifier/mp_regen/add                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/mp_regen/add.mcfunction#L1
     #declare function api:modifier/mp_regen/get                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/mp_regen/get.mcfunction#L1
     #declare function api:modifier/mp_regen/remove                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/modifier/mp_regen/remove.mcfunction#L1
@@ -164,48 +178,7 @@
     #declare function api:mp/get_current                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mp/get_current.mcfunction#L1
     #declare function api:mp/get_max                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mp/get_max.mcfunction#L1
     #declare function api:mp/set                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mp/set.mcfunction#L1
-    #declare function api:player_modifier/attack/base/add                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/base/add.mcfunction#L1
-    #declare function api:player_modifier/attack/base/get                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/base/get.mcfunction#L1
-    #declare function api:player_modifier/attack/base/remove                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/base/remove.mcfunction#L1
-    #declare function api:player_modifier/attack/fire/add                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/fire/add.mcfunction#L1
-    #declare function api:player_modifier/attack/fire/get                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/fire/get.mcfunction#L1
-    #declare function api:player_modifier/attack/fire/remove                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/fire/remove.mcfunction#L1
-    #declare function api:player_modifier/attack/magic/add                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/magic/add.mcfunction#L1
-    #declare function api:player_modifier/attack/magic/get                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/magic/get.mcfunction#L1
-    #declare function api:player_modifier/attack/magic/remove                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/magic/remove.mcfunction#L1
-    #declare function api:player_modifier/attack/physical/add                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/physical/add.mcfunction#L1
-    #declare function api:player_modifier/attack/physical/get                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/physical/get.mcfunction#L1
-    #declare function api:player_modifier/attack/physical/remove                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/physical/remove.mcfunction#L1
-    #declare function api:player_modifier/attack/thunder/add                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/thunder/add.mcfunction#L1
-    #declare function api:player_modifier/attack/thunder/get                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/thunder/get.mcfunction#L1
-    #declare function api:player_modifier/attack/thunder/remove                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/thunder/remove.mcfunction#L1
-    #declare function api:player_modifier/attack/water/add                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/water/add.mcfunction#L1
-    #declare function api:player_modifier/attack/water/get                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/water/get.mcfunction#L1
-    #declare function api:player_modifier/attack/water/remove                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/attack/water/remove.mcfunction#L1
-    #declare function api:player_modifier/defense/base/add                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/base/add.mcfunction#L1
-    #declare function api:player_modifier/defense/base/get                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/base/get.mcfunction#L1
-    #declare function api:player_modifier/defense/base/remove                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/base/remove.mcfunction#L1
-    #declare function api:player_modifier/defense/fire/add                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/fire/add.mcfunction#L1
-    #declare function api:player_modifier/defense/fire/get                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/fire/get.mcfunction#L1
-    #declare function api:player_modifier/defense/fire/remove                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/fire/remove.mcfunction#L1
-    #declare function api:player_modifier/defense/magic/add                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/magic/add.mcfunction#L1
-    #declare function api:player_modifier/defense/magic/get                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/magic/get.mcfunction#L1
-    #declare function api:player_modifier/defense/magic/remove                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/magic/remove.mcfunction#L1
-    #declare function api:player_modifier/defense/physical/add                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/physical/add.mcfunction#L1
-    #declare function api:player_modifier/defense/physical/get                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/physical/get.mcfunction#L1
-    #declare function api:player_modifier/defense/physical/remove                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/physical/remove.mcfunction#L1
-    #declare function api:player_modifier/defense/thunder/add                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/thunder/add.mcfunction#L1
-    #declare function api:player_modifier/defense/thunder/get                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/thunder/get.mcfunction#L1
-    #declare function api:player_modifier/defense/thunder/remove                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/thunder/remove.mcfunction#L1
-    #declare function api:player_modifier/defense/water/add                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/water/add.mcfunction#L1
-    #declare function api:player_modifier/defense/water/get                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/water/get.mcfunction#L1
-    #declare function api:player_modifier/defense/water/remove                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/defense/water/remove.mcfunction#L1
-    #declare function api:player_modifier/heal/add                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/heal/add.mcfunction#L1
-    #declare function api:player_modifier/heal/get                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/heal/get.mcfunction#L1
-    #declare function api:player_modifier/heal/remove                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/heal/remove.mcfunction#L1
-    #declare function api:player_modifier/mp_regen/add                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/mp_regen/add.mcfunction#L1
-    #declare function api:player_modifier/mp_regen/get                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/mp_regen/get.mcfunction#L1
-    #declare function api:player_modifier/mp_regen/remove                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_modifier/mp_regen/remove.mcfunction#L1
+    #declare function api:mp/update_max                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mp/update_max.mcfunction#L1
     #declare function api:player_vector/get                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/player_vector/get.mcfunction#L1
     #declare function api:rom/please                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/rom/please.mcfunction#L1
     #declare function api:spawner/subtract_hp                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/spawner/subtract_hp.mcfunction#L1
@@ -294,6 +267,7 @@
     #declare function score_to_health:modify_max_health                               from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/modify_max_health.mcfunction#L1
     #declare function score_to_health:player_tick                                     from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/player_tick.mcfunction#L1
     #declare function score_to_health:restore                                         from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/restore.mcfunction#L1
+    #declare function world_manager:gimmick/ending_portal/close                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/close.mcfunction#L1
     #declare function world_manager:gimmick/ending_portal/open                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/open.mcfunction#L1
     #declare loot_table asset_manager:artifact/generate_lore/attack_info              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/attack_info.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/condition                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/condition.json#L1
@@ -333,7 +307,7 @@
     #declare loot_table player_manager:lost_item/give_all/name_to_textcomponent       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/loot_tables/lost_item/give_all/name_to_textcomponent.json#L1
     #declare objective Const                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L115
     #declare objective Global                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L103
-    #declare objective Lib                                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L205
+    #declare objective Lib                                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L199
     #declare objective MobID                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L156
     #declare objective MobUUID                                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L121
     #declare objective UserID                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L120
@@ -632,6 +606,13 @@
     #declare tag/function asset:artifact/tick                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/tick.json#L1
     #declare tag/function asset:artifact/use_item                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/use_item.json#L1
     #declare tag/function asset:artifact/using_item                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/using_item.json#L1
+    #declare tag/function asset:effect/end                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/end.json#L1
+    #declare tag/function asset:effect/given                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/given.json#L1
+    #declare tag/function asset:effect/load                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/load.json#L1
+    #declare tag/function asset:effect/re-given                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/re-given.json#L1
+    #declare tag/function asset:effect/register                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/register.json#L1
+    #declare tag/function asset:effect/remove                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/remove.json#L1
+    #declare tag/function asset:effect/tick                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/tick.json#L1
     #declare tag/function asset:island/dispelled                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/island/dispelled.json#L1
     #declare tag/function asset:island/register                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/island/register.json#L1
     #declare tag/function asset:mob/attack                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/mob/attack.json#L1
@@ -652,9 +633,9 @@
     #declare tag/function asset:spawner/register/f                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/spawner/register/f.json#L1
     #declare tag/function asset:teleporter/register                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/teleporter/register.json#L1
     #declare tag/function asset:trader/register                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/trader/register.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/minecraft/tags/functions/load.json#L1
     # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/load.json#L1
     # from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/minecraft/tags/functions/load.json#L1
     #declare tag/function minecraft:load
     #declare tag/function minecraft:tick                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
     #declare tag/item lib:all                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/all.json#L1
@@ -691,40 +672,7 @@
     #declare team NoCollision                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L92
 
 #> declare
-# @within function asset:mob/*/hurt/
-#declare function asset:mob/super.hurt from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/register
-#declare function asset:mob/extends from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/extends.mcfunction#L1
-
-#> declare
-# @within
-#   function api:mob/core/summon
-#   function asset:mob/*/summon/2.summon
-#declare function asset:mob/common/summon from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
-
-#> declare
-# @within function asset:teleporter/*/register
-#declare function asset:teleporter/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
-
-#> declare
-# @within function asset:artifact/*/*/3.main
-    #declare function asset:artifact/common/use/auto     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/auto.mcfunction#L1
-    #declare function asset:artifact/common/use/chest    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/chest.mcfunction#L1
-    #declare function asset:artifact/common/use/feet     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/feet.mcfunction#L1
-    #declare function asset:artifact/common/use/head     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/head.mcfunction#L1
-    #declare function asset:artifact/common/use/hotbar   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/hotbar.mcfunction#L1
-    #declare function asset:artifact/common/use/legs     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/legs.mcfunction#L1
-    #declare function asset:artifact/common/use/mainhand from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/mainhand.mcfunction#L1
-    #declare function asset:artifact/common/use/offhand  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/offhand.mcfunction#L1
-
-#> declare
-# @within function asset:trader/*/register/register
-#declare function asset:trader/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
-
-#> declare
-# @within function asset:artifact/*/*/2.check_condition
+# @within function asset:artifact/*/**check_condition
     #declare function asset:artifact/common/check_condition/auto     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/auto.mcfunction#L1
     #declare function asset:artifact/common/check_condition/chest    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/chest.mcfunction#L1
     #declare function asset:artifact/common/check_condition/feet     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/feet.mcfunction#L1
@@ -735,6 +683,47 @@
     #declare function asset:artifact/common/check_condition/offhand  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/offhand.mcfunction#L1
 
 #> declare
+# @within function asset:artifact/*/**main
+    #declare function asset:artifact/common/use/auto     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/auto.mcfunction#L1
+    #declare function asset:artifact/common/use/chest    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/chest.mcfunction#L1
+    #declare function asset:artifact/common/use/feet     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/feet.mcfunction#L1
+    #declare function asset:artifact/common/use/head     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/head.mcfunction#L1
+    #declare function asset:artifact/common/use/hotbar   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/hotbar.mcfunction#L1
+    #declare function asset:artifact/common/use/legs     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/legs.mcfunction#L1
+    #declare function asset:artifact/common/use/mainhand from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/mainhand.mcfunction#L1
+    #declare function asset:artifact/common/use/offhand  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/use/offhand.mcfunction#L1
+
+#> declare
+# @within function asset:teleporter/*/register
+#declare function asset:teleporter/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
+
+#> declare
+# @within function asset:spawner/*/register
+#declare function asset:spawner/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/spawner/common/register.mcfunction#L1
+
+#> declare
+# @within
+#   function api:mob/core/summon
+#   function asset:mob/*/summon/2.summon
+#declare function asset:mob/common/summon from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/tick/
+#declare function asset:mob/super.tick from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
+
+#> declare
+# @within function asset:trader/*/register/register
+#declare function asset:trader/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/register
+#declare function asset:mob/extends from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/extends.mcfunction#L1
+
+#> declare
+# @within function asset:island/*/register/register
+#declare function asset:island/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/island/common/register.mcfunction#L1
+
+#> declare
 # @within function asset:artifact/*/give/2.give
 #declare function asset:artifact/common/give from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
 
@@ -743,30 +732,21 @@
 #declare function asset:mob/super.death from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.death.mcfunction#L1
 
 #> declare
-# @within function asset:island/*/register/register
-#declare function asset:island/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/island/common/register.mcfunction#L1
-
-#> declare
 # @within function asset:mob/*/attack/
 #declare function asset:mob/super.attack from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.attack.mcfunction#L1
 
 #> declare
-# @within function asset:spawner/*/register
-#declare function asset:spawner/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/spawner/common/register.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/tick/
-#declare function asset:mob/super.tick from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
+# @within function asset:mob/*/hurt/
+#declare function asset:mob/super.hurt from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
 
 #> declare
 # @within
-#   asset_manager:trader/**
-#   asset:trader/*/register/*
-#   asset:trader/common/register
-#   function core:patcher/migration/v0.2.1/
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L19
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v0.2.1/.mcfunction#L12
-#declare storage asset:trader
+#   function asset_manager:**
+#   function asset:*/*/**
+#   function asset:*/extends
+#   function asset:*/super.*
+#   function api:**
+#declare storage asset:context from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/_index.d.mcfunction#L11
 
 #> declare
 # @within
@@ -781,25 +761,6 @@
 #   function world_manager:**
     #declare objective OhMyDatID from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L30
     #declare storage oh_my_dat:  from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L29
-
-#> declare
-# @within
-#   asset_manager:artifact/**
-#   asset:artifact/*/register
-#   asset:artifact/*/give/2.give
-#   asset:artifact/*/trigger/2.check_condition
-#   asset:artifact/*/trigger/3.main
-#   asset:artifact/common/**
-#declare storage asset:artifact from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L12
-
-#> declare
-# @within
-#   function asset_manager:**
-#   function asset:*/*/**
-#   function asset:*/extends
-#   function asset:*/super.*
-#   function api:**
-#declare storage asset:context from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/_index.d.mcfunction#L11
 
 #> declare
 # @within
@@ -819,10 +780,17 @@
 
 #> declare
 # @within
-#   asset:island/*/register/*
-#   asset:island/common/register
-#   asset_manager:island/**
-#declare storage asset:island from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/island/_index.d.mcfunction#L9
+#   asset_manager:artifact/**
+#   asset:artifact/*/register
+#   asset:artifact/*/give/2.give
+#   asset:artifact/*/trigger/**check_condition
+#   asset:artifact/*/trigger/**main
+#   asset:artifact/common/**
+#declare storage asset:artifact from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L12
+
+#> declare
+# @within asset*:**
+#declare storage asset:temp from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L15
 
 #> declare
 # @within
@@ -837,29 +805,77 @@
 #declare storage asset:mob from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L14
 
 #> declare
-# @within asset:**
-#declare storage asset:temp from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L14
+# @within
+#   function core:patcher/migration/v0.2.1/
+#   asset_manager:trader/**
+#   asset:trader/*/register/*
+#   asset:trader/common/register
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v0.2.1/.mcfunction#L12
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L19
+#declare storage asset:trader
 
 #> declare
 # @within
+#   asset:island/*/register/*
+#   asset:island/common/register
+#   asset_manager:island/**
+#declare storage asset:island from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/island/_index.d.mcfunction#L9
+
+#> declare
+# @within
+#   function asset_manager:island/dispel/boss/*
 #   core:tick/player/
 #   player_manager:vanilla_attack/**
 #   asset_manager:artifact/triggers/**
 #   asset:artifact/**
 #   asset_manager:teleporter/tick/**
 #   core:handler/attack
-#   function asset_manager:island/dispel/boss/*
 #   asset_manager:mob/triggers/
 #   asset_manager:mob/triggers/death/
 #   asset:mob/**
 #   function asset_manager:mob/common_tag/anti_void_action/**
 #   asset_manager:spawner/tick/*
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L43
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L87
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
 #declare tag this
+
+#> declare
+# @within
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
+#   asset_manager:mob/triggers/
+#   asset:mob/*/hurt/**
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L55
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L63
+#declare tag Attacker
+
+#> declare
+# @within
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
+#   asset_manager:mob/triggers/
+#   asset:mob/*/attack/**
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L56
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L57
+#declare tag Victim
+
+#> declare
+# @within
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
+    #declare tag DisEquip from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L58
+    #declare tag Equip    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
+
+#> declare
+# @within
+#   function asset:artifact/*/**check_condition
+#   function asset:artifact/*/**check_condition/**
+#   function asset_manager:artifact/check/
+#   function asset:artifact/common/use/*
+#declare tag CanUsed from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L10
 
 #> declare
 # @within
@@ -893,26 +909,6 @@
 
 #> declare
 # @within
-#   asset_manager:mob/triggers/
-#   asset:mob/*/attack/**
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L57
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L56
-#declare tag Victim
-
-#> declare
-# @within
-#   asset_manager:mob/triggers/
-#   asset:mob/*/hurt/**
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L63
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L55
-#declare tag Attacker
-
-#> declare
-# @within
 #   function asset_manager:mob/common_tag/*
 #   function asset:**
     #declare tag AllowRideBannedVehicle   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L69
@@ -929,26 +925,10 @@
 
 #> declare
 # @within
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
-    #declare tag DisEquip from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L58
-    #declare tag Equip    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
-
-#> declare
-# @within
-#   function asset:artifact/*/*/2.check_condition
-#   function asset:artifact/*/*/2.check_condition/**
-#   function asset_manager:artifact/check/
-#   function asset:artifact/common/use/*
-#declare tag CanUsed from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L10
-
-#> declare
-# @within
 #   function core:patcher/migration/v0.3.0/
 #   **
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v0.3.0/.mcfunction#L22
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L30
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L157
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L32
 #declare objective MobHealth
 
 #> declare
