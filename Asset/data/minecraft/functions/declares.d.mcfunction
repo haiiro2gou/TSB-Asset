@@ -574,7 +574,9 @@
     #declare tag/function asset:artifact/attack                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/attack.json#L1
     #declare tag/function asset:artifact/attack/melee                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/attack/melee.json#L1
     #declare tag/function asset:artifact/attack/projectile                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/attack/projectile.json#L1
-    #declare tag/function asset:artifact/click.carrot_on_a_stick                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/click.carrot_on_a_stick.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/click.carrot_on_a_stick.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/Asset/data/asset/tags/functions/artifact/click.carrot_on_a_stick.json#L1
+    #declare tag/function asset:artifact/click.carrot_on_a_stick
     #declare tag/function asset:artifact/damage                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/damage.json#L1
     #declare tag/function asset:artifact/damage/explode                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/damage/explode.json#L1
     #declare tag/function asset:artifact/damage/fire                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/damage/fire.json#L1
@@ -584,11 +586,15 @@
     #declare tag/function asset:artifact/damage/from_entity/projectile                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/damage/from_entity/projectile.json#L1
     #declare tag/function asset:artifact/dis_equip                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/dis_equip.json#L1
     #declare tag/function asset:artifact/equip                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/equip.json#L1
-    #declare tag/function asset:artifact/give                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/give.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/give.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/Asset/data/asset/tags/functions/artifact/give.json#L1
+    #declare tag/function asset:artifact/give
     #declare tag/function asset:artifact/killed                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/killed.json#L1
     #declare tag/function asset:artifact/killed/melee                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/killed/melee.json#L1
     #declare tag/function asset:artifact/killed/projectile                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/killed/projectile.json#L1
-    #declare tag/function asset:artifact/load                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/load.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/load.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/Asset/data/asset/tags/functions/artifact/load.json#L1
+    #declare tag/function asset:artifact/load
     #declare tag/function asset:artifact/register                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/register.json#L1
     #declare tag/function asset:artifact/sneak/                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/sneak/.json#L1
     #declare tag/function asset:artifact/sneak/10s                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/sneak/10s.json#L1
@@ -625,7 +631,9 @@
     #declare tag/function asset:mob/remove                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/mob/remove.json#L1
     #declare tag/function asset:mob/summon                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/mob/summon.json#L1
     #declare tag/function asset:mob/tick                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/mob/tick.json#L1
-    #declare tag/function asset:rejoin                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/rejoin.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/rejoin.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/Asset/data/asset/tags/functions/rejoin.json#L1
+    #declare tag/function asset:rejoin
     #declare tag/function asset:spawner/register/a                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/spawner/register/a.json#L1
     #declare tag/function asset:spawner/register/b                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/spawner/register/b.json#L1
     #declare tag/function asset:spawner/register/c                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/spawner/register/c.json#L1
@@ -699,6 +707,10 @@
 #declare function asset:teleporter/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
 
 #> declare
+# @within function asset:effect/*/re-given/
+#declare function asset:effect/super.re-given from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.re-given.mcfunction#L1
+
+#> declare
 # @within function asset:spawner/*/register
 #declare function asset:spawner/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/spawner/common/register.mcfunction#L1
 
@@ -709,12 +721,20 @@
 #declare function asset:mob/common/summon from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
 
 #> declare
+# @within function asset:effect/*/given/
+#declare function asset:effect/super.given from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.given.mcfunction#L1
+
+#> declare
 # @within function asset:mob/*/tick/
 #declare function asset:mob/super.tick from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
 
 #> declare
 # @within function asset:trader/*/register/register
 #declare function asset:trader/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/tick/
+#declare function asset:effect/super.tick from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.tick.mcfunction#L1
 
 #> declare
 # @within function asset:mob/*/register
@@ -729,8 +749,16 @@
 #declare function asset:artifact/common/give from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
 
 #> declare
+# @within function asset:effect/*/register
+#declare function asset:effect/extends from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/extends.mcfunction#L1
+
+#> declare
 # @within function asset:mob/*/death/
 #declare function asset:mob/super.death from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.death.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/remove/
+#declare function asset:effect/super.remove from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.remove.mcfunction#L1
 
 #> declare
 # @within function asset:mob/*/attack/
@@ -739,6 +767,10 @@
 #> declare
 # @within function asset:mob/*/hurt/
 #declare function asset:mob/super.hurt from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/end/
+#declare function asset:effect/super.end from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.end.mcfunction#L1
 
 #> declare
 # @within
@@ -792,6 +824,16 @@
 #> declare
 # @within asset*:**
 #declare storage asset:temp from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L15
+
+#> declare
+# @within
+#   function api:entity/mob/effect/**
+#   function asset:effect/extends
+#   function asset:effect/super.*
+#   function asset:effect/*/register
+#   function asset:effect/*/
+#   function asset_manager:effect/**
+#declare storage asset:effect from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L12
 
 #> declare
 # @within
