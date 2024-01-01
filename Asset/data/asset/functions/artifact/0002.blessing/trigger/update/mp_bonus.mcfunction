@@ -2,9 +2,7 @@
 #
 #
 #
-# @within function
-#   core:handler/join
-#   asset:artifact/0002.blessing/trigger/**
+# @within function asset:artifact/0002.blessing/trigger/**
 
 #> Diff
 # @private
