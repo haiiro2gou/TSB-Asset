@@ -27,6 +27,7 @@
         "asset:mob/0219.aorta/hurt/1.trigger",
         "asset:mob/0220.vena_cana/hurt/1.trigger",
         "asset:mob/1004.tultaria/hurt/1.trigger",
+        "asset:mob/example/hurt/1.trigger",
         "asset:mob/0060.self_destructor/hurt/1.trigger",
         "asset:mob/0021.demon_eye/hurt/1.trigger",
         "asset:mob/0055.hetukedah/hurt/1.trigger",
@@ -66,6 +67,7 @@
         "asset:mob/0189.water_mage/hurt/1.trigger",
         "asset:mob/0190.thunder_mage/hurt/1.trigger",
         "asset:mob/0156.infringement/hurt/1.trigger",
-        "asset:mob/0186.ferocious_bee/hurt/1.trigger"
+        "asset:mob/0186.ferocious_bee/hurt/1.trigger",
+        "asset:mob/ex.1/_/hurt"
     ]
 }

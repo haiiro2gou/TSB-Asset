@@ -20,8 +20,7 @@
     function api:modifier/mp_regen/remove
 
 # 最大体力-10%
-    data modify storage api: Argument.UUID set value [I;1,1,664,0]
-    function api:modifier/max_health/remove
+    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-029800000003
 
 # リセット
     tag @s remove IG.Fullset

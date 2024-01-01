@@ -5,8 +5,7 @@
 # @within function asset:mob/0224.pumpkin_ghost/hurt/1.trigger
 
 # 割合ダメージ
-    execute as @p[tag=Attacker,distance=..50] run function api:modifier/max_health/get
-    execute store result storage lib: Argument.Damage float 0.20 run data get storage api: Return.MaxHealth
+    execute store result storage lib: Argument.Damage float 0.020 run attribute @p[tag=Attacker,distance=..50] generic.max_health get 10
 # 属性
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.FixedDamage set value 1b
