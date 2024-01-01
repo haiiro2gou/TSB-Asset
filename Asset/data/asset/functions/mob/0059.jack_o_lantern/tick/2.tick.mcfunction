@@ -9,7 +9,7 @@
     particle dust 0.851 0 1 1 ~ ~0.5 ~ 0.2 0.2 0.2 0 1 normal @a
 
 # 常時耐性
-    effect give @s resistance 9 1 true
+    effect give @s resistance 9 3 true
 
 # ハメ対策
     execute unless block ~ ~0.5 ~ #lib:no_collision at @p run function asset:mob/0059.jack_o_lantern/tick/spread_tp

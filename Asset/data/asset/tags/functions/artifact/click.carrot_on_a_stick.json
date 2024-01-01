@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:artifact/1048.thunder_storm/trigger/1.trigger",
+        "asset:artifact/1045.mini_black_hole/trigger/1.trigger",
+        "asset:artifact/1043.gamma_ray/trigger/1.trigger",
+        "asset:artifact/1037.grand_flame/trigger/1.trigger",
+        "asset:artifact/0738.voltage_striker/trigger/1.trigger",
+        "asset:artifact/0737.summer_festival_of_remembrance/trigger/1.trigger",
+        "asset:artifact/0769.shaking_splash/trigger/1.trigger",
         "asset:artifact/0958.whetstone_of_the_gods/trigger/1.trigger",
         "asset:artifact/0985.ark_of_the_sanctuary/trigger/1.trigger",
         "asset:artifact/0976.brave_sword/trigger/1.trigger",
@@ -16,6 +23,7 @@
         "asset:artifact/0793.queen_bee_rocket/trigger/1.trigger",
         "asset:artifact/0613.call_fulstuka/trigger/1.trigger",
         "asset:artifact/0870.samurai_blade/trigger/1.trigger",
+        "asset:artifact/0837.the_world_knife/trigger/1.trigger",
         "asset:artifact/0822.sound_of_a_star/trigger/1.trigger",
         "asset:artifact/0005.musket_matchlock/trigger/1.trigger",
         "asset:artifact/0905.book_of_metastasis/trigger/1.trigger",
@@ -23,6 +31,7 @@
         "asset:artifact/0907.rod_of_rain/trigger/1.trigger",
         "asset:artifact/0840.honey_bee_stick/trigger/1.trigger",
         "asset:artifact/0826.infinite_potatoes/trigger/1.trigger",
+        "asset:artifact/0002.blessing/trigger/1.trigger",
         "asset:artifact/0001.book_of_all-seeing/trigger/1.trigger",
         "asset:artifact/0010.attack_order/trigger/1.trigger",
         "asset:artifact/0016.golem_core/trigger/1.trigger",

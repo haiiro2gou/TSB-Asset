@@ -37,7 +37,7 @@
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set $Fluctuation Lib -30
     execute if predicate api:global_vars/difficulty/hard run scoreboard players set $Fluctuation Lib -60
     execute if predicate api:global_vars/difficulty/min/normal run function lib:mp/fluctuation
-
+    
 # スケジュールループスタート
     schedule function asset:mob/0217.medousa_eye/player_process/01.schedule_loop 1t replace
 
