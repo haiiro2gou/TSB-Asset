@@ -707,6 +707,10 @@
 #declare function asset:teleporter/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
 
 #> declare
+# @within function asset:effect/*/re-given/
+#declare function asset:effect/super.re-given from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.re-given.mcfunction#L1
+
+#> declare
 # @within function asset:spawner/*/register
 #declare function asset:spawner/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/spawner/common/register.mcfunction#L1
 
@@ -717,12 +721,20 @@
 #declare function asset:mob/common/summon from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
 
 #> declare
+# @within function asset:effect/*/given/
+#declare function asset:effect/super.given from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.given.mcfunction#L1
+
+#> declare
 # @within function asset:mob/*/tick/
 #declare function asset:mob/super.tick from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
 
 #> declare
 # @within function asset:trader/*/register/register
 #declare function asset:trader/common/register from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/tick/
+#declare function asset:effect/super.tick from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.tick.mcfunction#L1
 
 #> declare
 # @within function asset:mob/*/register
@@ -737,8 +749,16 @@
 #declare function asset:artifact/common/give from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
 
 #> declare
+# @within function asset:effect/*/register
+#declare function asset:effect/extends from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/extends.mcfunction#L1
+
+#> declare
 # @within function asset:mob/*/death/
 #declare function asset:mob/super.death from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.death.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/remove/
+#declare function asset:effect/super.remove from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.remove.mcfunction#L1
 
 #> declare
 # @within function asset:mob/*/attack/
@@ -747,6 +767,10 @@
 #> declare
 # @within function asset:mob/*/hurt/
 #declare function asset:mob/super.hurt from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/end/
+#declare function asset:effect/super.end from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/effect/super.end.mcfunction#L1
 
 #> declare
 # @within
@@ -800,6 +824,16 @@
 #> declare
 # @within asset*:**
 #declare storage asset:temp from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L15
+
+#> declare
+# @within
+#   function api:entity/mob/effect/**
+#   function asset:effect/extends
+#   function asset:effect/super.*
+#   function asset:effect/*/register
+#   function asset:effect/*/
+#   function asset_manager:effect/**
+#declare storage asset:effect from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L12
 
 #> declare
 # @within
