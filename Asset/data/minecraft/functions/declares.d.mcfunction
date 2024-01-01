@@ -331,12 +331,13 @@
     #declare loot_table minecraft:blocks/stone                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/loot_tables/blocks/stone.json#L1
     #declare loot_table minecraft:empty                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/loot_tables/empty.json#L1
     #declare loot_table player_manager:lost_item/give_all/name_to_textcomponent       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/loot_tables/lost_item/give_all/name_to_textcomponent.json#L1
-    #declare objective Const                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L115
-    #declare objective Global                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L103
-    #declare objective Lib                                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L205
-    #declare objective MobID                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L156
-    #declare objective MobUUID                                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L121
-    #declare objective UserID                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L120
+    #declare objective Const                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L116
+    #declare objective Global                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L104
+    #declare objective Lib                                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L206
+    #declare objective MobID                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L157
+    #declare objective MobUUID                                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L122
+    #declare objective Temporary                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L100
+    #declare objective UserID                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L121
     #declare predicate api:global_vars/difficulty/easy                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/predicates/global_vars/difficulty/easy.json#L1
     #declare predicate api:global_vars/difficulty/hard                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/predicates/global_vars/difficulty/hard.json#L1
     #declare predicate api:global_vars/difficulty/max/hard                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/predicates/global_vars/difficulty/max/hard.json#L1
@@ -948,7 +949,7 @@
 #   **
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v0.3.0/.mcfunction#L22
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L30
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L157
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L158
 #declare objective MobHealth
 
 #> declare
