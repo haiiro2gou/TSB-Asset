@@ -70,7 +70,6 @@
         "asset:mob/1006.green_star/summon/1.trigger",
         "asset:mob/1005.blue_star/summon/1.trigger",
         "asset:mob/1004.tultaria/summon/1.trigger",
-        "asset:mob/example/summon/1.trigger",
         "asset:mob/0021.demon_eye/summon/1.trigger",
         "asset:mob/0038.laser_eye/summon/1.trigger",
         "asset:mob/0023.chainsaw_zombie/summon/1.trigger",
@@ -156,9 +155,6 @@
         "asset:mob/0191.thunder_magic/summon/1.trigger",
         "asset:mob/0156.infringement/summon/1.trigger",
         "asset:mob/0186.ferocious_bee/summon/1.trigger",
-        "asset:mob/0214.water_magic/summon/1.trigger",
-        "asset:mob/ex.1/_/summon",
-        "asset:mob/ex.2/_/summon",
-        "asset:mob/ex.3/_/summon"
+        "asset:mob/0214.water_magic/summon/1.trigger"
     ]
 }
