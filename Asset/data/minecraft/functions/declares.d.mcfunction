@@ -547,7 +547,6 @@
     #declare tag PlayerShouldInvulnerable                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/functions/manage_tag/_index.d.mcfunction#L6
     #declare tag Projectile                                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L9
     #declare tag Uninterferable                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L12
-    #declare tag UUIDAttacker                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/damage/core/health_subtract/non-player.mcfunction#L10
     #declare tag/block lib:air                                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/blocks/air.json#L1
     #declare tag/block lib:chests                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/blocks/chests.json#L1
     #declare tag/block lib:command_blocks                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/blocks/command_blocks.json#L1
