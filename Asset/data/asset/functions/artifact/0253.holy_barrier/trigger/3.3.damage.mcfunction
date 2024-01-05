@@ -14,5 +14,5 @@
     function lib:damage/
     function lib:damage/reset
 
-# まだ息があるようならもう一度ダメージを与える
-    execute if entity @s[tag=!Death] run function asset:artifact/0253.holy_barrier/trigger/3.3.damage
+# まだ息があるようならとどめを刺す
+    execute if score @s MobHealth matches 999900.. run function asset:artifact/0253.holy_barrier/trigger/3.3.damage
