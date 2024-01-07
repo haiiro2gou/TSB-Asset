@@ -14,7 +14,8 @@
 
 # ダメージ 最大体力の200%分
 # lib:damage/にif dataをつけているのはデバッグ中に引数Damageが足りませんと出たため
-    execute at @a if score @s SP.UserID = @p UserID store result storage lib: Argument.Damage double 1.0 run attribute @p generic.max_health get 2.0
+    execute at @a if score @s SP.UserID = @p UserID as @p run function api:modifier/max_health/get
+    execute at @a if score @s SP.UserID = @p UserID store result storage lib: Argument.Damage double 1 run data get storage api: Return.MaxHealth 2
 
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
