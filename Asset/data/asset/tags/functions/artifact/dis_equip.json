@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1057.great_demon_head/trigger/dis_equip/",
+        "asset:artifact/1058.great_demon_chest/trigger/dis_equip/",
+        "asset:artifact/1059.great_demon_leg/trigger/dis_equip/",
+        "asset:artifact/1060.great_demon_boots/trigger/dis_equip/",
         "asset:artifact/1038.flame_devil_head/trigger/dis_equip/",
         "asset:artifact/1039.flame_devil_chest/trigger/dis_equip/",
         "asset:artifact/1040.flame_devil_legs/trigger/dis_equip/",
