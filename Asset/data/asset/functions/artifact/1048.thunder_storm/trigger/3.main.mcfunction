@@ -22,6 +22,7 @@
 # Marker召喚
 # MP消費を引き継ぐ
     execute as 0-0-0-0-0 at @s run summon marker ^ ^ ^ {Tags:["T4.Marker","T4.MarkerInit"]}
+    execute as @e[type=marker,tag=T4.MarkerInit,distance=..24] run scoreboard players operation @s T4.OwnerID = @p[tag=this] UserID
     execute as @e[type=marker,tag=T4.MarkerInit,distance=..24] run scoreboard players operation @s T4.MPPer = $MPValue Temporary
     execute as @e[type=marker,tag=T4.MarkerInit,distance=..24] run tag @s remove T4.MarkerInit
 
