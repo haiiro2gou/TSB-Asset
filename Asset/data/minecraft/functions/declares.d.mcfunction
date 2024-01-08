@@ -952,11 +952,11 @@
 
 #> declare
 # @within
-#   function core:patcher/migration/v0.3.0/
 #   **
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v0.3.0/.mcfunction#L22
+#   function core:patcher/migration/v0.3.0/
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L158
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L30
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v0.3.0/.mcfunction#L76
 #declare objective MobHealth
 
 #> declare
