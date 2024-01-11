@@ -354,6 +354,7 @@
     #declare predicate lib:dimension/is_nether                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/dimension/is_nether.json#L1
     #declare predicate lib:dimension/is_overworld                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/dimension/is_overworld.json#L1
     #declare predicate lib:has_health_modify_score                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/has_health_modify_score.json#L1
+    #declare predicate lib:in_battle                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/in_battle.json#L1
     #declare predicate lib:is_baby                                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_baby.json#L1
     #declare predicate lib:is_ban_tp_area                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_ban_tp_area.json#L1
     #declare predicate lib:is_burning                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_burning.json#L1
@@ -570,6 +571,7 @@
     #declare tag Friend                                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L6
     #declare tag Npc                                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L10
     #declare tag Object                                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L11
+    #declare tag PlayerNearbyEnemy                                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/functions/manage_tag/_index.d.mcfunction#L10
     #declare tag PlayerShouldInvulnerable                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/functions/manage_tag/_index.d.mcfunction#L6
     #declare tag Projectile                                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L9
     #declare tag Uninterferable                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L12
