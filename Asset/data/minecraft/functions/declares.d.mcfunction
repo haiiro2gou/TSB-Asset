@@ -98,6 +98,14 @@
     #declare function api:data_get/xp_p                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/xp_p.mcfunction#L1
     #declare function api:data_get/xp_seed                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/xp_seed.mcfunction#L1
     #declare function api:data_get/xp_total                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/xp_total.mcfunction#L1
+    #declare function api:entity/mob/effect/get/all                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/all.mcfunction#L1
+    #declare function api:entity/mob/effect/get/from_id                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/from_id.mcfunction#L1
+    #declare function api:entity/mob/effect/get/size/all                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/size/all.mcfunction#L1
+    #declare function api:entity/mob/effect/get/size/bad                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/size/bad.mcfunction#L1
+    #declare function api:entity/mob/effect/get/size/good                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/get/size/good.mcfunction#L1
+    #declare function api:entity/mob/effect/give                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/give.mcfunction#L1
+    #declare function api:entity/mob/effect/remove/from_id                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_id.mcfunction#L1
+    #declare function api:entity/mob/effect/remove/from_level                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_level.mcfunction#L1
     #declare function api:global_vars/get_difficulty                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/global_vars/get_difficulty.mcfunction#L1
     #declare function api:heal/                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/heal/.mcfunction#L1
     #declare function api:heal/modifier                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/heal/modifier.mcfunction#L1
@@ -640,6 +648,13 @@
     #declare tag/function asset:artifact/tick                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/tick.json#L1
     #declare tag/function asset:artifact/use_item                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/use_item.json#L1
     #declare tag/function asset:artifact/using_item                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/artifact/using_item.json#L1
+    #declare tag/function asset:effect/end                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/end.json#L1
+    #declare tag/function asset:effect/given                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/given.json#L1
+    #declare tag/function asset:effect/load                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/load.json#L1
+    #declare tag/function asset:effect/re-given                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/re-given.json#L1
+    #declare tag/function asset:effect/register                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/register.json#L1
+    #declare tag/function asset:effect/remove                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/remove.json#L1
+    #declare tag/function asset:effect/tick                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/effect/tick.json#L1
     #declare tag/function asset:island/dispelled                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/island/dispelled.json#L1
     #declare tag/function asset:island/register                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/island/register.json#L1
     #declare tag/function asset:mob/attack                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/mob/attack.json#L1
@@ -854,21 +869,21 @@
 # @within
 #   asset_manager:spawner/tick/*
 #   function asset_manager:island/dispel/boss/*
+#   asset_manager:mob/triggers/
+#   asset_manager:mob/triggers/death/
+#   asset:mob/**
+#   function asset_manager:mob/common_tag/anti_void_action/**
 #   core:tick/player/
 #   player_manager:vanilla_attack/**
 #   asset_manager:artifact/triggers/**
 #   asset:artifact/**
 #   asset_manager:teleporter/tick/**
 #   core:handler/attack
-#   asset_manager:mob/triggers/
-#   asset_manager:mob/triggers/death/
-#   asset:mob/**
-#   function asset_manager:mob/common_tag/anti_void_action/**
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L43
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L87
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 #declare tag this
 
 #> declare
