@@ -21,11 +21,11 @@
 # スタックの操作方法 (default = API || "replace")
     data modify storage asset:effect StackOperation set value "forceReplace"
 # 最大残り時間 (default = 2147483647)
-    # data modify storage asset:effect MaxDuration set value
+    data modify storage asset:effect MaxDuration set value 100
 # 最大スタック (default = 2147483647)
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か
-    data modify storage asset:effect IsBadEffect set value true
+    data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処遇 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # エフェクトを消す際に必要なLv (default = 1)
