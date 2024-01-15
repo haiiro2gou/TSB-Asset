@@ -30,3 +30,6 @@
     # data modify storage asset:effect ProcessOnDied set value
 # エフェクトを消す際に必要なLv (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
+# フィールド
+    data modify storage asset:effect Field.Tick set value 0
+    data modify storage asset:effect Field.FlucAmount set value -1
