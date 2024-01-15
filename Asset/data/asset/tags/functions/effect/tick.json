@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:effect/0120.mana_poison/_/tick",
-        "asset:effect/0202.sheep_blessing/_/tick"
+        "asset:effect/0202.sheep_blessing/_/tick",
+        "asset:effect/0204.void_transaction/_/tick"
     ]
 }

@@ -40,6 +40,7 @@
         "asset:effect/0117.armor_debuff/_/re-given",
         "asset:effect/0118.armor_toughness_debuff/_/re-given",
         "asset:effect/0119.attack_speed_debuff/_/re-given",
-        "asset:effect/0202.sheep_blessing/_/re-given"
+        "asset:effect/0202.sheep_blessing/_/re-given",
+        "asset:effect/0204.void_transaction/_/re-given"
     ]
 }
