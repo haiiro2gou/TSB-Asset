@@ -9,7 +9,7 @@
 # ID
     data modify storage asset:effect ID set value 206
 # 名前
-    data modify storage asset:effect Name set value '{"text":"幽霊状態"}'
+    data modify storage asset:effect Name set value '[{"text":"幽霊","color":"dark_purple"},{"text":"状態","color":"yellow"}]'
 # 説明文
     data modify storage asset:effect Description set value '{"text":"スペクテイターモードになるが、元の位置から離れすぎると戻れなくなる"}'
 # 残り時間 (default = API || error)

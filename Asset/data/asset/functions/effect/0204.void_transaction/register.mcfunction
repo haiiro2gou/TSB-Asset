@@ -9,9 +9,9 @@
 # ID
     data modify storage asset:effect ID set value 204
 # 名前
-    data modify storage asset:effect Name set value '{"text":"羊の加護"}'
+    data modify storage asset:effect Name set value '{"text":"","color":"dark_purple","bold":true,"with":[{"text":"奈"},{"text":"落","obfuscated":true},{"text":"との契約"}]}'
 # 説明文
-    data modify storage asset:effect Description set value '{"text":"足元に羊毛の床を生み出す"}'
+    data modify storage asset:effect Description set value ['{"text":"契約により絶大な力を得る。"}','{"text":"","with":[{"text":"終了すると、"},{"text":"奈","obfuscated":true},{"text":"落へ引きずり込まれる。"}]}']
 # 残り時間 (default = API || error)
     data modify storage asset:effect Duration set value 2400
 # スタック (default = API || 1)
