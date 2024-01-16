@@ -41,6 +41,7 @@
         "asset:effect/0118.armor_toughness_debuff/_/end",
         "asset:effect/0119.attack_speed_debuff/_/end",
         "asset:effect/0202.sheep_blessing/_/end",
-        "asset:effect/0204.void_transaction/_/end"
+        "asset:effect/0204.void_transaction/_/end",
+        "asset:effect/0206.spirit_state/_/end"
     ]
 }
