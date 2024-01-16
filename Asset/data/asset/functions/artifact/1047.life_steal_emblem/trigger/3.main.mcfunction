@@ -11,14 +11,17 @@
 # すでにバフがついている場合はそれを先に取り外す
     execute if entity @a[scores={T3.BuffTick=1..}] run function asset:artifact/1047.life_steal_emblem/trigger/remove_buff
 
+# 最大HPを取得する
+    # function api:modifier/max_health/get
+
 # 物理攻撃 + (最大HP * 0.125) %
     data modify storage api: Argument.UUID set value [I;1,1,1047,7]
-    execute store result storage api: Argument.Amount double 0.001 run attribute @s minecraft:generic.max_health get 1.25
+    execute store result storage api: Argument.Amount double 0.001 run data get storage api: Return.MaxHealth 1.25
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 
 # 自身に最大HPの25%のダメージを与える
-    execute store result storage lib: Argument.Damage float 1 run attribute @s minecraft:generic.max_health get 0.25
+    execute store result storage lib: Argument.Damage float 1 run data get storage api: Return.MaxHealth 0.25
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
     data modify storage lib: Argument.FixedDamage set value 1b

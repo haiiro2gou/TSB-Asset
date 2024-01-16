@@ -16,7 +16,8 @@
     function api:modifier/attack/water/remove
 
 # 最大体力
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-041f00000001
+    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
+    function api:modifier/max_health/remove
 
 # ノクバ耐性
     attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-041f00000001

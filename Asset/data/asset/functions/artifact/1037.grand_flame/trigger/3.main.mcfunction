@@ -20,7 +20,8 @@
 
 # 体力
     # 最大体力を取得
-        execute store result score $ST.MaxHP Temporary run attribute @s minecraft:generic.max_health get
+        function api:modifier/max_health/get
+        execute store result score $ST.MaxHP Temporary run data get storage api: Return.MaxHealth
 
     # 現在体力を取得
         function api:data_get/health
@@ -30,7 +31,7 @@
         scoreboard players operation $ST.CurrentHP Temporary /= $ST.MaxHP Temporary
 
 # スコアセット
-    scoreboard players operation $ST.OwnerId Temporary = @s UserID 
+    scoreboard players operation $ST.OwnerId Temporary = @s UserID
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.OwnerID = $ST.OwnerId Temporary
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players set @s ST.FlyingTick 100
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.PercentHP = $ST.CurrentHP Temporary
