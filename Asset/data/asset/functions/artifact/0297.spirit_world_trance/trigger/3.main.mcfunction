@@ -11,5 +11,4 @@
 
 # 幽霊状態になる
     data modify storage api: Argument.ID set value 206
-    data modify storage api: Argument.Duration set value 200
     function api:entity/mob/effect/give

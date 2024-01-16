@@ -13,7 +13,7 @@
 # 説明文
     data modify storage asset:effect Description set value '{"text":"足元に羊毛の床を生み出す"}'
 # 残り時間 (default = API || error)
-    # data modify storage asset:effect Duration set value
+    data modify storage asset:effect Duration set value 40
 # スタック (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 残り時間の操作方法 (default = API || "replace")
@@ -21,9 +21,9 @@
 # スタックの操作方法 (default = API || "replace")
     data modify storage asset:effect StackOperation set value "forceReplace"
 # 最大残り時間 (default = 2147483647)
-    data modify storage asset:effect MaxDuration set value 100
+    # data modify storage asset:effect MaxDuration set value
 # 最大スタック (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 1
+    # data modify storage asset:effect MaxStack set value
 # 悪い効果か否か
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処遇 (default = "remove")

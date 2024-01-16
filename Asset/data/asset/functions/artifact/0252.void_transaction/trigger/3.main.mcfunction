@@ -11,5 +11,4 @@
 
 # エフェクトを呼び出し
     data modify storage api: Argument.ID set value 204
-    data modify storage api: Argument.Duration set value 2400
     function api:entity/mob/effect/give

@@ -14,5 +14,4 @@
 
 # 羊の加護エフェクトを付与
     data modify storage api: Argument.ID set value 202
-    data modify storage api: Argument.Duration set value 40
     function api:entity/mob/effect/give

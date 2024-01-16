@@ -13,7 +13,7 @@
 # 説明文
     data modify storage asset:effect Description set value '{"text":"スペクテイターモードになるが、元の位置から離れすぎると戻れなくなる"}'
 # 残り時間 (default = API || error)
-    # data modify storage asset:effect Duration set value
+    data modify storage asset:effect Duration set value 200
 # スタック (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 残り時間の操作方法 (default = API || "replace")
