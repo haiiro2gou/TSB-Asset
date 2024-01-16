@@ -2,7 +2,6 @@
     "values": [
         "asset:artifact/0005.musket_matchlock/trigger/0.load",
         "asset:artifact/0078.self_destruct_order/trigger/0.load",
-        "asset:artifact/0087.sheep_blessing/trigger/0.load",
         "asset:artifact/0105.secret_meat/trigger/0.load",
         "asset:artifact/0152.call_cat/trigger/0.load",
         "asset:artifact/0172.icicle/trigger/0.load",
@@ -43,7 +42,6 @@
         "asset:artifact/0905.book_of_metastasis/trigger/0.load",
         "asset:artifact/0907.rod_of_rain/trigger/0.load",
         "asset:artifact/0915.flame_hunter_hat/trigger/0.load",
-        "asset:artifact/0952.lunatic_rod/trigger/0.load",
         "asset:artifact/0953.meteor_rain/trigger/0.load",
         "asset:artifact/0966.protection/trigger/0.load",
         "asset:artifact/0967.enhanced_protection/trigger/0.load",
