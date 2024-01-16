@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"۞","color":"dark_gray"},{"text":"ソリタリネス","color":"gray"},{"text":"۞","color":"dark_gray"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"孤独が唯一の友人だった。"}]','[{"text":"最大体力+4","color":"red"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"孤独が唯一の友人だった。"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -53,7 +53,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:64,Enchantments:[{id:unbreaking,lvl:3},{id:protection,lvl:5}],AttributeModifiers:[{UUID:[I;1,1,561,3],AttributeName:"generic.armor",Name:"armor",Slot:feet,Operation:0,Amount:3},{UUID:[I;1,1,561,3],AttributeName:"generic.movement_speed",Name:"speed",Slot:feet,Operation:1,Amount:0.3}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:64,Enchantments:[{id:unbreaking,lvl:3},{id:protection,lvl:5}],AttributeModifiers:[{UUID:[I;1,1,561,3],AttributeName:"generic.armor",Name:"armor",Slot:feet,Operation:0,Amount:3},{UUID:[I;1,1,561,3],AttributeName:"generic.max_health",Name:"max_health",Slot:feet,Operation:0,Amount:4},{UUID:[I;1,1,561,3],AttributeName:"generic.movement_speed",Name:"speed",Slot:feet,Operation:1,Amount:0.3}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

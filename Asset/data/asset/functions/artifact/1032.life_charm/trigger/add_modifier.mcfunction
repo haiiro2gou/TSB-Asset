@@ -17,4 +17,4 @@
     execute unless data storage api: Argument{Amount: 0.0d} run function api:modifier/max_health/add
 
 # リセット
-    data remove storage api: Argument
+    scoreboard players reset $Count Temporary

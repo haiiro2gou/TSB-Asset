@@ -14,8 +14,7 @@
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
 
 # HP回復
-    function api:modifier/max_health/get
-    execute store result storage lib: Argument.Heal double 0.50 run data get storage api: Return.MaxHealth
+    execute store result storage lib: Argument.Heal double 0.0050 run attribute @s generic.max_health get 100
     function lib:heal/modifier
     function lib:heal/
 

@@ -17,5 +17,4 @@
     function api:modifier/defense/physical/remove
 
 # 最大体力+8
-    data modify storage api: Argument.UUID set value [I;1,1,639,5]
-    function api:modifier/max_health/remove
+    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-027f00000005

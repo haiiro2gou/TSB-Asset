@@ -12,8 +12,7 @@
         stopsound @s * entity.item.break
         tellraw @s [{"text": "<"},{"selector":"@s"},{"text": "> き の こ 万 歳 ！"}]
     # 処理
-        function api:modifier/max_health/get
-        execute store result storage lib: Argument.Heal double 0.50 run data get storage api: Return.MaxHealth
+        execute store result storage lib: Argument.Heal double 0.01 run attribute @s generic.max_health get 50
         function lib:heal/modifier
         function lib:heal/
         function lib:heal/reset
