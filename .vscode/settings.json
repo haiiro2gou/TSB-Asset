@@ -421,7 +421,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/give/1.trigger"
                     }
@@ -582,7 +581,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/give/1.trigger"
                     }
@@ -751,7 +749,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/register"
                     }
@@ -799,7 +796,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/0.load"
                     }
@@ -835,7 +831,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -854,7 +849,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -873,7 +867,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -892,7 +885,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -911,7 +903,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -930,7 +921,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -949,7 +939,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -968,7 +957,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -987,7 +975,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1006,7 +993,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1025,7 +1011,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1044,7 +1029,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1063,7 +1047,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1082,7 +1065,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1101,7 +1083,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1120,7 +1101,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1139,7 +1119,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1158,7 +1137,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1177,7 +1155,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1196,7 +1173,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1215,7 +1191,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1234,7 +1209,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1253,7 +1227,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1272,7 +1245,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1291,7 +1263,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1310,7 +1281,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1329,7 +1299,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1348,7 +1317,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1367,7 +1335,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1386,7 +1353,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1405,7 +1371,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1450,7 +1415,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/1.trigger"
                     }
@@ -1464,7 +1428,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/dis_equip/"
                     }
@@ -1508,7 +1471,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:artifact/%namespace%/trigger/rejoin_process"
                     }
@@ -1554,7 +1516,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/summon"
                     }
@@ -1666,7 +1627,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/register"
                     }
@@ -1747,7 +1707,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/load"
                     }
@@ -1807,7 +1766,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/attack"
                     }
@@ -1858,7 +1816,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/hurt"
                     }
@@ -1909,7 +1866,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/death"
                     }
@@ -1960,7 +1916,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/tick"
                     }
@@ -2011,7 +1966,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/init"
                     }
@@ -2049,7 +2003,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/rejoin_process"
                     }
@@ -2092,7 +2045,6 @@
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:mob/%namespace%/_/remove"
                     }
