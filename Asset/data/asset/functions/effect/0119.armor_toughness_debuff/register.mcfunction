@@ -1,13 +1,13 @@
-#> asset:effect/0118.armor_toughness_debuff/register
+#> asset:effect/0119.armor_toughness_debuff/register
 #
 #
 #
-# @within function asset:effect/0118.armor_toughness_debuff/_/register
+# @within function asset:effect/0119.armor_toughness_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 118
+    data modify storage asset:effect ID set value 119
 # 名前
     data modify storage asset:effect Name set value '{"text":"防具強度減少"}'
 # 説明文
