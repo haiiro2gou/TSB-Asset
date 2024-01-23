@@ -31,7 +31,7 @@
         "asset:effect/0108.defense_magic_debuff/_/register",
         "asset:effect/0109.defense_fire_debuff/_/register",
         "asset:effect/0110.defense_water_debuff/_/register",
-        "asset:effect/0111.defense_thunder_debuff/_/register",
+        "asset:effect/0112.defense_thunder_debuff/_/register",
         "asset:effect/0113.heal_debuff/_/register",
         "asset:effect/0114.receive_heal_debuff/_/register",
         "asset:effect/0115.max_health_debuff/_/register",

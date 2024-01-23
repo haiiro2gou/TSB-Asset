@@ -1,13 +1,13 @@
-#> asset:effect/0111.defense_thunder_debuff/register
+#> asset:effect/0112.defense_thunder_debuff/register
 #
 #
 #
-# @within function asset:effect/0111.defense_thunder_debuff/_/register
+# @within function asset:effect/0112.defense_thunder_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 111
+    data modify storage asset:effect ID set value 112
 # 名前
     data modify storage asset:effect Name set value '{"text":"雷属性耐性低下"}'
 # 説明文
