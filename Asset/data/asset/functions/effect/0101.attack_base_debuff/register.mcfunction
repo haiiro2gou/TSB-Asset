@@ -1,13 +1,13 @@
-#> asset:effect/0100.attack_base_debuff/register
+#> asset:effect/0101.attack_base_debuff/register
 #
 #
 #
-# @within function asset:effect/0100.attack_base_debuff/_/register
+# @within function asset:effect/0101.attack_base_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 100
+    data modify storage asset:effect ID set value 101
 # 名前
     data modify storage asset:effect Name set value '{"text":"攻撃力低下"}'
 # 説明文

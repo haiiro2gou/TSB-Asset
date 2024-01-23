@@ -20,7 +20,7 @@
         "asset:effect/0018.armor_buff/_/end",
         "asset:effect/0019.armor_toughness_buff/_/end",
         "asset:effect/0020.attack_speed_buff/_/end",
-        "asset:effect/0100.attack_base_debuff/_/end",
+        "asset:effect/0101.attack_base_debuff/_/end",
         "asset:effect/0101.attack_physical_debuff/_/end",
         "asset:effect/0102.attack_magic_debuff/_/end",
         "asset:effect/0103.attack_fire_debuff/_/end",
