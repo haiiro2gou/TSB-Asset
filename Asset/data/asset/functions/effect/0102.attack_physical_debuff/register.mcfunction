@@ -1,13 +1,13 @@
-#> asset:effect/0101.attack_physical_debuff/register
+#> asset:effect/0102.attack_physical_debuff/register
 #
 #
 #
-# @within function asset:effect/0101.attack_physical_debuff/_/register
+# @within function asset:effect/0102.attack_physical_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 101
+    data modify storage asset:effect ID set value 102
 # 名前
     data modify storage asset:effect Name set value '{"text":"物理攻撃力低下"}'
 # 説明文

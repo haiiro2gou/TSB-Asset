@@ -21,7 +21,7 @@
         "asset:effect/0019.armor_toughness_buff/_/re-given",
         "asset:effect/0020.attack_speed_buff/_/re-given",
         "asset:effect/0101.attack_base_debuff/_/re-given",
-        "asset:effect/0101.attack_physical_debuff/_/re-given",
+        "asset:effect/0102.attack_physical_debuff/_/re-given",
         "asset:effect/0102.attack_magic_debuff/_/re-given",
         "asset:effect/0103.attack_fire_debuff/_/re-given",
         "asset:effect/0104.attack_water_debuff/_/re-given",
