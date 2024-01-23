@@ -1,13 +1,13 @@
-#> asset:effect/0104.attack_water_debuff/register
+#> asset:effect/0105.attack_water_debuff/register
 #
 #
 #
-# @within function asset:effect/0104.attack_water_debuff/_/register
+# @within function asset:effect/0105.attack_water_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 104
+    data modify storage asset:effect ID set value 105
 # 名前
     data modify storage asset:effect Name set value '{"text":"水属性攻撃力低下"}'
 # 説明文
