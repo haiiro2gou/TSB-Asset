@@ -1,13 +1,13 @@
-#> asset:effect/0102.attack_magic_debuff/register
+#> asset:effect/0103.attack_magic_debuff/register
 #
 #
 #
-# @within function asset:effect/0102.attack_magic_debuff/_/register
+# @within function asset:effect/0103.attack_magic_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 102
+    data modify storage asset:effect ID set value 103
 # 名前
     data modify storage asset:effect Name set value '{"text":"魔法攻撃力低下"}'
 # 説明文
