@@ -1,13 +1,13 @@
-#> asset:effect/0103.attack_fire_debuff/register
+#> asset:effect/0104.attack_fire_debuff/register
 #
 #
 #
-# @within function asset:effect/0103.attack_fire_debuff/_/register
+# @within function asset:effect/0104.attack_fire_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 103
+    data modify storage asset:effect ID set value 104
 # 名前
     data modify storage asset:effect Name set value '{"text":"火属性攻撃力低下"}'
 # 説明文

@@ -23,7 +23,7 @@
         "asset:effect/0101.attack_base_debuff/_/register",
         "asset:effect/0102.attack_physical_debuff/_/register",
         "asset:effect/0102.attack_magic_debuff/_/register",
-        "asset:effect/0103.attack_fire_debuff/_/register",
+        "asset:effect/0104.attack_fire_debuff/_/register",
         "asset:effect/0105.attack_water_debuff/_/register",
         "asset:effect/0106.attack_thunder_debuff/_/register",
         "asset:effect/0107.defense_base_debuff/_/register",
