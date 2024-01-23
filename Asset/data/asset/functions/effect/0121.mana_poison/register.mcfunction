@@ -1,13 +1,13 @@
-#> asset:effect/0120.mana_poison/register
+#> asset:effect/0121.mana_poison/register
 #
 #
 #
-# @within function asset:effect/0120.mana_poison/_/register
+# @within function asset:effect/0121.mana_poison/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 120
+    data modify storage asset:effect ID set value 121
 # 名前
     data modify storage asset:effect Name set value '{"text":"MP毒"}'
 # 説明文

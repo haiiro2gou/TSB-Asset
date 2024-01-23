@@ -1,5 +1,5 @@
-#> asset:effect/0120.mana_poison/tick/fluc
-# @within function asset:effect/0120.mana_poison/tick/
+#> asset:effect/0121.mana_poison/tick/fluc
+# @within function asset:effect/0121.mana_poison/tick/
 
 #> Val
 # @private
