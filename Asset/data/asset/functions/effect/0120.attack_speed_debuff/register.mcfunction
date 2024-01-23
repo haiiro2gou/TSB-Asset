@@ -1,13 +1,13 @@
-#> asset:effect/0119.attack_speed_debuff/register
+#> asset:effect/0120.attack_speed_debuff/register
 #
 #
 #
-# @within function asset:effect/0119.attack_speed_debuff/_/register
+# @within function asset:effect/0120.attack_speed_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 119
+    data modify storage asset:effect ID set value 120
 # 名前
     data modify storage asset:effect Name set value '{"text":"攻撃速度減少"}'
 # 説明文
