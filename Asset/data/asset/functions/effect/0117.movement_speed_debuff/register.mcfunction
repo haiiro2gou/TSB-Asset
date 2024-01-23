@@ -1,13 +1,13 @@
-#> asset:effect/0116.movement_speed_debuff/register
+#> asset:effect/0117.movement_speed_debuff/register
 #
 #
 #
-# @within function asset:effect/0116.movement_speed_debuff/_/register
+# @within function asset:effect/0117.movement_speed_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 116
+    data modify storage asset:effect ID set value 117
 # 名前
     data modify storage asset:effect Name set value '{"text":"移動速度低下"}'
 # 説明文
