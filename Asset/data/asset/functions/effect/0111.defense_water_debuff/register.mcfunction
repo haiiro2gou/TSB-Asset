@@ -1,13 +1,13 @@
-#> asset:effect/0110.defense_water_debuff/register
+#> asset:effect/0111.defense_water_debuff/register
 #
 #
 #
-# @within function asset:effect/0110.defense_water_debuff/_/register
+# @within function asset:effect/0111.defense_water_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 110
+    data modify storage asset:effect ID set value 111
 # 名前
     data modify storage asset:effect Name set value '{"text":"水属性耐性低下"}'
 # 説明文
