@@ -1,13 +1,13 @@
-#> asset:effect/0114.max_health_debuff/register
+#> asset:effect/0115.max_health_debuff/register
 #
 #
 #
-# @within function asset:effect/0114.max_health_debuff/_/register
+# @within function asset:effect/0115.max_health_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 114
+    data modify storage asset:effect ID set value 115
 # 名前
     data modify storage asset:effect Name set value '{"text":"最大体力低下"}'
 # 説明文
