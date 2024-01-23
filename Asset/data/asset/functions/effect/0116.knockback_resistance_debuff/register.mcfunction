@@ -1,13 +1,13 @@
-#> asset:effect/0115.knockback_resistance_debuff/register
+#> asset:effect/0116.knockback_resistance_debuff/register
 #
 #
 #
-# @within function asset:effect/0115.knockback_resistance_debuff/_/register
+# @within function asset:effect/0116.knockback_resistance_debuff/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value true
 # ID
-    data modify storage asset:effect ID set value 115
+    data modify storage asset:effect ID set value 116
 # 名前
     data modify storage asset:effect Name set value '{"text":"ノックバック耐性低下"}'
 # 説明文
