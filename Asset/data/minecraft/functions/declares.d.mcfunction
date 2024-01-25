@@ -530,8 +530,8 @@
     #declare predicate world_manager:area/04-03.end_forgotten_star_higher             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/predicates/area/04-03.end_forgotten_star_higher.json#L1
     #declare predicate world_manager:area/04.end                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/predicates/area/04.end.json#L1
     #declare recipe minecraft:enchanting_table                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/recipes/enchanting_table.json#L1
-    #declare score_holder #LoadTime                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L7
-    #declare score_holder #PlayerCount                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L6
+    #declare score_holder $LoadTime                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L7
+    #declare score_holder $PlayerCount                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L6
     #declare storage api:                                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/_index.d.mcfunction#L6
     #declare storage lib:                                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/_index.d.mcfunction#L6
     #declare storage minecraft:global                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L57
