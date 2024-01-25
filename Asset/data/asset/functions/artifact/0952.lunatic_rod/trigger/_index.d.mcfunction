@@ -5,4 +5,4 @@
 # @within function asset:artifact/0952.lunatic_rod/trigger/**
     #declare tag Hit
     #declare tag Landing
-    #declare score_holder $Interval
+    #declare score_holder #Interval

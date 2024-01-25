@@ -5,7 +5,7 @@
 # @within function asset:artifact/0905.book_of_metastasis/trigger/4.schedule
 #> Private
 # @private
-    #declare score_holder $isBanTPArea
+    #declare score_holder #isBanTPArea
     #declare tag P5.Landing
 
 # 着弾検知
@@ -19,7 +19,7 @@
     tp @s[tag=!P5.Landing] ^ ^ ^0.5 ~ ~
 
 # TPBANエリアにいった場合
-    execute at @s store result score $isBanTPArea Temporary if predicate lib:is_ban_tp_area
-    execute if score $isBanTPArea Temporary matches 1 at @s run particle smoke ~ ~ ~ 0 0 0 0.1 30
-    execute if score $isBanTPArea Temporary matches 1 run kill @s
-    scoreboard players reset $isBanTPArea Temporary
+    execute at @s store result score #isBanTPArea Temporary if predicate lib:is_ban_tp_area
+    execute if score #isBanTPArea Temporary matches 1 at @s run particle smoke ~ ~ ~ 0 0 0 0.1 30
+    execute if score #isBanTPArea Temporary matches 1 run kill @s
+    scoreboard players reset #isBanTPArea Temporary

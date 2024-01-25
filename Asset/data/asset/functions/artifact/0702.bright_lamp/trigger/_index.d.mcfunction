@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/0702.bright_lamp/trigger/**
-    #declare score_holder $RecursiveLimit
+    #declare score_holder #RecursiveLimit

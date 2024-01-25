@@ -20,7 +20,7 @@
     #
     #declare tag Landing
     #declare tag LandingTarget
-    #declare score_holder $LazerDistance
+    #declare score_holder #LazerDistance
 
 #> Val
 # @within function asset:mob/0046.clock_of_despair/tick/skill/common/gear_*/spread_summon/*

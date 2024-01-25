@@ -4,4 +4,4 @@
 #> tag
 # @within function
 #   asset:artifact/0278.reveille/trigger/**
-    #declare score_holder $Timeline
+    #declare score_holder #Timeline

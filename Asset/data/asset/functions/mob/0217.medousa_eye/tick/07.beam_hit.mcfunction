@@ -24,8 +24,8 @@
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
 # デスログ
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにより石化した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sと目を合わせてしまい、石像となった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1#sは%2#sにより石化した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1#sは%2#sと目を合わせてしまい、石像となった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
     execute as @e[type=zombie,tag=this,distance=..20,limit=1] run function lib:damage/modifier
 # 実行
@@ -34,10 +34,10 @@
     function lib:damage/reset
 
 # マナを吸収 イージー:無し ノーマル:30 ハード:60
-    execute if predicate api:global_vars/difficulty/normal run scoreboard players set $Fluctuation Lib -30
-    execute if predicate api:global_vars/difficulty/hard run scoreboard players set $Fluctuation Lib -60
+    execute if predicate api:global_vars/difficulty/normal run scoreboard players set #Fluctuation Lib -30
+    execute if predicate api:global_vars/difficulty/hard run scoreboard players set #Fluctuation Lib -60
     execute if predicate api:global_vars/difficulty/min/normal run function lib:mp/fluctuation
-    
+
 # スケジュールループスタート
     schedule function asset:mob/0217.medousa_eye/player_process/01.schedule_loop 1t replace
 

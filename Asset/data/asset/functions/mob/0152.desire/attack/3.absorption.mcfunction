@@ -5,12 +5,12 @@
 # @within function asset:mob/0152.desire/attack/2.attack
 #> private
 # @private
-    #declare score_holder $MPCheck
+    #declare score_holder #MPCheck
     #declare tag EmptyMP
 
 # プレイヤーのマナを検知する
-    execute as @p[tag=Victim] store result score $MPCheck Temporary run function lib:mp/get
-    execute if score $MPCheck Temporary matches ..80 run tag @p[tag=Victim] add EmptyMP
+    execute as @p[tag=Victim] store result score #MPCheck Temporary run function lib:mp/get
+    execute if score #MPCheck Temporary matches ..80 run tag @p[tag=Victim] add EmptyMP
 
 # マナが無いプレイヤーを殴った時
     # ダメージ設定
@@ -33,7 +33,7 @@
         function lib:damage/reset
 
 # マナを吸い取る
-    scoreboard players set $Fluctuation Lib -80
+    scoreboard players set #Fluctuation Lib -80
     execute as @p[tag=Victim] run function lib:mp/fluctuation
 
 # 演出
@@ -46,4 +46,4 @@
 # タグリセット
     tag @p[tag=EmptyMP] remove EmptyMP
     tag @s remove RunOnce
-    scoreboard players reset $MPCheck
+    scoreboard players reset #MPCheck

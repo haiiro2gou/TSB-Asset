@@ -13,27 +13,27 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0745.blade_of_whirlwind/trigger/4.vfx
 
 # 移動速度をスコア化する
-    execute store result score $AddDamage Temporary run attribute @s generic.movement_speed get 1000
-    scoreboard players operation $VectorMagnitude Temporary = $AddDamage Temporary
+    execute store result score #AddDamage Temporary run attribute @s generic.movement_speed get 1000
+    scoreboard players operation #VectorMagnitude Temporary = #AddDamage Temporary
 
 # 本来の補正一切なしの値を減算
-    scoreboard players operation $AddDamage Temporary -= $100 Const
+    scoreboard players operation #AddDamage Temporary -= #100 Const
 
 # attributeの補正の値×250だけダメージに加算されるので、1000×5÷20=250、より5を掛け、20で割るので結果的に4で割る
-    scoreboard players operation $AddDamage Temporary /= $2 Const
+    scoreboard players operation #AddDamage Temporary /= #2 Const
 
 # ダメージ
     #ダメージブレのための処理
         # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
+            execute store result score #RandomDamage Temporary run function lib:random/
         # 剰余算する。0~26の追加ダメージ
-            scoreboard players operation $RandomDamage Temporary %= $27 Const
+            scoreboard players operation #RandomDamage Temporary %= #27 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 252
+            scoreboard players add #RandomDamage Temporary 252
         # 移動速度の追加分を加算
-            scoreboard players operation $RandomDamage Temporary += $AddDamage Temporary
+            scoreboard players operation #RandomDamage Temporary += #AddDamage Temporary
     #ダメージを代入
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+        execute store result storage lib: Argument.Damage float 1 run scoreboard players get #RandomDamage Temporary
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
@@ -45,11 +45,11 @@
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
 
 # 自身の移動速度が1以上の時に実行
-    execute if score $VectorMagnitude Temporary matches 1.. run function asset:artifact/0745.blade_of_whirlwind/trigger/5.knockback
+    execute if score #VectorMagnitude Temporary matches 1.. run function asset:artifact/0745.blade_of_whirlwind/trigger/5.knockback
 
 # リセット
     function lib:damage/reset
     data remove storage lib: Argument
-    scoreboard players reset $RandomDamage Temporary
-    scoreboard players reset $VectorMagnitude Temporary
-    scoreboard players reset $AddDamage Temporary
+    scoreboard players reset #RandomDamage Temporary
+    scoreboard players reset #VectorMagnitude Temporary
+    scoreboard players reset #AddDamage Temporary

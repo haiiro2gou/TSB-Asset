@@ -17,6 +17,6 @@
     #declare tag 3N.SkillIceCannonParticle
     #declare tag 3N.SkillIcePillar
     #declare tag 3N.SkillPillarMaker
-    #declare score_holder $Count
-    #declare score_holder $Random
-    #declare score_holder $4tInterval
+    #declare score_holder #Count
+    #declare score_holder #Random
+    #declare score_holder #4tInterval

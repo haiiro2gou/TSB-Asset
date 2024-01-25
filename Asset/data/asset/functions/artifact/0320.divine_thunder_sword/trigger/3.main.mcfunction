@@ -16,13 +16,13 @@
 # ダメージ
     #ダメージブレのための処理
         # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
+            execute store result score #RandomDamage Temporary run function lib:random/
         # 剰余算する。0~40の追加ダメージ
-            scoreboard players operation $RandomDamage Temporary %= $41 Const
+            scoreboard players operation #RandomDamage Temporary %= #41 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 280
+            scoreboard players add #RandomDamage Temporary 280
     #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+        execute store result storage lib: Argument.Damage float 1 run scoreboard players get #RandomDamage Temporary
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
@@ -34,4 +34,4 @@
 
 # リセット
     function lib:damage/reset
-    scoreboard players reset $RandomDamage Temporary
+    scoreboard players reset #RandomDamage Temporary

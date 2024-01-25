@@ -8,7 +8,7 @@
 # @private
     #declare tag SpreadMarker
     #declare tag Init
-    #declare score_holder $Random
+    #declare score_holder #Random
 
 # 召喚する
     summon marker ~ ~ ~ {Tags:["Projectile","KI.Bullet","Init"]}
@@ -17,12 +17,12 @@
     scoreboard players operation @e[type=marker,tag=KI.Bullet,tag=Init,distance=..0.01,limit=1] KI.UserID = @s UserID
 
 # 開始タイミングをランダムにする
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $4 Const
-    scoreboard players operation $Random Temporary -= $2 Const
+    execute store result score #Random Temporary run function lib:random/
+    scoreboard players operation #Random Temporary %= #4 Const
+    scoreboard players operation #Random Temporary -= #2 Const
 
-# $Randomの値を移す
-    scoreboard players operation @e[type=marker,tag=KI.Bullet,tag=Init,distance=..0.01,limit=1] KI.Tick = $Random Temporary
+# #Randomの値を移す
+    scoreboard players operation @e[type=marker,tag=KI.Bullet,tag=Init,distance=..0.01,limit=1] KI.Tick = #Random Temporary
 
 # 前方拡散を実行する
 
@@ -40,4 +40,4 @@
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..10]
-    scoreboard players reset $Random Temporary
+    scoreboard players reset #Random Temporary

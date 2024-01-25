@@ -11,5 +11,5 @@
 #   asset:artifact/0471.stone_cutter_chainsaw/trigger/3.1.check_critical
 #   asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
 #
-    #declare score_holder $7n.Count
+    #declare score_holder #7n.Count
     #declare tag D3.Critical

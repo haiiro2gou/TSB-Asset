@@ -11,7 +11,7 @@
 
 #> Private
 # @private
-    #declare score_holder $Health
+    #declare score_holder #Health
 
 # 攻撃回数スコアを増やす
     scoreboard players add @s SP.AttackCount 1
@@ -33,8 +33,8 @@
 
 # ダメージ 基礎火力+現在体力の200%
     function api:data_get/health
-    execute store result score $Health Temporary run data get storage api: Health 2.0
-    execute store result storage lib: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $300 Const
+    execute store result score #Health Temporary run data get storage api: Health 2.0
+    execute store result storage lib: Argument.Damage double 1.0 run scoreboard players operation #Health Temporary += #300 Const
 
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
@@ -51,4 +51,4 @@
     execute if entity @s[scores={SP.AttackCount=3..}] run scoreboard players reset @s SP.AttackCount
 
 # リセット
-    scoreboard players reset $Health Temporary
+    scoreboard players reset #Health Temporary

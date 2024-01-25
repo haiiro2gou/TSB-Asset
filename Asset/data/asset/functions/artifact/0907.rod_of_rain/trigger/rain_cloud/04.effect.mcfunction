@@ -6,7 +6,7 @@
 
 #> Private
 # @private
-    #declare score_holder $AttackWater
+    #declare score_holder #AttackWater
 
 # 演出
     playsound entity.dolphin.swim player @a ~ ~ ~ 0.7 1.5 0
@@ -30,9 +30,9 @@
 # 回復
     # 水攻撃補正をstorageに入れる (補正1.2の場合、0.2になるように計算)
         execute as @p[tag=P8.Owner] run function api:modifier/attack/water/get
-        execute store result score $AttackWater Temporary run data get storage api: Return.Attack.Water 100
-        scoreboard players operation $AttackWater Temporary -= $100 Const
-        execute store result storage api: Argument.Amount double 0.01 run scoreboard players get $AttackWater Temporary
+        execute store result score #AttackWater Temporary run data get storage api: Return.Attack.Water 100
+        scoreboard players operation #AttackWater Temporary -= #100 Const
+        execute store result storage api: Argument.Amount double 0.01 run scoreboard players get #AttackWater Temporary
 
     # 体力回復量補正に水攻撃補正を掛ける
         data modify storage api: Argument.UUID set value [I;1,1,907,0]
@@ -53,4 +53,4 @@
     tag @s remove P8.This
     tag @p[tag=P8.Owner] remove P8.Owner
     function lib:heal/reset
-    scoreboard players reset $AttackWater Temporary
+    scoreboard players reset #AttackWater Temporary

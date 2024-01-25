@@ -5,8 +5,8 @@
 # @within function asset:mob/0262.frestchika/tick/1.trigger
 #> private
 # @private
-    #declare score_holder $Count
-    #declare score_holder $4tInterval
+    #declare score_holder #Count
+    #declare score_holder #4tInterval
 
 # オーバーヒートしていない限り常時耐性4がつく
     effect give @s[tag=!7A.SkillOverHeat] resistance 1 7 true
@@ -32,14 +32,14 @@
 # 以下エラー時の処理
 # もし同一座標に2体存在した場合瞬時にteleportする
     # 数のカウント
-        execute store result score $Count Temporary if entity @e[type=armor_stand,tag=7A.ArmorStand,distance=..0.01]
+        execute store result score #Count Temporary if entity @e[type=armor_stand,tag=7A.ArmorStand,distance=..0.01]
     # もしいたらテレポ
-        execute if score $Count Temporary matches 2.. run data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,0d],[8d,8d]]
-        execute if score $Count Temporary matches 2.. run function asset:mob/0262.frestchika/tick/move/spread
+        execute if score #Count Temporary matches 2.. run data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,0d],[8d,8d]]
+        execute if score #Count Temporary matches 2.. run function asset:mob/0262.frestchika/tick/move/spread
     # スコアも一応戻す
-        execute if score $Count Temporary matches 2.. run scoreboard players reset @s 7A.Tick
+        execute if score #Count Temporary matches 2.. run scoreboard players reset @s 7A.Tick
     # リセット
-        scoreboard players reset $Count
+        scoreboard players reset #Count
 
 # もしアマスタがどっかいってしまったら(tpの関係でatが無いと死ぬ)
     execute at @s unless entity @e[type=armor_stand,tag=7A.ArmorStand,distance=..0.01] run function asset:mob/0262.frestchika/tick/armorstand_respawn

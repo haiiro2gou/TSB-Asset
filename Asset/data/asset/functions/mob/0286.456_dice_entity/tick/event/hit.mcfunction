@@ -20,7 +20,7 @@
             # 疑似乱数取得
                 execute store result score @s Temporary run function lib:random/
             # ほしい範囲に剰余算
-                scoreboard players operation @s Temporary %= $3 Const
+                scoreboard players operation @s Temporary %= #3 Const
 
             # 火
                 execute if score @s Temporary matches 0 run data modify storage lib: Argument.ElementType set value "Fire"

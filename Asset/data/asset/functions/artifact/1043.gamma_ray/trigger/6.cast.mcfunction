@@ -8,7 +8,7 @@
 
 #> val
 # @private
-    #declare score_holder $SZ.Damage
+    #declare score_holder #SZ.Damage
 
 # 着弾検知
     execute anchored eyes run function asset:artifact/1043.gamma_ray/trigger/6.1.loop
@@ -16,17 +16,17 @@
 # ダメージ計算
 # 溜め時間：N Tick 溜め時間が長いほど二次関数的にダメージが上がる
 # N ^ 2 / 5 + 200
-    scoreboard players operation $SZ.Damage Temporary = @s SZ.CastTick
-    scoreboard players operation $SZ.Damage Temporary *= @s SZ.CastTick
-    scoreboard players operation $SZ.Damage Temporary /= $5 Const
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players operation $SZ.Damage Temporary += $200 Const
+    scoreboard players operation #SZ.Damage Temporary = @s SZ.CastTick
+    scoreboard players operation #SZ.Damage Temporary *= @s SZ.CastTick
+    scoreboard players operation #SZ.Damage Temporary /= #5 Const
+    execute store result storage lib: Argument.Damage float 1 run scoreboard players operation #SZ.Damage Temporary += #200 Const
 
 # ダメージ
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
     function lib:damage/modifier
     execute as @e[tag=SZ.Landing,distance=..28] run function lib:damage/
-    
+
 # 演出
     execute if score @s SZ.CastTick matches 0..20 anchored eyes run function asset:artifact/1043.gamma_ray/trigger/cast_vfx/1
     execute if score @s SZ.CastTick matches 21..40 anchored eyes run function asset:artifact/1043.gamma_ray/trigger/cast_vfx/2

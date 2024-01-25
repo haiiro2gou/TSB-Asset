@@ -6,16 +6,16 @@
 
 #> Private
 # @private
-    #declare score_holder $Temp
+    #declare score_holder #Temp
 
 # 移動
     execute unless entity @s[scores={27.Tick=40..60}] run tp @s ^ ^ ^0.5
 
 # 演出とダメージ
-    scoreboard players operation $Temp Temporary = @s 27.Tick
-    scoreboard players operation $Temp Temporary %= $2 Const
-    execute if score $Temp Temporary matches 0 rotated ~ 0 run function asset:mob/0079.return_thunder/tick/3.thunder
-    scoreboard players reset $Temp Temporary
+    scoreboard players operation #Temp Temporary = @s 27.Tick
+    scoreboard players operation #Temp Temporary %= #2 Const
+    execute if score #Temp Temporary matches 0 rotated ~ 0 run function asset:mob/0079.return_thunder/tick/3.thunder
+    scoreboard players reset #Temp Temporary
 
 # スコア
     scoreboard players add @s 27.Tick 1

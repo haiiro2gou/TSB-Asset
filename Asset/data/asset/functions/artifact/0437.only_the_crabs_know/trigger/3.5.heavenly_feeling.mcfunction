@@ -15,7 +15,7 @@
     # リセット
         function lib:heal/reset
     # MP回復
-        scoreboard players set $Fluctuation Lib 10000
+        scoreboard players set #Fluctuation Lib 10000
         function lib:mp/fluctuation
 
 # 演出

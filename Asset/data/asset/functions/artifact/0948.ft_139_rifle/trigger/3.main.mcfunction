@@ -7,7 +7,7 @@
 #> Private
 # @private
     #declare tag SpreadMarker
-    #declare score_holder $Random
+    #declare score_holder #Random
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
@@ -35,19 +35,19 @@
     tag @s remove Landing
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
+    execute store result score #Random Temporary run function lib:random/
 # ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+    scoreboard players operation #Random Temporary %= #3 Const
 # 向きを適当に変える
-    execute unless predicate lib:is_sneaking if score $Random Temporary matches 0 run tp @s ~ ~ ~ ~ ~-1
-    execute unless predicate lib:is_sneaking if score $Random Temporary matches 1 run tp @s ~ ~ ~ ~-1 ~-1
-    execute unless predicate lib:is_sneaking if score $Random Temporary matches 2 run tp @s ~ ~ ~ ~1 ~-1
-    scoreboard players reset $Random Temporary
+    execute unless predicate lib:is_sneaking if score #Random Temporary matches 0 run tp @s ~ ~ ~ ~ ~-1
+    execute unless predicate lib:is_sneaking if score #Random Temporary matches 1 run tp @s ~ ~ ~ ~-1 ~-1
+    execute unless predicate lib:is_sneaking if score #Random Temporary matches 2 run tp @s ~ ~ ~ ~1 ~-1
+    scoreboard players reset #Random Temporary
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker]
-    scoreboard players reset $Random Temporary
-    scoreboard players reset $Appropriate_Distance Temporary
-    scoreboard players reset $Distance_Damping Temporary
-    scoreboard players reset $MinDamage Temporary
-    scoreboard players reset $Damage Temporary
+    scoreboard players reset #Random Temporary
+    scoreboard players reset #Appropriate_Distance Temporary
+    scoreboard players reset #Distance_Damping Temporary
+    scoreboard players reset #MinDamage Temporary
+    scoreboard players reset #Damage Temporary

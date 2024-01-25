@@ -4,5 +4,5 @@
 #
 # @within function asset:artifact/0265.holy_symbol_lv.5/trigger/symbol/
 
-scoreboard players set $Fluctuation Lib 9
+scoreboard players set #Fluctuation Lib 9
 function lib:mp/fluctuation

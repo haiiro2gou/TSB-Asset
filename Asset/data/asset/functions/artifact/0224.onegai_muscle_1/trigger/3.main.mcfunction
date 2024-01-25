@@ -9,7 +9,7 @@
 
 # ここから先は神器側の効果の処理を書く
     # 体力を変更
-        scoreboard players set $Set Lib 100
+        scoreboard players set #Set Lib 100
         function lib:score_to_health_wrapper/set
     # 効果
         effect give @s strength 10 5 true

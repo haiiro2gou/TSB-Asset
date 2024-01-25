@@ -41,6 +41,7 @@
         "asset:effect/0119.armor_toughness_debuff/_/re-given",
         "asset:effect/0120.attack_speed_debuff/_/re-given",
         "asset:effect/0202.sheep_blessing/_/re-given",
-        "asset:effect/0206.spirit_state/_/re-given"
+        "asset:effect/0206.spirit_state/_/re-given",
+        "asset:effect/0218.heavy_weight/_/re-given"
     ]
 }

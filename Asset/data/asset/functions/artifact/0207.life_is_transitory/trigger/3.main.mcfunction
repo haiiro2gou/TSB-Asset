@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # プレイヤーのHPを1に
-    scoreboard players set $Set Lib 1
+    scoreboard players set #Set Lib 1
     function lib:score_to_health_wrapper/set
 
 # 効果・演出

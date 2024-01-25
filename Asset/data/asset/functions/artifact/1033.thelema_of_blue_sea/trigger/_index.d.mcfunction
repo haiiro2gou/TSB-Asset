@@ -11,4 +11,4 @@
 
 #> score_holder
 # @within function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/**
-    #declare score_holder $Count
+    #declare score_holder #Count

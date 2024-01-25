@@ -5,7 +5,7 @@
 # @within function asset:artifact/0877.hungry_uni/trigger/2.check_condition
 #> Private
 # @private
-    #declare score_holder $UseCount
+    #declare score_holder #UseCount
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand

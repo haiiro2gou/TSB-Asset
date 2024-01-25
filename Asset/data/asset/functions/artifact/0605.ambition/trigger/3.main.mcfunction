@@ -13,7 +13,7 @@
     execute store result score @s Temporary run function api:lost_items/get_length
 
 # 没収されたアイテム * 4の値を設定
-    scoreboard players operation @s Temporary *= $4 Const
+    scoreboard players operation @s Temporary *= #4 Const
 
 # 最大値をきめる
     execute if score @s Temporary matches 2300.. run scoreboard players set @s Temporary 2300

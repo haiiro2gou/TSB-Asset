@@ -6,7 +6,7 @@
 
 #> private
 # @private
-    #declare score_holder $2tInterval
+    #declare score_holder #2tInterval
 
 # スコア加算
     scoreboard players add @s RD.SwordTime 1
@@ -16,12 +16,12 @@
 
 # 2tickおきに実行するやつ
 # 実行時間を移す
-    scoreboard players operation $2tInterval Temporary = @s RD.SwordTime
+    scoreboard players operation #2tInterval Temporary = @s RD.SwordTime
 # 2tickおきに実行
-    scoreboard players operation $2tInterval Temporary %= $2 Const
-    execute if score $2tInterval Temporary matches 0 run function asset:artifact/0985.ark_of_the_sanctuary/trigger/sword/damage
+    scoreboard players operation #2tInterval Temporary %= #2 Const
+    execute if score #2tInterval Temporary matches 0 run function asset:artifact/0985.ark_of_the_sanctuary/trigger/sword/damage
 # リセット
-    scoreboard players reset $2tInterval Temporary
+    scoreboard players reset #2tInterval Temporary
 
 # 移動
     execute if score @s RD.SwordTime matches 1..3 run tp ^ ^ ^2

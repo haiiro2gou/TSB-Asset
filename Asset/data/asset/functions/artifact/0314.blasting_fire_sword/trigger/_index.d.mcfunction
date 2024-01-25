@@ -4,4 +4,4 @@
 #> tag
 # @within function
 #   asset:artifact/0314.blasting_fire_sword/trigger/**
-    #declare score_holder $Rotate
+    #declare score_holder #Rotate

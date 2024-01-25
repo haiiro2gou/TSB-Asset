@@ -14,13 +14,13 @@
 
 # 次に攻撃するタイミングをランダムにする
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
+    execute store result score #Random Temporary run function lib:random/
 # 剰余算する
-    scoreboard players operation $Random Temporary %= $31 Const
+    scoreboard players operation #Random Temporary %= #31 Const
 # スコアセットセット
-    scoreboard players operation @s 59.Tick = $Random Temporary
+    scoreboard players operation @s 59.Tick = #Random Temporary
 # スコアセットされたものから少し減らす
     scoreboard players remove @s 59.Tick 30
 
 # リセット
-    scoreboard players reset $Random Temporary
+    scoreboard players reset #Random Temporary

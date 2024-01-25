@@ -5,7 +5,7 @@
 # @within function asset:artifact/0876.uni/trigger/2.check_condition
 #> Private
 # @private
-    #declare score_holder $Random
+    #declare score_holder #Random
     #declare tag SpreadMarker
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
@@ -35,21 +35,21 @@
     tag @s remove Landing
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
+    execute store result score #Random Temporary run function lib:random/
 # ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+    scoreboard players operation #Random Temporary %= #3 Const
 # 向きを適当に変える
-    execute if score $Random Temporary matches 0 run tp @s ~ ~ ~ ~ ~-0.5
-    execute if score $Random Temporary matches 1 run tp @s ~ ~ ~ ~-0.5 ~-0.5
-    execute if score $Random Temporary matches 2 run tp @s ~ ~ ~ ~0.5 ~-0.5
-    scoreboard players reset $Random Temporary
+    execute if score #Random Temporary matches 0 run tp @s ~ ~ ~ ~ ~-0.5
+    execute if score #Random Temporary matches 1 run tp @s ~ ~ ~ ~-0.5 ~-0.5
+    execute if score #Random Temporary matches 2 run tp @s ~ ~ ~ ~0.5 ~-0.5
+    scoreboard players reset #Random Temporary
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker]
-    scoreboard players reset $Random Temporary
-    scoreboard players reset $Appropriate_Distance Temporary
-    scoreboard players reset $Distance_Damping Temporary
-    scoreboard players reset $MinDamage Temporary
-    scoreboard players reset $Damage Temporary
+    scoreboard players reset #Random Temporary
+    scoreboard players reset #Appropriate_Distance Temporary
+    scoreboard players reset #Distance_Damping Temporary
+    scoreboard players reset #MinDamage Temporary
+    scoreboard players reset #Damage Temporary
 
 

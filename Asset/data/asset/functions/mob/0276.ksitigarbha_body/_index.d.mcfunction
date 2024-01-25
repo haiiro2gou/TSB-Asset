@@ -3,7 +3,7 @@
 
 #> PairData
 # @within function asset:mob/0276.ksitigarbha_body/**/**
-    #declare score_holder $7O.PairID
+    #declare score_holder #7O.PairID
 
 #> OngaeshiFlag
 # @within

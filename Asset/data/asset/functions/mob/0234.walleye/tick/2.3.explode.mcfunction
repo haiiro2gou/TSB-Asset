@@ -13,7 +13,7 @@
 # 攻撃データ設定
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Fire"
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはウォールアイの爆発に巻き込まれた。","with":[{"selector":"@s"}]}]']
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1#sはウォールアイの爆発に巻き込まれた。","with":[{"selector":"@s"}]}]']
 # ダメージ
     data modify storage lib: Argument.Damage set value 10.0f
     function lib:damage/modifier

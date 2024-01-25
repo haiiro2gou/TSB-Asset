@@ -6,9 +6,9 @@
 
 #> Val
 # @private
-    #declare score_holder $01.MaxHP
-    #declare score_holder $01.CurrentHP
-    #declare score_holder $01.PercentHP
+    #declare score_holder #01.MaxHP
+    #declare score_holder #01.CurrentHP
+    #declare score_holder #01.PercentHP
 
 # VFX
     execute at @s run particle minecraft:enchant ~ ~1 ~ 0.2 0.5 0.2 0 100
@@ -16,21 +16,21 @@
 
 # 体力
     # 最大体力を取得
-        execute store result score $01.MaxHP Temporary run function api:mob/get_max_health
+        execute store result score #01.MaxHP Temporary run function api:mob/get_max_health
 
     # 現在体力を取得
-        execute store result score $01.CurrentHP Temporary run scoreboard players get @s MobHealth
-        scoreboard players operation $01.CurrentHP Temporary /= $100 Const
+        execute store result score #01.CurrentHP Temporary run scoreboard players get @s MobHealth
+        scoreboard players operation #01.CurrentHP Temporary /= #100 Const
 
     # 割合
         function api:mob/get_health_percent
-        execute store result score $01.PercentHP Temporary run data get storage api: Return.HealthPer 100
+        execute store result score #01.PercentHP Temporary run data get storage api: Return.HealthPer 100
 
     # 表示する
-        execute if entity @s[tag=!Enemy.Boss] run tellraw @p[tag=this] [{"text":"\uE01A","font":"tsb"},{"text":" ","font":"default"},{"score":{"objective":"Temporary","name":"$01.CurrentHP"},"color":"white","font":"default"},{"text":" / ","color":"white","font":"default"},{"score":{"objective":"Temporary","name":"$01.MaxHP"},"color":"white","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
+        execute if entity @s[tag=!Enemy.Boss] run tellraw @p[tag=this] [{"text":"\uE01A","font":"tsb"},{"text":" ","font":"default"},{"score":{"objective":"Temporary","name":"#01.CurrentHP"},"color":"white","font":"default"},{"text":" / ","color":"white","font":"default"},{"score":{"objective":"Temporary","name":"#01.MaxHP"},"color":"white","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"#01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
 
     # 天使だったら今までのデータを気にせず秘匿
-        execute if entity @s[tag=Enemy.Boss] run tellraw @p[tag=this] [{"text":"\uE01A","font":"tsb"},{"text":" ??? / ???","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
+        execute if entity @s[tag=Enemy.Boss] run tellraw @p[tag=this] [{"text":"\uE01A","font":"tsb"},{"text":" ??? / ???","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"#01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
 
 # 物理と魔法
     # 物理耐性取得
@@ -80,6 +80,6 @@
 
 # リセット
     data remove storage asset:temp 01
-    scoreboard players reset $01.CurrentHP Temporary
-    scoreboard players reset $01.MaxHP Temporary
-    scoreboard players reset $01.PercentHP Temporary
+    scoreboard players reset #01.CurrentHP Temporary
+    scoreboard players reset #01.MaxHP Temporary
+    scoreboard players reset #01.PercentHP Temporary

@@ -6,7 +6,7 @@
 
 #> Private
 # @private
-    #declare score_holder $Temp
+    #declare score_holder #Temp
 
 # 演出
     particle dust 1 0.5 0 1 ~ ~ ~ 0.05 0.05 0.05 0 1 normal @a

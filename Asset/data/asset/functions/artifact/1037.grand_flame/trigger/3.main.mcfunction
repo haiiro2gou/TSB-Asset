@@ -6,9 +6,9 @@
 
 #> Val
 # @private
-    #declare score_holder $ST.MaxHP
-    #declare score_holder $ST.CurrentHP
-    #declare score_holder $ST.OwnerId
+    #declare score_holder #ST.MaxHP
+    #declare score_holder #ST.CurrentHP
+    #declare score_holder #ST.OwnerId
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/auto
@@ -21,20 +21,20 @@
 # 体力
     # 最大体力を取得
         function api:modifier/max_health/get
-        execute store result score $ST.MaxHP Temporary run data get storage api: Return.MaxHealth
+        execute store result score #ST.MaxHP Temporary run data get storage api: Return.MaxHealth
 
     # 現在体力を取得
         function api:data_get/health
-        execute store result score $ST.CurrentHP Temporary run data get storage api: Health 100
+        execute store result score #ST.CurrentHP Temporary run data get storage api: Health 100
 
     # 割合
-        scoreboard players operation $ST.CurrentHP Temporary /= $ST.MaxHP Temporary
+        scoreboard players operation #ST.CurrentHP Temporary /= #ST.MaxHP Temporary
 
 # スコアセット
-    scoreboard players operation $ST.OwnerId Temporary = @s UserID
-    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.OwnerID = $ST.OwnerId Temporary
+    scoreboard players operation #ST.OwnerId Temporary = @s UserID
+    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.OwnerID = #ST.OwnerId Temporary
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players set @s ST.FlyingTick 100
-    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.PercentHP = $ST.CurrentHP Temporary
+    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.PercentHP = #ST.CurrentHP Temporary
 
 # 雪玉にMotionをセットする
     data modify storage lib: Argument.VectorMagnitude set value 1.5
@@ -54,6 +54,6 @@
 # リセット処理
     tag @e[type=snowball,tag=ST.SnowBallInit,distance=..3] remove ST.SnowBallInit
     data remove storage lib: Argument
-    scoreboard players reset $ST.MaxHP Temporary
-    scoreboard players reset $ST.OwnerId Temporary
-    scoreboard players reset $ST.CurrentHP Temporary
+    scoreboard players reset #ST.MaxHP Temporary
+    scoreboard players reset #ST.OwnerId Temporary
+    scoreboard players reset #ST.CurrentHP Temporary

@@ -10,7 +10,7 @@
     #declare tag 5.HitPosition
     #declare tag 5.Owner
     #declare tag 5.BlockChecker
-    #declare score_holder $5.OwnerId
+    #declare score_holder #5.OwnerId
 
 # 命中判定用AEC召喚
     summon area_effect_cloud ~ ~-0.1875 ~ {Duration:1,Tags:["5.HitPosition"]}
@@ -22,8 +22,8 @@
     execute rotated as @s facing ^ ^ ^-1 as @e[type=area_effect_cloud,tag=5.BlockChecker] run tp @s 0.0 0.01 0.0 ~ ~
 
 # 使用者取得
-    scoreboard players operation $5.OwnerId Temporary = @s 5.OwnerId
-    execute as @a if score @s UserID = $5.OwnerId Temporary run tag @s add 5.Owner
+    scoreboard players operation #5.OwnerId Temporary = @s 5.OwnerId
+    execute as @a if score @s UserID = #5.OwnerId Temporary run tag @s add 5.Owner
 
 # Damage計算(40*FlyingDuration)
     execute store result storage lib: Argument.Damage float 40 run scoreboard players get @s 5.FlyingDuration
@@ -51,5 +51,5 @@
     tag 0-0-0-0-0 remove 5.BlockChecker
     kill @e[type=area_effect_cloud,tag=5.BlockChecker,distance=..7]
     kill @e[type=area_effect_cloud,tag=5.HitPosition,distance=..1]
-    scoreboard players reset $5.OwnerId Temporary
+    scoreboard players reset #5.OwnerId Temporary
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

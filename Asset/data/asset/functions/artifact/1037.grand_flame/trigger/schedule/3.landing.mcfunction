@@ -6,20 +6,20 @@
 
 #> Val
 # @private
-    #declare score_holder $ST.OwnerId
-    #declare score_holder $ST.Damage
-    #declare score_holder $ST.PercentHP
+    #declare score_holder #ST.OwnerId
+    #declare score_holder #ST.Damage
+    #declare score_holder #ST.PercentHP
 
 # 使用者取得
-    scoreboard players operation $ST.OwnerId Temporary = @s ST.OwnerID
-    execute as @a if score @s UserID = $ST.OwnerId Temporary run tag @s add ST.Owner
+    scoreboard players operation #ST.OwnerId Temporary = @s ST.OwnerID
+    execute as @a if score @s UserID = #ST.OwnerId Temporary run tag @s add ST.Owner
 
 # ダメージ計算
 # 計算式 ： 660 + (現在HP%) * 2
-    scoreboard players set $ST.Damage Temporary 660
-    scoreboard players operation $ST.PercentHP Temporary = @s ST.PercentHP
-    scoreboard players operation $ST.PercentHP Temporary *= $2 Const
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players operation $ST.Damage Temporary += $ST.PercentHP Temporary
+    scoreboard players set #ST.Damage Temporary 660
+    scoreboard players operation #ST.PercentHP Temporary = @s ST.PercentHP
+    scoreboard players operation #ST.PercentHP Temporary *= #2 Const
+    execute store result storage lib: Argument.Damage float 1 run scoreboard players operation #ST.Damage Temporary += #ST.PercentHP Temporary
 
 # ダメージ付与
     # 第一属性
@@ -60,8 +60,8 @@
 
 # リセット
     function lib:damage/reset
-    scoreboard players reset $ST.OwnerId Temporary
-    scoreboard players reset $ST.Damage Temporary
-    scoreboard players reset $ST.PercentHP Temporary
+    scoreboard players reset #ST.OwnerId Temporary
+    scoreboard players reset #ST.Damage Temporary
+    scoreboard players reset #ST.PercentHP Temporary
     tag @a[tag=ST.Owner] remove ST.Owner
     kill @s

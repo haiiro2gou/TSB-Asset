@@ -19,7 +19,7 @@
     particle dust 0.161 0.161 0.161 0.5 ~ ~ ~ 0 0 0 0 0
 
 # 距離減衰をするためにスコアを増やす
-    scoreboard players add $Distance_Damping Temporary 1
+    scoreboard players add #Distance_Damping Temporary 1
 
 # 着弾
     execute if entity @s[tag=Landing] run function asset:artifact/0876.uni/trigger/hit

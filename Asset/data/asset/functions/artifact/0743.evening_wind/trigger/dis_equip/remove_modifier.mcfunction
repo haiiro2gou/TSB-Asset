@@ -5,7 +5,7 @@
 # @within function asset:artifact/0743.evening_wind/trigger/dis_equip/main
 
 # MP消費
-    scoreboard players set $Fluctuation Lib -150
+    scoreboard players set #Fluctuation Lib -150
     data modify storage lib: Argument.DisableLog set value true
     function lib:mp/fluctuation
 

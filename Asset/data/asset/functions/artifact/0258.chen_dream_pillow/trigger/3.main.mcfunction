@@ -6,7 +6,7 @@
 
 #> private
 # @private
-    #declare score_holder $Fluctuation
+    #declare score_holder #Fluctuation
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/auto
@@ -22,5 +22,5 @@
     tellraw @a [{"text":"とってもためになるちぇん氏のTwitter：","color":"white"},{"text":"@CMD__Cat","color":"aqua","clickEvent":{"action":"open_url","value":"https://twitter.com/CMD__Cat"},"hoverEvent":{"action":"show_text","contents":{"text":"クリックしてアクセス！"}}}]
 
 # MP回復
-    scoreboard players set $Fluctuation Lib 1231
+    scoreboard players set #Fluctuation Lib 1231
     function lib:mp/fluctuation

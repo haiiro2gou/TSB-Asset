@@ -8,6 +8,6 @@
 
 # 落下量を検知
     function api:data_get/fall_distance
-    execute store result score $FallDistance Temporary run data get storage api: FallDistance
-    execute if score $FallDistance Temporary matches 2.. run tag @s add 25.Landing
-    scoreboard players reset $FallDistance
+    execute store result score #FallDistance Temporary run data get storage api: FallDistance
+    execute if score #FallDistance Temporary matches 2.. run tag @s add 25.Landing
+    scoreboard players reset #FallDistance

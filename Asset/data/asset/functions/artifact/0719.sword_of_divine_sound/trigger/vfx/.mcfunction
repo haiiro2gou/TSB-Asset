@@ -12,7 +12,7 @@
     function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/circle
 
 # 演出用スコアのリセット
-    scoreboard players reset $RecursiveLimit Temporary
+    scoreboard players reset #RecursiveLimit Temporary
 
 # 雷っぽいパーティクル
     execute rotated ~ -80 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/start_lightning

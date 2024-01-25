@@ -6,15 +6,15 @@
 
 #> Private
 # @private
-    #declare score_holder $Temp
+    #declare score_holder #Temp
 
 # 5tick間隔で蜜柑を召喚
-    scoreboard players operation $Temp Temporary = @s 6J.Tick
-    scoreboard players operation $Temp Temporary %= $10 Const
-    execute if score $Temp Temporary matches 0 run data modify storage api: Argument.ID set value 263
-    execute if score $Temp Temporary matches 0 at @p[gamemode=!spectator,distance=..10] positioned ~ ~2.5 ~ run function api:mob/summon
-    execute if score $Temp Temporary matches 0 at @p[gamemode=!spectator,distance=..10] positioned ~ ~2.5 ~ run playsound entity.item.pickup hostile @a ~ ~ ~ 0.5 1 0
-    scoreboard players reset $Temp Temporary
+    scoreboard players operation #Temp Temporary = @s 6J.Tick
+    scoreboard players operation #Temp Temporary %= #10 Const
+    execute if score #Temp Temporary matches 0 run data modify storage api: Argument.ID set value 263
+    execute if score #Temp Temporary matches 0 at @p[gamemode=!spectator,distance=..10] positioned ~ ~2.5 ~ run function api:mob/summon
+    execute if score #Temp Temporary matches 0 at @p[gamemode=!spectator,distance=..10] positioned ~ ~2.5 ~ run playsound entity.item.pickup hostile @a ~ ~ ~ 0.5 1 0
+    scoreboard players reset #Temp Temporary
 
 # スコア
     scoreboard players add @s 6J.Tick 1

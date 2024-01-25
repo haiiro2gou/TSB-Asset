@@ -6,7 +6,7 @@
 
 #> private
 # @private
-    #declare score_holder $Fluctuation
+    #declare score_holder #Fluctuation
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/auto
@@ -20,7 +20,7 @@
 
 # MP回復
     execute store result storage asset:temp 3X.Temp double 0.32 run function lib:mp/get_max
-    execute store result score $Fluctuation Lib run data get storage asset:temp 3X.Temp
+    execute store result score #Fluctuation Lib run data get storage asset:temp 3X.Temp
     function lib:mp/fluctuation
 
 # HP回復

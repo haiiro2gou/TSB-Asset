@@ -8,7 +8,7 @@
     # 疑似乱数取得
         execute store result score @s Temporary run function lib:random/
     # ほしい範囲に剰余算
-        scoreboard players operation @s Temporary %= $3 Const
+        scoreboard players operation @s Temporary %= #3 Const
     # 0~2の値を4~6になるように4加算
         scoreboard players add @s Temporary 4
     # 保持
