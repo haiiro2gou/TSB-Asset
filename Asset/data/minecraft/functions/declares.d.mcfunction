@@ -230,6 +230,8 @@
     #declare function lib:mp/get_max                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/mp/get_max.mcfunction#L1
     #declare function lib:mp/set                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/mp/set.mcfunction#L1
     #declare function lib:random/                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/.mcfunction#L1
+    #declare function lib:random/with_biased/m                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/with_biased/m.mcfunction#L1
+    #declare function lib:random/with_biased/manual.m                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/with_biased/manual.m.mcfunction#L1
     #declare function lib:score_to_health_wrapper/set                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/score_to_health_wrapper/set.mcfunction#L1
     #declare function lib:score_to_move/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/score_to_move/.mcfunction#L1
     #declare function lib:spread_entity/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/spread_entity/.mcfunction#L1
