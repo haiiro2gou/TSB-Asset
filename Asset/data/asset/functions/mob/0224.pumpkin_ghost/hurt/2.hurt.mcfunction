@@ -11,7 +11,7 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.FixedDamage set value 1b
 # 死亡メッセージ
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1#sは呪われてしまった！","with":[{"selector":"@s"}]}]']
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは呪われてしまった！","with":[{"selector":"@s"}]}]']
 # 補正
     function lib:damage/modifier
 # ダメージ

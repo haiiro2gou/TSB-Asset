@@ -6,7 +6,7 @@
 
 #> Private
 # @private
-    #declare score_holder #Temp
+    #declare score_holder $Temp
 
 # スコア
     scoreboard players add @s KI.Tick 1

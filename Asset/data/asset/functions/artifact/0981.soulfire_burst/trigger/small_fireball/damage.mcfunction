@@ -7,13 +7,13 @@
 # ダメージ値設定
     #ダメージブレのための処理
         # 疑似乱数取得
-            execute store result score #RandomDamage Temporary run function lib:random/
+            execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。追加ダメージ発生
-          scoreboard players operation #RandomDamage Temporary %= #100 Const
+          scoreboard players operation $RandomDamage Temporary %= $100 Const
         # 最低ダメージ設定
-            scoreboard players add #RandomDamage Temporary 300
+            scoreboard players add $RandomDamage Temporary 300
     #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get #RandomDamage Temporary
+        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 
 # 魔法火属性
     data modify storage lib: Argument.AttackType set value "Magic"
@@ -27,4 +27,4 @@
 
 # リセット
     function lib:damage/reset
-    scoreboard players reset #RandomDamage Temporary
+    scoreboard players reset $RandomDamage Temporary

@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:mob/0115.jewel_bullet/**
-    #declare score_holder #RecursiveCount
+    #declare score_holder $RecursiveCount

@@ -6,15 +6,15 @@
 
 # 最初にMP割合を求める
 # 最大MPを取得する
-    execute store result score #MPMaxValue Temporary run function lib:mp/get_max
+    execute store result score $MPMaxValue Temporary run function lib:mp/get_max
 # 使用直前のMPを取得する
-    execute store result score #MPValue Temporary run function lib:mp/get
+    execute store result score $MPValue Temporary run function lib:mp/get
 
 # MP現在量を100倍する
-    scoreboard players operation #MPValue Temporary *= #100 Const
+    scoreboard players operation $MPValue Temporary *= $100 Const
 
 # 割る
-    scoreboard players operation #MPValue Temporary /= #MPMaxValue Temporary
+    scoreboard players operation $MPValue Temporary /= $MPMaxValue Temporary
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/auto
@@ -39,14 +39,14 @@
     execute positioned ~ ~1.8 ~ positioned ^ ^ ^0.5 run tag @e[type=marker,tag=MU.Star,distance=..0.01,sort=nearest,limit=1] add MU.Already
 
 # MP割合が34%以上なら2個目
-    execute if score #MPValue Temporary matches 34.. positioned ~ ~1.3 ~ run function asset:artifact/0822.sound_of_a_star/trigger/4.summon_2nd
+    execute if score $MPValue Temporary matches 34.. positioned ~ ~1.3 ~ run function asset:artifact/0822.sound_of_a_star/trigger/4.summon_2nd
 
 # MP割合が67%以上なら3個目
-    execute if score #MPValue Temporary matches 67.. positioned ~ ~1.3 ~ run function asset:artifact/0822.sound_of_a_star/trigger/5.summon_3rd
+    execute if score $MPValue Temporary matches 67.. positioned ~ ~1.3 ~ run function asset:artifact/0822.sound_of_a_star/trigger/5.summon_3rd
 
 # 星の処理開始
     schedule function asset:artifact/0822.sound_of_a_star/trigger/star/01.schedule 1t replace
 
 # リセット
-    scoreboard players reset #MPMaxValue Temporary
-    scoreboard players reset #MPValue Temporary
+    scoreboard players reset $MPMaxValue Temporary
+    scoreboard players reset $MPValue Temporary

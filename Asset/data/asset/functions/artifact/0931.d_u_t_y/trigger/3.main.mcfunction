@@ -6,16 +6,16 @@
 
 #> prv
 # @private
-    #declare score_holder #PV.EnemyNum
+    #declare score_holder $PV.EnemyNum
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
 # ダメージ計算
-    execute store result score #PV.EnemyNum Temporary if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5]
-    execute if score #PV.EnemyNum Temporary matches 11.. run scoreboard players set #PV.EnemyNum Temporary 10
-    execute store result storage lib: Argument.Damage float 80 run scoreboard players get #PV.EnemyNum Temporary
+    execute store result score $PV.EnemyNum Temporary if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5]
+    execute if score $PV.EnemyNum Temporary matches 11.. run scoreboard players set $PV.EnemyNum Temporary 10
+    execute store result storage lib: Argument.Damage float 80 run scoreboard players get $PV.EnemyNum Temporary
 
 # 攻撃対象に追加ダメージ
     data modify storage lib: Argument.AttackType set value "Physical"
@@ -25,4 +25,4 @@
 
 # reset
     function lib:damage/reset
-    scoreboard players reset #PV.EnemyNum Temporary
+    scoreboard players reset $PV.EnemyNum Temporary

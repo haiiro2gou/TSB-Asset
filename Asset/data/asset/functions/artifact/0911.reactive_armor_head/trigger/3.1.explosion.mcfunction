@@ -16,7 +16,7 @@
     data modify storage lib: Argument.Damage set value 20f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Fire"
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1#sはリアクティブアーマーの爆発に巻き込まれた。","with":[{"selector":"@s"}]}]']
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはリアクティブアーマーの爆発に巻き込まれた。","with":[{"selector":"@s"}]}]']
     function lib:damage/modifier
     execute as @a[tag=!this,distance=..3] run function lib:damage/
     function lib:damage/reset

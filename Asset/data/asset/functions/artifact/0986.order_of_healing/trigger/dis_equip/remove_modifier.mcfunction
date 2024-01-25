@@ -5,7 +5,7 @@
 # @within function asset:artifact/0986.order_of_healing/trigger/dis_equip/main
 
 # MP消費
-    scoreboard players set #Fluctuation Lib -150
+    scoreboard players set $Fluctuation Lib -150
     function lib:mp/fluctuation
 
 # 体力回復量

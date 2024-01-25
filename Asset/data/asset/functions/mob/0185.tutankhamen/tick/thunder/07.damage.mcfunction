@@ -12,7 +12,7 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # デスログ
-        data modify storage lib: Argument.DeathMessage append value '{"translate": "%1#sは%2#sの蒼雷によって滅せられた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+        data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの蒼雷によって滅せられた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     # ダメージ
         execute as @e[type=wither_skeleton,tag=this,distance=..40,limit=1] run function lib:damage/modifier
         execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function lib:damage/

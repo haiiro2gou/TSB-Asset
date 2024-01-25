@@ -5,7 +5,7 @@
 # @within function asset:mob/0216.gray_guardian/tick/1.trigger
 #> private
 # @private
-    #declare score_holder #Count
+    #declare score_holder $Count
 
 # スコアを増やす
     scoreboard players add @s 60.Tick 1
@@ -30,13 +30,13 @@
 # 以下エラー時の処理
 # もし同一座標に2体存在した場合瞬時にteleportする
     # 数のカウント
-        execute store result score #Count Temporary run execute if entity @e[type=armor_stand,tag=60.ArmorStand,distance=..0.1]
+        execute store result score $Count Temporary run execute if entity @e[type=armor_stand,tag=60.ArmorStand,distance=..0.1]
     # もしいたらテレポ
-        execute if score #Count Temporary matches 2.. run function asset:mob/0216.gray_guardian/tick/move/spread
+        execute if score $Count Temporary matches 2.. run function asset:mob/0216.gray_guardian/tick/move/spread
     # スコアも一応戻す
-        execute if score #Count Temporary matches 2.. run scoreboard players reset @s 60.Tick
+        execute if score $Count Temporary matches 2.. run scoreboard players reset @s 60.Tick
     # リセット
-        scoreboard players reset #Count
+        scoreboard players reset $Count
 
 # もしアマスタがどっかいってしまったら(tpの関係でatが無いと死ぬ)
     execute at @s unless entity @e[type=armor_stand,tag=60.ArmorStand,distance=..0.01] run function asset:mob/0216.gray_guardian/tick/armorstand_respawn

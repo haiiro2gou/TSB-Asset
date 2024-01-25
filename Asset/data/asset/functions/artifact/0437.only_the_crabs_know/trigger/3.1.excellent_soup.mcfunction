@@ -14,7 +14,7 @@
 
 # MP回復
     # 回復する量 = 50
-        scoreboard players set #Fluctuation Lib 50
+        scoreboard players set $Fluctuation Lib 50
         function lib:mp/fluctuation
 
 # 演出

@@ -7,4 +7,4 @@
 # @within function asset:artifact/1043.gamma_ray/trigger/5.casting
 
 # VFXを呼び出す
-#function asset:artifact/1043.gamma_ray/trigger/vfx/fc_#(Num)
+$function asset:artifact/1043.gamma_ray/trigger/vfx/fc_$(Num)

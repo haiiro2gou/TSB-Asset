@@ -11,4 +11,4 @@
     playsound ogg:random.levelup player @a ~ ~ ~ 1 1 1
 
 # scoreリセット
-    scoreboard players reset #Timeline 7Q.Timeline
+    scoreboard players reset $Timeline 7Q.Timeline

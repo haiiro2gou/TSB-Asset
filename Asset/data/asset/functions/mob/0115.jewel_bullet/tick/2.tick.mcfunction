@@ -15,7 +15,7 @@
     function asset:mob/0115.jewel_bullet/tick/3.move_recursive
 
 # 再帰用スコアのリセット
-    scoreboard players reset #RecursiveCount Temporary
+    scoreboard players reset $RecursiveCount Temporary
 
 # 消滅
     execute if entity @s[scores={36.Tick=32..}] run kill @s

@@ -9,7 +9,7 @@
 
 # ここから先は神器側の効果の処理を書く
     # MP回復
-        scoreboard players set #Fluctuation Lib 10000
+        scoreboard players set $Fluctuation Lib 10000
         function lib:mp/fluctuation
 
     # データ取得

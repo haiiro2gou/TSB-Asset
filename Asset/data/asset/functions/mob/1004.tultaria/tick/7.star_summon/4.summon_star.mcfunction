@@ -5,13 +5,13 @@
 # @within function asset:mob/1004.tultaria/tick/7.star_summon/3.summon
 #> private
 # @private
-    #declare score_holder #Random
+    #declare score_holder $Random
 
 # スキル選択
-    execute if score #Random Temporary matches 0 run data modify storage api: Argument.ID set value 1005
-    execute if score #Random Temporary matches 1 run data modify storage api: Argument.ID set value 1006
-    execute if score #Random Temporary matches 2 run data modify storage api: Argument.ID set value 1007
-    execute if score #Random Temporary matches 3 run data modify storage api: Argument.ID set value 1008
+    execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set value 1005
+    execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set value 1006
+    execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set value 1007
+    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set value 1008
 
 # マーカー召喚
     summon marker ~ ~ ~ {Tags:["Object","RW.This"]}

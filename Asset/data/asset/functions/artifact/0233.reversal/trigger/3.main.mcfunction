@@ -11,8 +11,8 @@
 
 #> Val
 # @private
-    #declare score_holder #6H.MP
-    #declare score_holder #6H.SetMP
+    #declare score_holder $6H.MP
+    #declare score_holder $6H.SetMP
 
 # MP反転
     execute as @a run function asset:artifact/0233.reversal/trigger/set_mp
@@ -23,5 +23,5 @@
     playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 2 0 1
 
 # 後処理
-    scoreboard players reset #6H.MP Temporary
-    scoreboard players reset #6H.SetMP Temporary
+    scoreboard players reset $6H.MP Temporary
+    scoreboard players reset $6H.SetMP Temporary

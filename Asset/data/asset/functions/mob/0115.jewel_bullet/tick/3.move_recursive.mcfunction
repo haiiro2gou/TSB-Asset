@@ -17,7 +17,7 @@
     execute positioned ~-0.5 ~ ~-0.5 if entity @p[gamemode=!spectator,dx=0] run function asset:mob/0115.jewel_bullet/tick/4.hit
 
 # 再帰用スコア
-    scoreboard players add #RecursiveCount Temporary 1
+    scoreboard players add $RecursiveCount Temporary 1
 
 # 4回まで再帰
-    execute if score #RecursiveCount Temporary matches ..4 at @s run function asset:mob/0115.jewel_bullet/tick/3.move_recursive
+    execute if score $RecursiveCount Temporary matches ..4 at @s run function asset:mob/0115.jewel_bullet/tick/3.move_recursive

@@ -3,7 +3,7 @@
 
 #> tag
 # @within function asset:artifact/0730.lake_reflecting_starry_sky/trigger/lake/main
-    #declare score_holder #Interval
+    #declare score_holder $Interval
 
 #> 湖本体のTag
 # @within function

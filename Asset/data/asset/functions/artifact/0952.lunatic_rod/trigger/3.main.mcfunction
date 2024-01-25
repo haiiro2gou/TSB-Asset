@@ -34,4 +34,4 @@
 # 再帰処理のリセット
     tag @e[type=#lib:living,tag=Hit,distance=..40] remove Hit
     tag @s remove Landing
-    scoreboard players reset #Interval Temporary
+    scoreboard players reset $Interval Temporary

@@ -16,5 +16,5 @@
     #declare tag M.SkillSlash
     #declare tag M.SkillBeam
     #declare tag M.SkillTpSlash
-    #declare score_holder #Count
-    #declare score_holder #Random
+    #declare score_holder $Count
+    #declare score_holder $Random

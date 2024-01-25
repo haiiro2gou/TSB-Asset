@@ -5,7 +5,7 @@
 # @within function asset:mob/0216.gray_guardian/tick/4.skill_active
 #> Val
 # @private
-#declare score_holder #4tInterval
+#declare score_holder $4tInterval
 # 最初に実行
     execute if score @s 60.Tick matches 0 run function asset:mob/0216.gray_guardian/tick/3.skill_axe/2.first_tick
 
@@ -17,12 +17,12 @@
 
 # 3tickおきに実行するやつ
 # 実行時間を移す
-    scoreboard players operation #4tInterval Temporary = @s 60.Tick
+    scoreboard players operation $4tInterval Temporary = @s 60.Tick
 # 3tickおきに実行
-    scoreboard players operation #4tInterval Temporary %= #3 Const
-    execute if score @s 60.Tick matches 25..151 if score #4tInterval Temporary matches 0 run function asset:mob/0216.gray_guardian/tick/3.skill_axe/interval
+    scoreboard players operation $4tInterval Temporary %= $3 Const
+    execute if score @s 60.Tick matches 25..151 if score $4tInterval Temporary matches 0 run function asset:mob/0216.gray_guardian/tick/3.skill_axe/interval
 # リセット
-    scoreboard players reset #4tInterval
+    scoreboard players reset $4tInterval
 
 
 # 目を回す

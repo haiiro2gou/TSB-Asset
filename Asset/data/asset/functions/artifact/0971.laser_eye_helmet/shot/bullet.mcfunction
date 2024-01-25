@@ -20,7 +20,7 @@
     particle minecraft:dust 0.075 0.604 0.063 0.7 ~ ~ ~ 0 0 0 0 0
 
 # 距離減衰をするためにスコアを増やす
-    scoreboard players add #Distance_Damping Temporary 1
+    scoreboard players add $Distance_Damping Temporary 1
 
 # 着弾
     execute if entity @s[tag=Landing] run function asset:artifact/0971.laser_eye_helmet/shot/hit

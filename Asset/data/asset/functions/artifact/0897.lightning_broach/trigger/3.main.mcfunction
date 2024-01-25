@@ -6,10 +6,10 @@
 
 #> health
 # @private
-    #declare score_holder #Health
-    #declare score_holder #Count
-    #declare score_holder #CountMul
-    #declare score_holder #Base
+    #declare score_holder $Health
+    #declare score_holder $Count
+    #declare score_holder $CountMul
+    #declare score_holder $Base
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/hotbar
@@ -21,20 +21,20 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run playsound entity.lightning_bolt.impact player @a
 
 # 個数を取得
-    execute store result score #Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:897}}}]
+    execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:897}}}]
 
 # ダメージ係数の設定
-    scoreboard players set #Base Temporary 60
-    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,distance=..10,limit=1] run scoreboard players set #Base Temporary 15
-    scoreboard players set #CountMul Temporary 40
-    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,distance=..10,limit=1] run scoreboard players set #CountMul Temporary 5
+    scoreboard players set $Base Temporary 60
+    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,distance=..10,limit=1] run scoreboard players set $Base Temporary 15
+    scoreboard players set $CountMul Temporary 40
+    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,distance=..10,limit=1] run scoreboard players set $CountMul Temporary 5
 
 # ダメージ/計算
-    scoreboard players operation #Health Temporary = @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] MobHealth
-    scoreboard players operation #Count Temporary *= #CountMul Temporary
-    scoreboard players operation #Count Temporary += #Base Temporary
-    scoreboard players operation #Health Temporary *= #Count Temporary
-    execute store result storage lib: Argument.Damage float 0.00001 run scoreboard players get #Health Temporary
+    scoreboard players operation $Health Temporary = @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] MobHealth
+    scoreboard players operation $Count Temporary *= $CountMul Temporary
+    scoreboard players operation $Count Temporary += $Base Temporary
+    scoreboard players operation $Health Temporary *= $Count Temporary
+    execute store result storage lib: Argument.Damage float 0.00001 run scoreboard players get $Health Temporary
 # ダメージ/その他の設定
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Thunder"
@@ -44,8 +44,8 @@
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run function lib:damage/
 
 # リセット
-    scoreboard players reset #Base Temporary
-    scoreboard players reset #Count Temporary
-    scoreboard players reset #CountMul Temporary
-    scoreboard players reset #Health Temporary
+    scoreboard players reset $Base Temporary
+    scoreboard players reset $Count Temporary
+    scoreboard players reset $CountMul Temporary
+    scoreboard players reset $Health Temporary
     function lib:damage/reset

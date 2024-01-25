@@ -6,14 +6,14 @@
 
 #> Private
 # @private
-    #declare score_holder #Count
+    #declare score_holder $Count
 
 # 松明を持ってるかチェック
-    execute store result score #Count Temporary run clear @s torch 0
-    execute if score #Count Temporary matches ..0 run tag @s add ExtraCheckFailed
+    execute store result score $Count Temporary run clear @s torch 0
+    execute if score $Count Temporary matches ..0 run tag @s add ExtraCheckFailed
 # これtickだとうるさそうだからとりあえずコメントアウト
-    # execute if score #Count Temporary matches ..0 run function lib:message/artifact/dont_have_require_items
-    scoreboard players reset #Count Temporary
+    # execute if score $Count Temporary matches ..0 run function lib:message/artifact/dont_have_require_items
+    scoreboard players reset $Count Temporary
 
 # プレイヤーがサバイバルかどうかを確認
     execute unless entity @s[gamemode=!spectator,gamemode=!adventure] run tag @s add ExtraCheckFailed

@@ -6,10 +6,10 @@
 
 #> Private
 # @private
-    #declare score_holder #HealthPer
+    #declare score_holder $HealthPer
 
 # 体力チェック
     function api:mob/get_health_percent
-    execute store result score #HealthPer Temporary run data get storage api: Return.HealthPer 100
-    execute unless score #HealthPer Temporary matches 50.. run tag @s add 2W.HPless50Per
-    scoreboard players reset #HealthPer Temporary
+    execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
+    execute unless score $HealthPer Temporary matches 50.. run tag @s add 2W.HPless50Per
+    scoreboard players reset $HealthPer Temporary

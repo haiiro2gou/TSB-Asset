@@ -10,10 +10,10 @@
     # 防御貫通
         #data modify storage lib: Argument.FixedDamage set value true
     # 属性が変わる
-        execute if score #Random Temporary matches 0 run data modify storage lib: Argument.ElementType set value "None"
-        execute if score #Random Temporary matches 1 run data modify storage lib: Argument.ElementType set value "Fire"
-        execute if score #Random Temporary matches 2 run data modify storage lib: Argument.ElementType set value "Water"
-        execute if score #Random Temporary matches 3 run data modify storage lib: Argument.ElementType set value "Thunder"
+        execute if score $Random Temporary matches 0 run data modify storage lib: Argument.ElementType set value "None"
+        execute if score $Random Temporary matches 1 run data modify storage lib: Argument.ElementType set value "Fire"
+        execute if score $Random Temporary matches 2 run data modify storage lib: Argument.ElementType set value "Water"
+        execute if score $Random Temporary matches 3 run data modify storage lib: Argument.ElementType set value "Thunder"
 
 # 補正functionを実行
     function lib:damage/modifier

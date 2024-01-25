@@ -28,7 +28,7 @@
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker]
-    scoreboard players reset #Appropriate_Distance Temporary
-    scoreboard players reset #Distance_Damping Temporary
-    scoreboard players reset #MinDamage Temporary
-    scoreboard players reset #Damage Temporary
+    scoreboard players reset $Appropriate_Distance Temporary
+    scoreboard players reset $Distance_Damping Temporary
+    scoreboard players reset $MinDamage Temporary
+    scoreboard players reset $Damage Temporary

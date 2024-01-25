@@ -6,17 +6,17 @@
 
 #> Private
 # @private
-    #declare score_holder #4tInterval
+    #declare score_holder $4tInterval
 
 # 4tickおきに実行するやつ
 # 実行時間を移す
-    scoreboard players operation #4tInterval Temporary = @s 5U.Life
+    scoreboard players operation $4tInterval Temporary = @s 5U.Life
 # 4tickおきに実行
-    scoreboard players operation #4tInterval Temporary %= #4 Const
-    execute if score #4tInterval Temporary matches 0 run playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.5 0.75
-    execute if score #4tInterval Temporary matches 0 run playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1.5 1.25
+    scoreboard players operation $4tInterval Temporary %= $4 Const
+    execute if score $4tInterval Temporary matches 0 run playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.5 0.75
+    execute if score $4tInterval Temporary matches 0 run playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1.5 1.25
 # リセット
-    scoreboard players reset #4tInterval
+    scoreboard players reset $4tInterval
 
 # スコアID使って対象を特定
     execute at @a if score @s 5U.Owner = @p UserID run tag @p add 5U.This

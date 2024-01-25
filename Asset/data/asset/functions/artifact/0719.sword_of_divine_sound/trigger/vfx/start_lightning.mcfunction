@@ -15,4 +15,4 @@
 
 # リセット
     kill @e[type=marker,tag=LightningMarker,distance=..30,limit=1]
-    scoreboard players reset #RecursiveLimit Temporary
+    scoreboard players reset $RecursiveLimit Temporary

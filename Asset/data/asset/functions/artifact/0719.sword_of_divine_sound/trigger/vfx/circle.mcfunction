@@ -19,5 +19,5 @@
     execute rotated ~27 0 run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000008 0
 
 # これを~357までやるのがだるいので回転する再帰を使用
-    scoreboard players add #RecursiveLimit Temporary 1
-    execute if score #RecursiveLimit Temporary matches ..11 rotated ~30 ~ run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/circle
+    scoreboard players add $RecursiveLimit Temporary 1
+    execute if score $RecursiveLimit Temporary matches ..11 rotated ~30 ~ run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/circle

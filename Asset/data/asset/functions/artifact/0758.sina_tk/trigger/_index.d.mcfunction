@@ -6,4 +6,4 @@
     #declare tag Init
     #declare tag SpreadMarker
     #declare tag L2.Bullet
-    #declare score_holder #Rucursive
+    #declare score_holder $Rucursive

@@ -14,7 +14,7 @@
     execute rotated ~16 0 run particle end_rod ^ ^ ^2 ^ ^ ^100000000 0.000000005 0
 
 # スコア
-    scoreboard players add #RecursiveLimit Temporary 1
+    scoreboard players add $RecursiveLimit Temporary 1
 
 # 一周するまで再帰
-    execute if score #RecursiveLimit Temporary matches ..17 rotated ~20 ~ run function asset:artifact/0702.bright_lamp/trigger/vfx
+    execute if score $RecursiveLimit Temporary matches ..17 rotated ~20 ~ run function asset:artifact/0702.bright_lamp/trigger/vfx

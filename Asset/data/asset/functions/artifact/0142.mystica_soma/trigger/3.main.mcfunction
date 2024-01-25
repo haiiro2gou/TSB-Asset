@@ -16,7 +16,7 @@
 
 # MP回復
     execute store result storage asset:temp 3Y.Temp double 0.55 run function lib:mp/get_max
-    execute store result score #Fluctuation Lib run data get storage asset:temp 3Y.Temp
+    execute store result score $Fluctuation Lib run data get storage asset:temp 3Y.Temp
     function lib:mp/fluctuation
 
 # HP回復

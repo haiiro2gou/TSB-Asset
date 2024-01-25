@@ -15,7 +15,7 @@
     # 耐性エフェクトを無視するか否か
         data modify storage lib: Argument.FixedDamage set value true
 # キルログ
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1#sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
 # 対象指定
     execute at @e[type=iron_golem,tag=26.GolemBomb] as @e[type=#lib:living,tag=!Uninterferable,tag=!26.GolemBomb,distance=..5] run function lib:damage/
 # リセット
@@ -31,11 +31,11 @@
     # 耐性エフェクトを無視するか否か
         data modify storage lib: Argument.FixedDamage set value true
 # キルログ
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1#sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
 # 対象指定
     execute at @e[type=snow_golem,tag=26.GolemBomb] as @e[type=#lib:living,tag=!Uninterferable,tag=!26.GolemBomb,distance=..5] run function lib:damage/
 # キルログ
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1#sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
 # リセット
     function lib:damage/reset
 

@@ -23,13 +23,13 @@
 # 以下エラー時の処理
 # もし同一座標に2体存在した場合瞬時にteleportする
     # 数のカウント
-        execute store result score #Count Temporary if entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01]
+        execute store result score $Count Temporary if entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01]
     # もしいたらテレポ
-        execute if score #Count Temporary matches 2.. run function asset:mob/0175.queen_bee/tick/teleport
+        execute if score $Count Temporary matches 2.. run function asset:mob/0175.queen_bee/tick/teleport
     # スコアも一応戻す
-        execute if score #Count Temporary matches 2.. run scoreboard players reset @s 4V.Tick
+        execute if score $Count Temporary matches 2.. run scoreboard players reset @s 4V.Tick
     # リセット
-        scoreboard players reset #Count
+        scoreboard players reset $Count
 
 # もしアマスタがどっかいってしまったら(tpの関係でatが無いと死ぬ)
     execute at @s unless entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01] run function asset:mob/0175.queen_bee/tick/armorstand_respawn

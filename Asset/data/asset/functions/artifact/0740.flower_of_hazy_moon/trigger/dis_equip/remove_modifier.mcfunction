@@ -6,10 +6,10 @@
 
 #> Private
 # @private
-    #declare score_holder #Fluctuation
+    #declare score_holder $Fluctuation
 
 # MP消費
-    scoreboard players set #Fluctuation Lib -150
+    scoreboard players set $Fluctuation Lib -150
     data modify storage lib: Argument.DisableLog set value 1b
     function lib:mp/fluctuation
 

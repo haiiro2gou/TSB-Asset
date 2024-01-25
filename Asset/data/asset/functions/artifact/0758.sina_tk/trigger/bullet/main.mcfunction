@@ -12,7 +12,7 @@
 
 # 再帰処理で前方に進む
     function asset:artifact/0758.sina_tk/trigger/bullet/recursive
-    scoreboard players reset #Rucursive Temporary
+    scoreboard players reset $Rucursive Temporary
 
 # 消滅
     execute unless block ~ ~ ~ #lib:no_collision run kill @s

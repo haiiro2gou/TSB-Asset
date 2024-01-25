@@ -6,7 +6,7 @@
 
 # MP減少
     # 減少する量 = 50
-        scoreboard players set #Fluctuation Lib -50
+        scoreboard players set $Fluctuation Lib -50
         function lib:mp/fluctuation
 
 # 毒

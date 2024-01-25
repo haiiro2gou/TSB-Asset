@@ -28,13 +28,13 @@
 
 # もし同一座標に2体存在した場合瞬時にteleportする
     # 数のカウント
-        execute store result score #Count Temporary if entity @e[type=armor_stand,tag=3L.ArmorStand,distance=..0.01]
+        execute store result score $Count Temporary if entity @e[type=armor_stand,tag=3L.ArmorStand,distance=..0.01]
     # もしいたらテレポ
-        execute if score #Count Temporary matches 2.. run function asset:mob/0129.lexiel/tick/2.1.teleport
+        execute if score $Count Temporary matches 2.. run function asset:mob/0129.lexiel/tick/2.1.teleport
     # スコアも一応戻す
-        execute if score #Count Temporary matches 2.. run scoreboard players reset @s 3L.Tick
+        execute if score $Count Temporary matches 2.. run scoreboard players reset @s 3L.Tick
     # リセット
-        scoreboard players reset #Count
+        scoreboard players reset $Count
 
 # もしアマスタがどっかいってしまったら(tpの関係でatが無いと死ぬ)
     execute at @s unless entity @e[type=armor_stand,tag=3L.ArmorStand,distance=..0.01] run function asset:mob/0129.lexiel/tick/armorstand_respawn

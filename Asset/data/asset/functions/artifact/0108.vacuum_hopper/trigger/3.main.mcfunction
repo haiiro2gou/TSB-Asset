@@ -7,7 +7,7 @@
 #> Private
 # @private
     #declare tag Vacuum
-    #declare score_holder #Items
+    #declare score_holder $Items
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/auto
@@ -24,8 +24,8 @@
     execute positioned ^ ^ ^40 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
     execute at @e[tag=Vacuum] run particle portal ~ ~ ~ 0.2 0.2 0.2 0 30 force @a
     tp @e[tag=Vacuum] @s
-    execute store result score #Items Temporary if entity @e[type=item,tag=Vacuum]
-    tellraw @s [{"text": "ﾀﾞｲｿｿ >> "},{"text": "[ "},{"score": {"name": "#Items","objective": "Temporary"},"color": "gold"},{"text": " ]のアイテムを回収しました"}]
+    execute store result score $Items Temporary if entity @e[type=item,tag=Vacuum]
+    tellraw @s [{"text": "ﾀﾞｲｿｿ >> "},{"text": "[ "},{"score": {"name": "$Items","objective": "Temporary"},"color": "gold"},{"text": " ]のアイテムを回収しました"}]
     execute as @e[type=item,distance=..1] run data modify entity @s PickupDelay set value 0s
-    scoreboard players reset #Items Temporary
+    scoreboard players reset $Items Temporary
     tag @e[type=item,tag=Vacuum] remove Vacuum
