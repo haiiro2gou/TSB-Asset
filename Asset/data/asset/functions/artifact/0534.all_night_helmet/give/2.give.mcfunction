@@ -1,9 +1,9 @@
-#> asset:artifact/0534.all_night_hellmet/give/2.give
+#> asset:artifact/0534.all_night_helmet/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0534.all_night_hellmet/give/1.trigger
+# @within function asset:artifact/0534.all_night_helmet/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
@@ -53,7 +53,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,display:{color:1050959},HideFlags:64,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:projectile_protection",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;1,1,534,6],Slot:"head"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:196,Unbreakable:1b,display:{color:1050959},Trim:{material:"gold",pattern:"tsb_armor:534"},Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:projectile_protection",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;1,1,534,6],Slot:"head"}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
