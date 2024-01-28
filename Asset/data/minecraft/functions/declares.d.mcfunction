@@ -184,7 +184,6 @@
     #declare function api:spawner/subtract_hp                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/spawner/subtract_hp.mcfunction#L1
     #declare function api:teleporter/set_activation_state/from_id                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_id.mcfunction#L1
     #declare function api:teleporter/set_activation_state/from_nearest                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_nearest.mcfunction#L1
-    #declare function core:patcher/migration/v0.4.8/                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v0.4.8/.mcfunction#L1
     #declare function debug:stopwatch.start                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/stopwatch.start.mcfunction#L1
     #declare function debug:stopwatch.stop                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/stopwatch.stop.mcfunction#L1
     #declare function debug:tps/watch                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/tps/watch.mcfunction#L1
