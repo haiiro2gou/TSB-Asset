@@ -209,10 +209,6 @@
     #declare function lib:array/sort_descend                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/array/sort_descend.mcfunction#L1
     #declare function lib:array/sum                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/array/sum.mcfunction#L1
     #declare function lib:bit_array_to_integer/                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/bit_array_to_integer/.mcfunction#L1
-    #declare function lib:damage/                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/.mcfunction#L1
-    #declare function lib:damage/modifier                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/modifier.mcfunction#L1
-    #declare function lib:damage/modifier_continuation                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/modifier_continuation.mcfunction#L1
-    #declare function lib:damage/reset                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/reset.mcfunction#L1
     #declare function lib:dimension/get                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/dimension/get.mcfunction#L1
     #declare function lib:forward_spreader/circle                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/forward_spreader/circle.mcfunction#L1
     #declare function lib:forward_spreader/square                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/forward_spreader/square.mcfunction#L1
