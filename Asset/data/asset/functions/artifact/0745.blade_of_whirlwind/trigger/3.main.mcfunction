@@ -40,15 +40,15 @@
         data modify storage lib: Argument.ElementType set value "Water"
 
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
 
 # 自身の移動速度が1以上の時に実行
     execute if score $VectorMagnitude Temporary matches 1.. run function asset:artifact/0745.blade_of_whirlwind/trigger/5.knockback
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     data remove storage lib: Argument
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $VectorMagnitude Temporary

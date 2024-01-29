@@ -12,7 +12,7 @@
     # 無属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute positioned ~-1 ~2 ~-1 as @e[type=#lib:living,tag=Enemy,dx=1,dy=1,dz=1] run function lib:damage/
+        function api:damage/modifier
+        execute positioned ~-1 ~2 ~-1 as @e[type=#lib:living,tag=Enemy,dx=1,dy=1,dz=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

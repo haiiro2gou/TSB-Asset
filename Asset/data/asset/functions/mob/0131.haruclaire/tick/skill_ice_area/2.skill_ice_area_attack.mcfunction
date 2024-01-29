@@ -25,11 +25,11 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 周囲にプレイヤーがいたら
     execute if entity @a[gamemode=!spectator,distance=..6] run tag @s add 3N.SkillIceAreaHit

@@ -17,10 +17,10 @@
     # 水属性
         data modify storage lib: Argument.ElementType set value "Water"
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] remove AD.HitTarget

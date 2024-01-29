@@ -17,7 +17,7 @@
         data modify storage lib: Argument.AttackType set value "Physical"
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

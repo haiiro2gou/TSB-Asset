@@ -12,10 +12,10 @@
     # 無属性
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 移動速度を落とす
     effect give @a[tag=!PlayerShouldInvulnerable,distance=..1] slowness 1 9 true

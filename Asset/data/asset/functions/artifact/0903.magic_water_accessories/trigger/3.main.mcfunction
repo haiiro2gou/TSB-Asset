@@ -38,10 +38,10 @@
     # 水属性
         data modify storage lib: Argument.ElementType set value "Water"
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] at @s run function api:damage/
 
 # リセット
     scoreboard players reset $P3.MaxMP Temporary
     scoreboard players reset $P3.Count Temporary
-    function lib:damage/reset
+    function api:damage/reset

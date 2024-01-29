@@ -17,8 +17,8 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.FixedDamage set value 1b
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

@@ -23,9 +23,9 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    execute as @a[tag=R4.OwnerPlayer] run function lib:damage/modifier
+    execute as @a[tag=R4.OwnerPlayer] run function api:damage/modifier
 # ダメージ
-    function lib:damage/
+    function api:damage/
 
 # ノクバ耐性を考慮して吹っ飛ばし続ける
     data modify storage lib: Argument.VectorMagnitude set value 0.5
@@ -33,6 +33,6 @@
     execute as @s at @s facing entity @e[type=armor_stand,tag=R4.SlashShot,distance=..5,sort=nearest,limit=1] feet rotated ~ ~ run function lib:motion/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
     data remove storage lib: Argument

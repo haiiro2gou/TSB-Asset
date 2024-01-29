@@ -25,8 +25,8 @@
     # 無属性
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Friend,tag=Hit,tag=!Uninterferable,tag=!PlayerShouldInvulnerable,distance=..5] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,tag=Friend,tag=Hit,tag=!Uninterferable,tag=!PlayerShouldInvulnerable,distance=..5] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @e[type=#lib:living,tag=Friend,tag=Hit,tag=!Uninterferable,distance=..10] remove Hit

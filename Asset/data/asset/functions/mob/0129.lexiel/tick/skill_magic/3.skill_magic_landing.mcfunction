@@ -18,10 +18,10 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        function lib:damage/modifier
-        execute as @p[gamemode=!creative,tag=LandingTarget,distance=..50] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @p[gamemode=!creative,tag=LandingTarget,distance=..50] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @p[tag=LandingTarget,distance=..50] remove LandingTarget

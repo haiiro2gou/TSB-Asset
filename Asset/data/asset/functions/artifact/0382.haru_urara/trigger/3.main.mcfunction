@@ -23,11 +23,11 @@
     # 耐性エフェクトを無視するか否か
         data modify storage lib: Argument.FixedDamage set value false
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 吹っ飛び効果
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run effect give @s minecraft:levitation 1 30 true

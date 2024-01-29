@@ -16,6 +16,6 @@
 # 耐性を無視する
     data modify storage lib: Argument.FixedDamage set value true
 # 自爆する
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

@@ -10,9 +10,9 @@
     data modify storage lib: Argument.Damage set value 9999f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.FixedDamage set value true
-    function lib:damage/modifier
-    function lib:damage/
-    function lib:damage/reset
+    function api:damage/modifier
+    function api:damage/
+    function api:damage/reset
 
 # まだ息があるようならとどめを刺す
     execute if score @s MobHealth matches 999900.. run function asset:artifact/0253.holy_barrier/trigger/3.3.damage

@@ -20,11 +20,11 @@
         # 第一属性
             data modify storage lib: Argument.AttackType set value "Physical"
     # 補正
-        execute as @p[tag=this,distance=..5] run function lib:damage/modifier
+        execute as @p[tag=this,distance=..5] run function api:damage/modifier
     # 実行
-        function lib:damage/
+        function api:damage/
     # 開放
-        function lib:damage/reset
+        function api:damage/reset
 
 # タグの開放
     tag @s remove D3.Critical

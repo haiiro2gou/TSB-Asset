@@ -8,10 +8,10 @@
     data modify storage lib: Argument.Damage set value 32f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Fire"
-    execute as @e[type=zombie,tag=this,distance=..0.01,limit=1] run function lib:damage/modifier
-    function lib:damage/
+    execute as @e[type=zombie,tag=this,distance=..0.01,limit=1] run function api:damage/modifier
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # Tag削除
     tag @s remove LandingTarget

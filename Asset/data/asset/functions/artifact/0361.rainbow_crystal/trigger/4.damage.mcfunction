@@ -11,50 +11,50 @@
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementTypeNone set value "None"
-    execute as @p[tag=this] run function lib:damage/modifier
-    function lib:damage/
+    execute as @p[tag=this] run function api:damage/modifier
+    function api:damage/
 
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementTypeNone set value "Fire"
-    execute as @p[tag=this] run function lib:damage/modifier_continuation
-    function lib:damage/
+    execute as @p[tag=this] run function api:damage/modifier_continuation
+    function api:damage/
 
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementTypeNone set value "Water"
-    execute as @p[tag=this] run function lib:damage/modifier_continuation
-    function lib:damage/
+    execute as @p[tag=this] run function api:damage/modifier_continuation
+    function api:damage/
 
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementTypeNone set value "Thunder"
-    function lib:damage/
+    function api:damage/
 
 # 魔法
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementTypeNone set value "None"
-    execute as @p[tag=this] run function lib:damage/modifier_continuation
-    function lib:damage/
+    execute as @p[tag=this] run function api:damage/modifier_continuation
+    function api:damage/
 
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementTypeNone set value "Fire"
-    execute as @p[tag=this] run function lib:damage/modifier_continuation
-    function lib:damage/
+    execute as @p[tag=this] run function api:damage/modifier_continuation
+    function api:damage/
 
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementTypeNone set value "Water"
-    execute as @p[tag=this] run function lib:damage/modifier_continuation
-    function lib:damage/
+    execute as @p[tag=this] run function api:damage/modifier_continuation
+    function api:damage/
 
     data modify storage lib: Argument.Damage set value 210f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementTypeNone set value "Thunder"
-    execute as @p[tag=this] run function lib:damage/modifier_continuation
-    function lib:damage/
+    execute as @p[tag=this] run function api:damage/modifier_continuation
+    function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

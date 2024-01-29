@@ -9,9 +9,9 @@
         data modify storage lib: Argument.Damage set value 15f
         data modify storage lib: Argument.AttackType set value "Magic"
         data modify storage lib: Argument.FixedDamage set value true
-        function lib:damage/
+        function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset
 
 # MP回復
     # 回復する量 = 100

@@ -14,8 +14,8 @@
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
 # 補正function
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象は自分
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

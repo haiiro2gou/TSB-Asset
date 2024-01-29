@@ -15,8 +15,8 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 範囲5m以内の攻撃先を対象に
-    execute as @a[tag=Victim,distance=..5] run function lib:damage/
+    execute as @a[tag=Victim,distance=..5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

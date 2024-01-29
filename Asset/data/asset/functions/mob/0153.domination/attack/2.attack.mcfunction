@@ -13,11 +13,11 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[tag=Victim] run function lib:damage/
+    execute as @p[tag=Victim] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # プレイヤーをパニック状態にする
 # プレイヤーにタグ、スコアを付与する

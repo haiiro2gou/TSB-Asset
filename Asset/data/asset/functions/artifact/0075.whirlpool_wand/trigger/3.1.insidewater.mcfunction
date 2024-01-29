@@ -12,10 +12,10 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
     # ダメージを与える
-        function lib:damage/modifier
-        function lib:damage/
+        function api:damage/modifier
+        function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     playsound minecraft:block.bubble_column.upwards_inside player @a ~ ~ ~ 1 1.8

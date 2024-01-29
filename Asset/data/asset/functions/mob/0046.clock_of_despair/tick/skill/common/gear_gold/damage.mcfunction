@@ -18,9 +18,9 @@
     # 死亡ログ
         data modify storage lib: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの黄金の歯車により時空の狭間へ送られた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正 (厳密な紐付けではない)
-    execute as @e[type=zombie,scores={MobID=46},distance=..14,limit=1] run function lib:damage/modifier
+    execute as @e[type=zombie,scores={MobID=46},distance=..14,limit=1] run function api:damage/modifier
 # 与
-    execute as @e[type=#lib:living,tag=Friend,tag=Target,distance=..10] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Friend,tag=Target,distance=..10] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @e[type=#lib:living,tag=Friend,tag=Target] remove Target

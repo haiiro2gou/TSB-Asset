@@ -18,8 +18,8 @@
     data modify storage lib: Argument.ElementType set value "Fire"
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの炎の魔法で燃え尽きた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..6] run function lib:damage/
+    execute as @p[tag=Victim,distance=..6] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

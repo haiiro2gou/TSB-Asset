@@ -26,9 +26,9 @@
     # 死亡メッセージ
         data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは食べてはらない物を食べてしまった。","with":[{"selector":"@s"}]}]']
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージを与える
-        function lib:damage/
+        function api:damage/
 
 # 演出
     tellraw @s {"text":"うっ...変な感じだ","bold":true}

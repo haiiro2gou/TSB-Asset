@@ -9,7 +9,7 @@
     execute store result storage lib: Argument.Damage float 0.20 run data get storage api: Return.MaxHealth
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.FixedDamage set value 1b
-    execute as @e[type=wither_skeleton,tag=this,distance=..0.01,limit=1] run function lib:damage/modifier
-    function lib:damage/
+    execute as @e[type=wither_skeleton,tag=this,distance=..0.01,limit=1] run function api:damage/modifier
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

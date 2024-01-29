@@ -16,10 +16,10 @@
         execute if entity @s[tag=S2.Water] run data modify storage lib: Argument.ElementType set value "Water"
         execute if entity @s[tag=S2.Thunder] run data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute at @s as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+        function api:damage/modifier
+        execute at @s as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # キル
     kill @s

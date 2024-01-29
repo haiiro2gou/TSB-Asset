@@ -15,11 +15,11 @@
     data modify storage lib: Argument.Damage set value 37f
     data modify storage lib: Argument.AttackType set value "Physical"
 # 補正functionを実行
-    execute as @e[type=zombie,tag=this,distance=..6,sort=nearest,limit=1] run function lib:damage/modifier
+    execute as @e[type=zombie,tag=this,distance=..6,sort=nearest,limit=1] run function api:damage/modifier
 # 対象
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 難易度の値を取得
     function api:global_vars/get_difficulty

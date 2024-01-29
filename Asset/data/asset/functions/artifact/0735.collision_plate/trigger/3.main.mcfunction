@@ -24,10 +24,10 @@
 # ダメージ
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function lib:damage/
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function api:damage/
 
 # スコアとかストレージとかリセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $KF.Armor Temporary
     scoreboard players reset $KF.ArmorTough Temporary

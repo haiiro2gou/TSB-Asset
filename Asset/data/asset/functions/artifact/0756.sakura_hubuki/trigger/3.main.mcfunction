@@ -41,12 +41,12 @@
         data modify storage lib: Argument.AttackType set value "Physical"
         data modify storage lib: Argument.ElementType set value "Water"
     # 補正
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージを与える
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
 
 # リセット
     scoreboard players reset $Random Temporary
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $101 Temporary
-    function lib:damage/reset
+    function api:damage/reset

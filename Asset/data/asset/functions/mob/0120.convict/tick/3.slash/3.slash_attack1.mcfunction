@@ -12,10 +12,10 @@
     data modify storage lib: Argument.Damage set value 20.0f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,tag=!PlayerShouldInvulnerable,distance=..3] at @s run function lib:damage/
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,tag=!PlayerShouldInvulnerable,distance=..3] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # スコアをぶっ飛ばす
     execute if entity @p[distance=..3] run scoreboard players set @s 3C.Tick 1000

@@ -22,10 +22,10 @@
     # ダメージ量確定
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $Damage Temporary
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[tag=LandingTarget] run function lib:damage/
+        function api:damage/modifier
+        execute as @e[tag=LandingTarget] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 
 # 着弾タグを消す

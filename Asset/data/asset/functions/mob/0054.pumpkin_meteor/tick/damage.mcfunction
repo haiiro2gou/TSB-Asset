@@ -17,10 +17,10 @@
     # 属性
         data modify storage lib: Argument.ElementType set value "Fire"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # キル
     kill @s

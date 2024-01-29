@@ -18,11 +18,11 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの稲妻に焼け落ちた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 円
     particle electric_spark ^0 ^ ^-1 0 0 0 0 1

@@ -23,8 +23,8 @@
     # 防御無視
         data modify storage lib: Argument.FixedDamage set value true
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージを与える
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset

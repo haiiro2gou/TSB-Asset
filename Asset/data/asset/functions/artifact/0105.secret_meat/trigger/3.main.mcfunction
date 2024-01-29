@@ -23,6 +23,6 @@
     execute if score $Random Temporary matches 90..99 run function asset:artifact/0105.secret_meat/trigger/dead_effect
 # リセット
     scoreboard players reset $Random Temporary
-    function lib:damage/reset
+    function api:damage/reset
 # MP0化が発生するとは限らないので一応リセ
     scoreboard players reset $Fluctuation Lib

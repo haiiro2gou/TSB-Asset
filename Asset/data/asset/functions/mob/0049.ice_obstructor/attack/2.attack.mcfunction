@@ -23,11 +23,11 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって凍結した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって凍り付いた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute at @p[tag=Victim,distance=..32] as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function lib:damage/
+    execute at @p[tag=Victim,distance=..32] as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
 
 # 粉雪を設置
     execute at @p[gamemode=survival,tag=Victim,distance=..32] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

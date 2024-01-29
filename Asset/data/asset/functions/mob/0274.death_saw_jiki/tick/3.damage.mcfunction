@@ -20,13 +20,13 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # 対象に
         tag @e[type=#lib:living,type=!player,tag=Friend,distance=..1] add DamageTarget
         tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add DamageTarget
-        execute as @e[type=#lib:living,tag=DamageTarget,distance=..1] run function lib:damage/
+        execute as @e[type=#lib:living,tag=DamageTarget,distance=..1] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset
         tag @e[type=#lib:living,tag=DamageTarget,distance=..2] remove DamageTarget
 
 # クールタイムを与える

@@ -18,9 +18,9 @@
         data modify storage lib: Argument.AttackType set value "Magic"
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージを与える
-        function lib:damage/modifier
-        execute as @p[tag=EmptyMP] run function lib:damage/
-        function lib:damage/reset
+        function api:damage/modifier
+        execute as @p[tag=EmptyMP] run function api:damage/
+        function api:damage/reset
     # 演出
         execute as @p[tag=EmptyMP] at @s run playsound entity.puffer_fish.hurt hostile @a ~ ~ ~ 1 0
         execute as @p[tag=EmptyMP] at @s run particle soul ~ ~1 ~ 0 0 0 0.1 10

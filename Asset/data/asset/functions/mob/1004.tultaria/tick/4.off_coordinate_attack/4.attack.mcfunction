@@ -13,10 +13,10 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=2.5..8] run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=2.5..8] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmACwCMpcAbPQOykC0pAzAKweuVcAjaqwCGAkV1bU4A2aSYoUTEfTAEAdiIC2CZIDDFAAQAmVigD2MKGrAwRGbQGck4c4XUQk1IwRRx3cDGcwADcRbEJdcAAPJAAGAitEWIBfZIJ7UjRCJ0QuAgcIOw8kgjhsbDQYB11qWPiwDDNCiF16tAcAUXLK6o6AR0Iw7CgAZVtfckQAMzDq1IBdIA_3
 # 落雷

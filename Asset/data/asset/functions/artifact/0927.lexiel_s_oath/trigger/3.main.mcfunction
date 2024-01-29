@@ -43,11 +43,11 @@
     execute if entity @e[type=#lib:living,tag=Victim,scores={MobID=1004},distance=..10] run data modify storage lib: Argument.Damage set value 2f
 
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $Rotate Temporary

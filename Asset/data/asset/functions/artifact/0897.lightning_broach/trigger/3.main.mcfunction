@@ -40,12 +40,12 @@
     data modify storage lib: Argument.ElementType set value "Thunder"
     data modify storage lib: Argument.FixedDamage set value 1b
 # ダメージ
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run function lib:damage/
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run function api:damage/
 
 # リセット
     scoreboard players reset $Base Temporary
     scoreboard players reset $Count Temporary
     scoreboard players reset $CountMul Temporary
     scoreboard players reset $Health Temporary
-    function lib:damage/reset
+    function api:damage/reset

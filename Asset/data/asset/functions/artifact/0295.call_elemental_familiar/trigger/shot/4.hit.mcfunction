@@ -10,19 +10,19 @@
     execute if entity @s[tag=87.ShotFire] run data modify storage lib: Argument.ElementType set value "Fire"
     execute if entity @s[tag=87.ShotThunder] run data modify storage lib: Argument.ElementType set value "Thunder"
     execute if entity @s[tag=87.ShotWater] run data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/
+    function api:damage/
 
 # 演出
     particle minecraft:crit ~ ~ ~ 0 0 0 0.5 5
 
 # マスターとして補正functionを実行
-    execute at @a if score @s 87.UserID = @p UserID as @p run function lib:damage/modifier
+    execute at @a if score @s 87.UserID = @p UserID as @p run function api:damage/modifier
 
 # ダメージ実行
-    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function lib:damage/
+    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # ショットを消す
     kill @s

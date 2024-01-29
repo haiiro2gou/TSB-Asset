@@ -22,10 +22,10 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 自害
     kill @s

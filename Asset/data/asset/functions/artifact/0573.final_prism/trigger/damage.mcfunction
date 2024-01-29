@@ -16,10 +16,10 @@
         execute if score $Random Temporary matches 3 run data modify storage lib: Argument.ElementType set value "Thunder"
 
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,tag=PrismDamage,distance=..50] at @s run function lib:damage/
+    execute as @e[type=#lib:living,tag=PrismDamage,distance=..50] at @s run function api:damage/
     tag @e[type=#lib:living,tag=PrismDamage,distance=..50] remove PrismDamage
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

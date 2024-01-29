@@ -19,16 +19,16 @@
     data modify storage lib: Argument.ElementType set value "Fire"
 
 # 補正実行
-    function lib:damage/modifier
+    function api:damage/modifier
 
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 
 # 吹き飛ばし
     execute at @a[gamemode=!spectator,distance=..2] run summon area_effect_cloud ~ ~ ~ {Radius:0.1f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:20b,duration:5,show_particles:0b}]}
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # パーティクル
     particle smoke ~ ~0.1 ~ 1 0.1 1 0.02 100

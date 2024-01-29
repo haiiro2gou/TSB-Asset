@@ -15,11 +15,11 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.FixedDamage set value 1b
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute as @e[type=zombie,scores={MobID=59},distance=..3,sort=nearest,limit=1] run function lib:damage/
+    execute as @e[type=zombie,scores={MobID=59},distance=..3,sort=nearest,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # キル
     kill @s

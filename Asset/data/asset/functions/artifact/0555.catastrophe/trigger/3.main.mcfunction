@@ -13,8 +13,8 @@
 
     # ダメージ
         data modify storage lib: Argument set value {Damage:600,AttackType:Magic,ElementType:None,FixedDamage:false}
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Attacker,limit=1] run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,tag=Attacker,limit=1] run function api:damage/
 
     # リセット
-        function lib:damage/reset
+        function api:damage/reset

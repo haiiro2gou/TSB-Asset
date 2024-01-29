@@ -16,8 +16,8 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Fire"
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # 範囲5m以内のゾンビを対象に
-        execute as @p[tag=Victim] run function lib:damage/
+        execute as @p[tag=Victim] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset

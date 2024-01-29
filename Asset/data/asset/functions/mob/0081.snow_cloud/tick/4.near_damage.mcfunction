@@ -12,8 +12,8 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに近づいて凍死した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの冷たさにより全身が凍り付いた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ対象
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

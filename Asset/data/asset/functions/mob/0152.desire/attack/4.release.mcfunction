@@ -11,11 +11,11 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..32] run function lib:damage/
+    execute as @p[tag=Victim,distance=..32] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     playsound minecraft:entity.evoker.prepare_summon hostile @a ~ ~ ~ 1 2

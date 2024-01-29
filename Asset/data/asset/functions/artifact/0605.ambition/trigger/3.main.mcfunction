@@ -26,10 +26,10 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # 攻撃したモブ1体を対象に
-        execute as @e[type=#lib:living,type=!player,tag=Victim] run function lib:damage/
+        execute as @e[type=#lib:living,type=!player,tag=Victim] run function api:damage/
 
 # リセット
     scoreboard players reset @s Temporary
-    function lib:damage/reset
+    function api:damage/reset

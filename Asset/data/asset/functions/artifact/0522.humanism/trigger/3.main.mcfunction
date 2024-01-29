@@ -28,10 +28,10 @@
         data modify storage lib: Argument.Damage set value 1700f
         data modify storage lib: Argument.AttackType set value "Magic"
         data modify storage lib: Argument.ElementType set value "Water"
-        function lib:damage/modifier
+        function api:damage/modifier
         execute at @a run tag @e[tag=Enemy,tag=!Uninterferable,distance=..50] add EI.Target
-        execute as @e[tag=EI.Target] run function lib:damage/
-        function lib:damage/reset
+        execute as @e[tag=EI.Target] run function api:damage/
+        function api:damage/reset
 
 # タグリセット
     execute at @a run tag @e[tag=EI.Target,tag=!Uninterferable,distance=..50] remove EI.Target

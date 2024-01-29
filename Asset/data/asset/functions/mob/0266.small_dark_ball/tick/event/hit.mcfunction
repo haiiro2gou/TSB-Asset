@@ -12,11 +12,11 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @p[dx=0] unless entity @s[tag=PlayerShouldInvulnerable] at @s run function lib:damage/
+    execute as @p[dx=0] unless entity @s[tag=PlayerShouldInvulnerable] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 消失
     function asset:mob/0266.small_dark_ball/tick/event/kill

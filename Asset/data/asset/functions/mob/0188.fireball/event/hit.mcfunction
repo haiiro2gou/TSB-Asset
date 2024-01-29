@@ -12,11 +12,11 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @p[dx=0] unless entity @s[gamemode=!adventure,gamemode=!survival] at @s run function lib:damage/
+    execute as @p[dx=0] unless entity @s[gamemode=!adventure,gamemode=!survival] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 消失
     kill @s

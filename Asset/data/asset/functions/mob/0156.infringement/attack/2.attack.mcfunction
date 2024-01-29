@@ -18,11 +18,11 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..32] run function lib:damage/
+    execute as @p[tag=Victim,distance=..32] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 鈍足を与える
     effect give @p[tag=Victim,distance=..32] slowness 1 3

@@ -17,9 +17,9 @@
 # キルログ
     data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
 # 対象指定
-    execute at @e[type=iron_golem,tag=26.GolemBomb] as @e[type=#lib:living,tag=!Uninterferable,tag=!26.GolemBomb,distance=..5] run function lib:damage/
+    execute at @e[type=iron_golem,tag=26.GolemBomb] as @e[type=#lib:living,tag=!Uninterferable,tag=!26.GolemBomb,distance=..5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # ダメージ処理(スノウゴーレム)
     # 与えるダメージ = 125
@@ -33,11 +33,11 @@
 # キルログ
     data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
 # 対象指定
-    execute at @e[type=snow_golem,tag=26.GolemBomb] as @e[type=#lib:living,tag=!Uninterferable,tag=!26.GolemBomb,distance=..5] run function lib:damage/
+    execute at @e[type=snow_golem,tag=26.GolemBomb] as @e[type=#lib:living,tag=!Uninterferable,tag=!26.GolemBomb,distance=..5] run function api:damage/
 # キルログ
     data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはゴーレムの自爆に巻き込まれてしまった。","with":[{"selector":"@s"}]}]']
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出(アイアンゴーレム)
     execute at @e[type=iron_golem,tag=26.GolemBomb] run particle minecraft:explosion ~ ~ ~ 3 3 3 1 100 force @a[distance=..30]

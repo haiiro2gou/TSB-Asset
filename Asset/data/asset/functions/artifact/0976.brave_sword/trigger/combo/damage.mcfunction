@@ -23,9 +23,9 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    execute as @p[tag=this] run function lib:damage/modifier
+    execute as @p[tag=this] run function api:damage/modifier
 # ダメージ実行
-    function lib:damage/
+    function api:damage/
 
 # ノクバ耐性を考慮して吹っ飛ばす
     data modify storage lib: Argument.VectorMagnitude set value -0.2
@@ -33,6 +33,6 @@
     execute as @s at @s facing entity @p[tag=this] feet rotated ~ ~25 run function lib:motion/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
     data remove storage lib: Argument

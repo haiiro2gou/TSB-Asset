@@ -13,11 +13,11 @@
 # 死亡メッセージ
     data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは呪われてしまった！","with":[{"selector":"@s"}]}]']
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute as @p[tag=Attacker,distance=..50] run function lib:damage/
+    execute as @p[tag=Attacker,distance=..50] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     particle block_marker barrier ~ ~1 ~ 0 0 0 0 0

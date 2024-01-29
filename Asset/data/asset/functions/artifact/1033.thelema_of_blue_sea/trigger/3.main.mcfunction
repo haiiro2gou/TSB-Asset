@@ -38,9 +38,9 @@
 
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
-    function lib:damage/reset
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
+    function api:damage/reset
 
 # スケジュールループを起動
     schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop 1t replace

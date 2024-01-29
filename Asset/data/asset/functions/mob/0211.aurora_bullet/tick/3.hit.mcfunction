@@ -12,11 +12,11 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってオーロラに包まれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって空の塵となった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # 実行
-    execute as @a[tag=!PlayerShouldInvulnerable,dx=0] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # スコアを付与
     scoreboard players set @a[gamemode=!spectator,dx=0] 5U.DebuffTime 80

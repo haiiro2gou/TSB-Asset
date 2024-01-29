@@ -15,6 +15,6 @@
 # ダメージ
     data modify storage lib: Argument.Damage set value 500.0f
     data modify storage lib: Argument.AttackType set value "Physical"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
-    function lib:damage/reset
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
+    function api:damage/reset

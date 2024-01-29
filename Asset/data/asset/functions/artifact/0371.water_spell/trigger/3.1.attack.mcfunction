@@ -20,8 +20,8 @@
     # 水属性
         data modify storage lib: Argument.ElementType set value "Water"
 # 補正functionを実行
-    execute as @p[tag=this] run function lib:damage/modifier
+    execute as @p[tag=this] run function api:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

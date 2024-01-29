@@ -19,10 +19,10 @@
     data modify storage lib: Argument.Damage set value 450.0f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=LandingTarget,distance=..15] run function lib:damage/
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=LandingTarget,distance=..15] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # Tag消し
     tag @e[type=#lib:living,tag=LandingTarget,distance=..15] remove LandingTarget

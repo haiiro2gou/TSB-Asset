@@ -14,8 +14,8 @@
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
