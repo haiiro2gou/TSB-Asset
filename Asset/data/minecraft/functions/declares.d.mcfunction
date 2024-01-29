@@ -2,17 +2,6 @@
 # @private
 
 #> declare
-# @within function asset:artifact/*/*/2.check_condition
-    #declare function asset:artifact/common/check_condition/auto     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/auto.mcfunction#L1
-    #declare function asset:artifact/common/check_condition/chest    from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/chest.mcfunction#L1
-    #declare function asset:artifact/common/check_condition/feet     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/feet.mcfunction#L1
-    #declare function asset:artifact/common/check_condition/head     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/head.mcfunction#L1
-    #declare function asset:artifact/common/check_condition/hotbar   from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/hotbar.mcfunction#L1
-    #declare function asset:artifact/common/check_condition/legs     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/legs.mcfunction#L1
-    #declare function asset:artifact/common/check_condition/mainhand from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/mainhand.mcfunction#L1
-    #declare function asset:artifact/common/check_condition/offhand  from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/offhand.mcfunction#L1
-
-#> declare
 # @within **
     #alias vector shulkerA 10000 0 10000                                              from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L41
     #alias vector shulkerB 10000 1 10000                                              from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L42
@@ -233,6 +222,8 @@
     #declare function lib:mp/get_max                                                  from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/mp/get_max.mcfunction#L1
     #declare function lib:mp/set                                                      from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/mp/set.mcfunction#L1
     #declare function lib:random/                                                     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/random/.mcfunction#L1
+    #declare function lib:random/with_biased/m                                        from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/random/with_biased/m.mcfunction#L1
+    #declare function lib:random/with_biased/manual.m                                 from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/random/with_biased/manual.m.mcfunction#L1
     #declare function lib:score_to_health_wrapper/set                                 from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/score_to_health_wrapper/set.mcfunction#L1
     #declare function lib:score_to_move/                                              from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/score_to_move/.mcfunction#L1
     #declare function lib:spread_entity/                                              from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/spread_entity/.mcfunction#L1
@@ -541,10 +532,11 @@
     #declare storage api:                                                             from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/_index.d.mcfunction#L6
     #declare storage lib:                                                             from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/_index.d.mcfunction#L6
     #declare storage minecraft:global                                                 from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L57
+    #declare tag Attacked                                                             from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/core/health_subtract/non-player.mcfunction#L11
     #declare tag AttackedEntity                                                       from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacked_entity/_index.d.mcfunction#L10
     #declare tag AttackingEntity                                                      from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacking_entity/_index.d.mcfunction#L10
     #declare tag BetaEndingPortal                                                     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/_index.d.mcfunction#L7
-    #declare tag Death                                                                from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L18
+    #declare tag Death                                                                from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L22
     #declare tag DevPrivilege                                                         from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L56
     #declare tag Enemy                                                                from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L7
     #declare tag Enemy.Boss                                                           from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L8
@@ -614,14 +606,14 @@
     #declare tag/function asset:artifact/tick                                         from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/artifact/tick.json#L1
     #declare tag/function asset:artifact/use_item                                     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/artifact/use_item.json#L1
     #declare tag/function asset:artifact/using_item                                   from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/artifact/using_item.json#L1
-    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/end.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/end.json#L1
+    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/end.json#L1
     #declare tag/function asset:effect/end
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/given.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/given.json#L1
     #declare tag/function asset:effect/given
-    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/load.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/load.json#L1
+    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/load.json#L1
     #declare tag/function asset:effect/load
     #declare tag/function asset:effect/re-given                                       from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/re-given.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/register.json#L1
@@ -630,24 +622,24 @@
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/remove.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/remove.json#L1
     #declare tag/function asset:effect/remove
-    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/tick.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/tick.json#L1
+    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/tick.json#L1
     #declare tag/function asset:effect/tick
     #declare tag/function asset:island/dispelled                                      from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/island/dispelled.json#L1
     #declare tag/function asset:island/register                                       from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/island/register.json#L1
     #declare tag/function asset:mob/attack                                            from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/attack.json#L1
     #declare tag/function asset:mob/death                                             from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/death.json#L1
-    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/hurt.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/hurt.json#L1
+    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/hurt.json#L1
     #declare tag/function asset:mob/hurt
     #declare tag/function asset:mob/initialize                                        from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/initialize.json#L1
     #declare tag/function asset:mob/load                                              from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/load.json#L1
-    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/register.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/register.json#L1
+    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/register.json#L1
     #declare tag/function asset:mob/register
     #declare tag/function asset:mob/remove                                            from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/remove.json#L1
-    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/summon.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/summon.json#L1
+    # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/summon.json#L1
     #declare tag/function asset:mob/summon
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/tick.json#L1
     # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/tick.json#L1
@@ -700,20 +692,6 @@
     #declare team NoCollision                                                         from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L93
 
 #> declare
-# @within function asset:artifact/*/give/2.give
-#declare function asset:artifact/common/give from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
-
-#> declare
-# @within function asset:effect/*/given/
-#declare function asset:effect/super.given from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.given.mcfunction#L1
-
-#> declare
-# @within
-#   function api:mob/core/summon
-#   function asset:mob/*/summon/2.summon
-#declare function asset:mob/common/summon from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
-
-#> declare
 # @within function asset:artifact/*/*/3.main
     #declare function asset:artifact/common/use/auto     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/use/auto.mcfunction#L1
     #declare function asset:artifact/common/use/chest    from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/use/chest.mcfunction#L1
@@ -725,8 +703,33 @@
     #declare function asset:artifact/common/use/offhand  from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/use/offhand.mcfunction#L1
 
 #> declare
-# @within function asset:effect/*/register
-#declare function asset:effect/extends from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/extends.mcfunction#L1
+# @within function asset:artifact/*/give/2.give
+#declare function asset:artifact/common/give from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
+
+#> declare
+# @within function asset:artifact/*/*/2.check_condition
+    #declare function asset:artifact/common/check_condition/auto     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/auto.mcfunction#L1
+    #declare function asset:artifact/common/check_condition/chest    from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/chest.mcfunction#L1
+    #declare function asset:artifact/common/check_condition/feet     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/feet.mcfunction#L1
+    #declare function asset:artifact/common/check_condition/head     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/head.mcfunction#L1
+    #declare function asset:artifact/common/check_condition/hotbar   from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/hotbar.mcfunction#L1
+    #declare function asset:artifact/common/check_condition/legs     from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/legs.mcfunction#L1
+    #declare function asset:artifact/common/check_condition/mainhand from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/mainhand.mcfunction#L1
+    #declare function asset:artifact/common/check_condition/offhand  from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/offhand.mcfunction#L1
+
+#> declare
+# @within
+#   function api:mob/core/summon
+#   function asset:mob/*/summon/2.summon
+#declare function asset:mob/common/summon from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/attack/
+#declare function asset:mob/super.attack from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.attack.mcfunction#L1
+
+#> declare
+# @within function asset:teleporter/*/register
+#declare function asset:teleporter/common/register from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
 
 #> declare
 # @within function asset:spawner/*/register
@@ -737,12 +740,40 @@
 #declare function asset:island/common/register from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/island/common/register.mcfunction#L1
 
 #> declare
+# @within function asset:mob/*/tick/
+#declare function asset:mob/super.tick from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/register
+#declare function asset:effect/extends from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/extends.mcfunction#L1
+
+#> declare
 # @within function asset:effect/*/end/
 #declare function asset:effect/super.end from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.end.mcfunction#L1
 
 #> declare
-# @within function asset:teleporter/*/register
-#declare function asset:teleporter/common/register from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
+# @within function asset:effect/*/re-given/
+#declare function asset:effect/super.re-given from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.re-given.mcfunction#L1
+
+#> declare
+# @within function asset:trader/*/register/register
+#declare function asset:trader/common/register from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/register
+#declare function asset:mob/extends from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/extends.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/hurt/
+#declare function asset:mob/super.hurt from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/given/
+#declare function asset:effect/super.given from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.given.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/tick/
+#declare function asset:effect/super.tick from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.tick.mcfunction#L1
 
 #> declare
 # @within function asset:mob/*/death/
@@ -753,34 +784,6 @@
 #declare function asset:effect/super.remove from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.remove.mcfunction#L1
 
 #> declare
-# @within function asset:effect/*/re-given/
-#declare function asset:effect/super.re-given from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.re-given.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/tick/
-#declare function asset:mob/super.tick from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/attack/
-#declare function asset:mob/super.attack from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.attack.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/register
-#declare function asset:mob/extends from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/extends.mcfunction#L1
-
-#> declare
-# @within function asset:trader/*/register/register
-#declare function asset:trader/common/register from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
-
-#> declare
-# @within function asset:effect/*/tick/
-#declare function asset:effect/super.tick from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.tick.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/hurt/
-#declare function asset:mob/super.hurt from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
-
-#> declare
 # @within
 #   function asset_manager:**
 #   function asset:*/*/**
@@ -788,38 +791,6 @@
 #   function asset:*/super.*
 #   function api:**
 #declare storage asset:context from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/_index.d.mcfunction#L11
-
-#> declare
-# @within
-#   asset_manager:artifact/**
-#   asset:artifact/*/register
-#   asset:artifact/*/give/2.give
-#   asset:artifact/*/trigger/2.check_condition
-#   asset:artifact/*/trigger/3.main
-#   asset:artifact/common/**
-#declare storage asset:artifact from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L12
-
-#> declare
-# @within
-#   api:mob/core/**
-#   asset:mob/*/register
-#   asset:mob/*/*/
-#   asset:mob/extends
-#   asset:mob/super.*
-#   asset_manager:mob/**
-#   asset:mob/*/summon/2.summon
-#   asset:mob/common/**
-#declare storage asset:mob from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L14
-
-#> declare
-# @within
-#   function api:entity/mob/effect/**
-#   function asset:effect/extends
-#   function asset:effect/super.*
-#   function asset:effect/*/register
-#   function asset:effect/*/
-#   function asset_manager:effect/**
-#declare storage asset:effect from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L12
 
 #> declare
 # @within
@@ -837,13 +808,29 @@
 
 #> declare
 # @within
-#   function core:migration/v0.1.4/
+#   asset_manager:artifact/**
+#   asset:artifact/*/register
+#   asset:artifact/*/give/2.give
+#   asset:artifact/*/trigger/2.check_condition
+#   asset:artifact/*/trigger/3.main
+#   asset:artifact/common/**
+#declare storage asset:artifact from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L12
+
+#> declare
+# @within
 #   asset:teleporter/*/*
 #   asset:teleporter/common/register
 #   asset_manager:teleporter/**
-# from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/migration/v0.1.4/.mcfunction#L12
+#   function core:migration/v0.1.4/
 # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/teleporter/_index.d.mcfunction#L9
+# from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/migration/v0.1.4/.mcfunction#L12
 #declare storage asset:teleporter
+
+#> declare
+# @within
+#   asset:spawner/*/*
+#   asset_manager:spawner/**
+#declare storage asset:spawner from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L8
 
 #> declare
 # @within
@@ -854,9 +841,13 @@
 
 #> declare
 # @within
-#   asset:spawner/*/*
-#   asset_manager:spawner/**
-#declare storage asset:spawner from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L8
+#   function api:entity/mob/effect/**
+#   function asset:effect/extends
+#   function asset:effect/super.*
+#   function asset:effect/*/register
+#   function asset:effect/*/
+#   function asset_manager:effect/**
+#declare storage asset:effect from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L12
 
 #> declare
 # @within
@@ -866,28 +857,48 @@
 #declare storage asset:island from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/island/_index.d.mcfunction#L9
 
 #> declare
+# @within
+#   api:mob/core/**
+#   asset:mob/*/register
+#   asset:mob/*/*/
+#   asset:mob/extends
+#   asset:mob/super.*
+#   asset_manager:mob/**
+#   asset:mob/*/summon/2.summon
+#   asset:mob/common/**
+#declare storage asset:mob from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L14
+
+#> declare
 # @within asset:**
 #declare storage asset:temp from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L14
 
 #> declare
 # @within
-#   function asset_manager:island/dispel/boss/*
-#   asset_manager:mob/triggers/
-#   asset_manager:mob/triggers/death/
-#   asset:mob/**
-#   function asset_manager:mob/common_tag/anti_void_action/**
+#   asset_manager:spawner/tick/*
 #   core:tick/player/
 #   player_manager:vanilla_attack/show_log
 #   asset_manager:artifact/triggers/**
 #   asset:artifact/**
 #   asset_manager:teleporter/tick/**
-#   asset_manager:spawner/tick/*
+#   function asset_manager:island/dispel/boss/*
+#   asset_manager:mob/triggers/
+#   asset_manager:mob/triggers/death/
+#   asset:mob/**
+#   function asset_manager:mob/common_tag/anti_void_action/**
+# from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
+# from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L14
 # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
 # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L43
 # from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L86
-# from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L14
-# from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
 #declare tag this
+
+#> declare
+# @within
+#   function asset:artifact/*/*/2.check_condition
+#   function asset:artifact/*/*/2.check_condition/**
+#   function asset_manager:artifact/check/
+#   function asset:artifact/common/use/*
+#declare tag CanUsed from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L10
 
 #> declare
 # @within
@@ -960,14 +971,6 @@
 #   asset:artifact/**
     #declare tag DisEquip from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L58
     #declare tag Equip    from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
-
-#> declare
-# @within
-#   function asset:artifact/*/*/2.check_condition
-#   function asset:artifact/*/*/2.check_condition/**
-#   function asset_manager:artifact/check/
-#   function asset:artifact/common/use/*
-#declare tag CanUsed from https://github.com/haiiro2gou/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L10
 
 #> declare
 # @within asset:artifact/**
