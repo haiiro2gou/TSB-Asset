@@ -11,13 +11,13 @@
 
 # 時間内にもう一度つかった愚か者へのダメージ
     # ダメージセット
-        data modify storage lib: Argument.Damage set value 10.0f
-        data modify storage lib: Argument.AttackType set value "Physical"
-        data modify storage lib: Argument.FixedDamage set value true
+        data modify storage api: Argument.Damage set value 10.0f
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.FixedDamage set value true
     # ダメージを与える
-        execute as @s[scores={CO.Tick=1..}] run function lib:damage/
+        execute as @s[scores={CO.Tick=1..}] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset
 
 # 演出
     execute if entity @s[scores={CO.Tick=1..}] run particle minecraft:dragon_breath ~ ~1 ~ 0.1 0.1 0.1 0.03 100

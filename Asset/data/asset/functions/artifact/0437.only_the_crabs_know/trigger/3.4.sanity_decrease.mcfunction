@@ -6,17 +6,17 @@
 
 # HP減少
     # 防御無視・補正なし・魔法・無属性の15のダメージを与える
-        data modify storage lib: Argument.Damage set value 15f
-        data modify storage lib: Argument.AttackType set value "Magic"
-        data modify storage lib: Argument.FixedDamage set value true
-        function lib:damage/
+        data modify storage api: Argument.Damage set value 15f
+        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.FixedDamage set value true
+        function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset
 
 # MP回復
     # 回復する量 = 100
-        scoreboard players set $Fluctuation Lib 100
-        function lib:mp/fluctuation
+        data modify storage api: Argument.Fluctuation set value 100
+        function api:mp/fluctuation
 
 # 演出
     tellraw @a[distance=..10] [{"selector":"@s","bold":true},{"text":"は正気度が減った"}]

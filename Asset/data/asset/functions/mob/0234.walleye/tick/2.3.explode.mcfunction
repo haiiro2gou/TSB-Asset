@@ -11,42 +11,42 @@
 
 # ダメージ: 半径1ブロック以内は60ダメージ、1ブロック離れるごとに10減少
 # 攻撃データ設定
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Fire"
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはウォールアイの爆発に巻き込まれた。","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sはウォールアイの爆発に巻き込まれた。","with":[{"selector":"@s"}]}]']
 # ダメージ
-    data modify storage lib: Argument.Damage set value 10.0f
-    function lib:damage/modifier
-    execute as @p[gamemode=!creative,distance=..1] at @s run function lib:damage/
-    execute as @e[type=!player,tag=!this,distance=..1] at @s run function lib:damage/
+    data modify storage api: Argument.Damage set value 10.0f
+    function api:damage/modifier
+    execute as @p[gamemode=!creative,distance=..1] at @s run function api:damage/
+    execute as @e[type=!player,tag=!this,distance=..1] at @s run function api:damage/
 
-    data modify storage lib: Argument.Damage set value 10.0f
-    function lib:damage/modifier_continuation
-    execute as @p[gamemode=!creative,distance=..2] at @s run function lib:damage/
-    execute as @e[type=!player,tag=!this,distance=..2] at @s run function lib:damage/
+    data modify storage api: Argument.Damage set value 10.0f
+    function api:damage/modifier_continuation
+    execute as @p[gamemode=!creative,distance=..2] at @s run function api:damage/
+    execute as @e[type=!player,tag=!this,distance=..2] at @s run function api:damage/
 
-    data modify storage lib: Argument.Damage set value 10.0f
-    function lib:damage/modifier_continuation
-    execute as @p[gamemode=!creative,distance=..3] at @s run function lib:damage/
-    execute as @e[type=!player,tag=!this,distance=..3] at @s run function lib:damage/
+    data modify storage api: Argument.Damage set value 10.0f
+    function api:damage/modifier_continuation
+    execute as @p[gamemode=!creative,distance=..3] at @s run function api:damage/
+    execute as @e[type=!player,tag=!this,distance=..3] at @s run function api:damage/
 
-    data modify storage lib: Argument.Damage set value 10.0f
-    function lib:damage/modifier_continuation
-    execute as @p[gamemode=!creative,distance=..4] at @s run function lib:damage/
-    execute as @e[type=!player,tag=!this,distance=..4] at @s run function lib:damage/
+    data modify storage api: Argument.Damage set value 10.0f
+    function api:damage/modifier_continuation
+    execute as @p[gamemode=!creative,distance=..4] at @s run function api:damage/
+    execute as @e[type=!player,tag=!this,distance=..4] at @s run function api:damage/
 
-    data modify storage lib: Argument.Damage set value 10.0f
-    function lib:damage/modifier_continuation
-    execute as @p[gamemode=!creative,distance=..5] at @s run function lib:damage/
-    execute as @e[type=!player,tag=!this,distance=..5] at @s run function lib:damage/
+    data modify storage api: Argument.Damage set value 10.0f
+    function api:damage/modifier_continuation
+    execute as @p[gamemode=!creative,distance=..5] at @s run function api:damage/
+    execute as @e[type=!player,tag=!this,distance=..5] at @s run function api:damage/
 
-    data modify storage lib: Argument.Damage set value 10.0f
-    function lib:damage/modifier_continuation
-    execute as @p[gamemode=!creative,distance=..6] at @s run function lib:damage/
-    execute as @e[type=!player,tag=!this,distance=..6] at @s run function lib:damage/
+    data modify storage api: Argument.Damage set value 10.0f
+    function api:damage/modifier_continuation
+    execute as @p[gamemode=!creative,distance=..6] at @s run function api:damage/
+    execute as @e[type=!player,tag=!this,distance=..6] at @s run function api:damage/
 
 # 引数リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 自死
     kill @s

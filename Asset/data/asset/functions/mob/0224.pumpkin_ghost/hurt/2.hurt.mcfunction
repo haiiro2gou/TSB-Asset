@@ -6,18 +6,18 @@
 
 # 割合ダメージ
     execute as @p[tag=Attacker,distance=..50] run function api:modifier/max_health/get
-    execute store result storage lib: Argument.Damage float 0.20 run data get storage api: Return.MaxHealth
+    execute store result storage api: Argument.Damage float 0.20 run data get storage api: Return.MaxHealth
 # 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.FixedDamage set value 1b
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.FixedDamage set value 1b
 # 死亡メッセージ
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは呪われてしまった！","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは呪われてしまった！","with":[{"selector":"@s"}]}]']
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute as @p[tag=Attacker,distance=..50] run function lib:damage/
+    execute as @p[tag=Attacker,distance=..50] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     particle block_marker barrier ~ ~1 ~ 0 0 0 0 0

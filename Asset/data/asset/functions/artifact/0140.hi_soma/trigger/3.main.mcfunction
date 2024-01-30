@@ -19,13 +19,13 @@
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
 
 # MP回復
-    scoreboard players set $Fluctuation Lib 75
-    function lib:mp/fluctuation
+    data modify storage api: Argument.Fluctuation set value 75
+    function api:mp/fluctuation
 
 # HP回復
-    data modify storage lib: Argument.Heal set value 15
-    function lib:heal/modifier
-    function lib:heal/
+    data modify storage api: Argument.Heal set value 15
+    function api:heal/modifier
+    function api:heal/
 
 # リセット
-    function lib:heal/reset
+    function api:heal/reset

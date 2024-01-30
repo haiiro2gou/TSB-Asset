@@ -11,12 +11,12 @@
 
 # 回復効果
     # 回復する量 = 5
-        data modify storage lib: Argument.Heal set value 5f
+        data modify storage api: Argument.Heal set value 5f
 # 実行者対象
-    function lib:heal/modifier
-    function lib:heal/
+    function api:heal/modifier
+    function api:heal/
 # リセット
-    function lib:heal/reset
+    function api:heal/reset
 
 # 演出
     particle minecraft:happy_villager ~ ~ ~ 1 1 1 1 100 normal @s

@@ -6,16 +6,16 @@
 
 # ダメージ
     # 与えるダメージ = 200
-        data modify storage lib: Argument.Damage set value 200f
+        data modify storage api: Argument.Damage set value 200f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
     # ダメージを与える
-        function lib:damage/modifier
-        function lib:damage/
+        function api:damage/modifier
+        function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     playsound minecraft:block.bubble_column.upwards_inside player @a ~ ~ ~ 1 1.8

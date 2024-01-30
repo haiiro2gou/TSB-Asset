@@ -12,24 +12,24 @@
 
 # 引数の設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 8.0d
+        data modify storage api: Argument.Damage set value 8.0d
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
 # デスログ
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって翻弄され、感電により心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの不意な電撃により、生命を終えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって翻弄され、感電により心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの不意な電撃により、生命を終えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ対象
-    execute as @p[tag=Victim,distance=..32] run function lib:damage/
+    execute as @p[tag=Victim,distance=..32] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # マナ減少
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set $Fluctuation Lib -8
-    execute if predicate api:global_vars/difficulty/min/hard as @p[tag=Victim,distance=..32] run function lib:mp/fluctuation
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Fluctuation set value -8
+    execute if predicate api:global_vars/difficulty/min/hard as @p[tag=Victim,distance=..32] run function api:mp/fluctuation
 
 # 弓から剣に切り替えた場合speedを得る
     execute if entity @s[tag=!1K.Sword] run effect give @s speed 500 0 true

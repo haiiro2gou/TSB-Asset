@@ -12,7 +12,7 @@
     execute as @e[type=#lib:living,tag=Enemy,tag=!this,distance=..10,sort=random,limit=5] unless entity @s[scores={MobID=84}] run particle heart ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
 
 # 回復
-    data modify storage lib: Argument.Heal set value 400f
-    function lib:heal/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=!this,distance=..10,sort=random,limit=5] unless entity @s[scores={MobID=84}] run function lib:heal/
-    function lib:heal/reset
+    data modify storage api: Argument.Heal set value 400f
+    function api:heal/modifier
+    execute as @e[type=#lib:living,tag=Enemy,tag=!this,distance=..10,sort=random,limit=5] unless entity @s[scores={MobID=84}] run function api:heal/
+    function api:heal/reset

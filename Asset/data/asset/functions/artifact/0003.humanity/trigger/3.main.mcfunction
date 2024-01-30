@@ -26,13 +26,13 @@
     execute if score @s Temporary matches 1 run playsound block.beacon.power_select player @s ~ ~ ~ 1 0 1
 
 # 回復処理
-    execute if score @s Temporary matches 0 run data modify storage lib: Argument.Heal set value 10000f
-    execute if score @s Temporary matches 0 run function lib:heal/modifier
-    execute if score @s Temporary matches 0 run function lib:heal/
+    execute if score @s Temporary matches 0 run data modify storage api: Argument.Heal set value 10000f
+    execute if score @s Temporary matches 0 run function api:heal/modifier
+    execute if score @s Temporary matches 0 run function api:heal/
 
 # 死亡処理
     execute if score @s Temporary matches 1 run kill
 
 # リセット
-    execute if score @s Temporary matches 0 run function lib:heal/reset
+    execute if score @s Temporary matches 0 run function api:heal/reset
     scoreboard players reset @s Temporary

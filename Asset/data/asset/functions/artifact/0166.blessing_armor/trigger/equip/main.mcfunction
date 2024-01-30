@@ -4,5 +4,7 @@
 #
 # @within function asset:artifact/0166.blessing_armor/trigger/equip/
 
-data modify storage api: Argument set value {Amount:0.20d,Operation:"multiply_base",UUID:[I;1,1,166,5]}
+data modify storage api: Argument.Amount set value 0.20d
+data modify storage api: Argument.Operation set value "multiply_base"
+data modify storage api: Argument.UUID set value [I;1,1,166,5]
 function api:modifier/max_health/add

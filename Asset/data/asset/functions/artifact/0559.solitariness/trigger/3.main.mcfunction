@@ -8,17 +8,19 @@
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
-    # 演出
-        execute at @e[type=#lib:living,tag=Victim] run particle end_rod ~ ~0.5 ~ 0.3 0.5 0.3 0 50 force @a
-    # 効果
-        # ノックバック
-            data modify storage lib: Argument.VectorMagnitude set value 1
-            execute as @e[type=#lib:living,tag=Victim] at @s facing entity @a[tag=this] feet rotated ~180 -15 run function lib:motion/
-            data remove storage lib: Argument
-        # Damage
-            data modify storage lib: Argument set value {Damage:60,AttackType:Physical,ElementType:None}
-            function lib:damage/modifier
-            execute as @e[type=#lib:living,tag=Victim] run function lib:damage/
 
-    # リセット
-        function lib:damage/reset
+# 演出
+    execute at @e[type=#lib:living,tag=Victim] run particle end_rod ~ ~0.5 ~ 0.3 0.5 0.3 0 50 force @a
+# 効果
+    # ノックバック
+        data modify storage lib: Argument.VectorMagnitude set value 1
+        execute as @e[type=#lib:living,tag=Victim] at @s facing entity @a[tag=this] feet rotated ~180 -15 run function lib:motion/
+        data remove storage lib: Argument
+    # Damage
+        data modify storage api: Argument.Damage set value 60f
+        data modify storage api: Argument.AttackType set value "Physical"
+        function api:damage/modifier
+        execute as @e[type=#lib:living,tag=Victim] run function api:damage/
+
+# リセット
+    function api:damage/reset

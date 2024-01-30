@@ -5,32 +5,32 @@
 # @within function asset:mob/0076.golden_watermelon_bomber/attack/1.trigger
 
 # 水属性ダメージ
-    data modify storage lib: Argument.Damage set value 17f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.Damage set value 17f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
 # デスログ
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの金色の輝きにより心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの電撃により死亡した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの金色の輝きにより心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの電撃により死亡した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ対象
-    execute as @p[tag=Victim,distance=..6] run function lib:damage/
+    execute as @p[tag=Victim,distance=..6] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 #　雷属性ダメージ
-    data modify storage lib: Argument.Damage set value 17f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.Damage set value 17f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Thunder"
 # デスログ
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの金色の輝きにより心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの電撃により死亡した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの金色の輝きにより心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの電撃により死亡した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ対象
-    execute as @p[tag=Victim,distance=..6] run function lib:damage/
+    execute as @p[tag=Victim,distance=..6] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1.8 0

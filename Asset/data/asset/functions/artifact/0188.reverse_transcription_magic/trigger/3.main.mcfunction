@@ -9,9 +9,9 @@
 
 # ここから先は神器側の効果の処理を書く
     # MPをOffhandItemのMPRequireに設定
-        execute store result score $Set Lib run data get storage asset:context Items.offhand.tag.TSB.MPCost
+        execute store result storage api: Argument.MP int 1 run data get storage asset:context Items.offhand.tag.TSB.MPCost
         tellraw @s [{"text": "MPが ["},{"nbt": "Inventory[{Slot:-106b}].tag.display.Name","storage": "asset:context","interpret": true},{"text": "] の消費MP [ "},{"score": {"name": "$Set","objective": "Lib"}},{"text": " ] になった！"}]
-        function lib:mp/set
+        function api:mp/set
     # 演出
         playsound ogg:random.levelup player @s ~ ~ ~ 1 1 1
         stopsound @s * entity.item.break

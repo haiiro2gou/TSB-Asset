@@ -5,10 +5,12 @@
 # @within function asset:mob/0174.burning_blaze/action/rush.tick
 
 # ダメージ
-    data modify storage lib: Argument set value {Damage:25,AttackType:Physical,AttackElement:Fire}
-    function lib:damage/modifier
-    execute as @a[tag=Hit] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 25f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
+    execute as @a[tag=Hit] run function api:damage/
+    function api:damage/reset
 
 # スコア設定
     scoreboard players set @s 4U.NowAction 0

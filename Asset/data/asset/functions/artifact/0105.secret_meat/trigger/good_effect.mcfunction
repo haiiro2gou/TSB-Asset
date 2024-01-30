@@ -13,13 +13,13 @@
     scoreboard players operation $Random Temporary %= $20 Const
 # 回復量ランダム
     scoreboard players add $Random Temporary 1
-    execute store result storage lib: Argument.Heal float 1 run scoreboard players get $Random Temporary
+    execute store result storage api: Argument.Heal float 1 run scoreboard players get $Random Temporary
 # リセット
     scoreboard players reset $Random Temporary
 # 回復
-    function lib:heal/modifier
-    function lib:heal/
-    function lib:heal/reset
+    function api:heal/modifier
+    function api:heal/
+    function api:heal/reset
 
 # 演出
     tellraw @s {"text":"なんだかいい予感がする！","bold":true}

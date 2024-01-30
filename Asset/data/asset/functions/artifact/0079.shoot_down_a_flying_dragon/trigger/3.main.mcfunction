@@ -46,16 +46,17 @@
                 execute if score $AroundWater Temporary matches 1.. run scoreboard players add $AttackStrength Temporary 1
 
         # 引数初期化
-            data modify storage lib: Argument set value {AttackType:Magic,ElementType:Thunder,BypassArmor:0b,FixedDamage:0b}
+            data modify storage api: Argument.AttackType set value "Magic"
+            data modify storage api: Argument.ElementType set value "Thunder"
 
         # //ここ時点で$AttackStrengthは0..3をとる
         # AttackStrengthに従ってダメージを設定
-            execute if score $AttackStrength Temporary matches 0 run data modify storage lib: Argument.Damage set value 160.0f
-            execute if score $AttackStrength Temporary matches 1 run data modify storage lib: Argument.Damage set value 180.0f
-            execute if score $AttackStrength Temporary matches 2 run data modify storage lib: Argument.Damage set value 220.0f
-            execute if score $AttackStrength Temporary matches 3 run data modify storage lib: Argument.Damage set value 270.0f
+            execute if score $AttackStrength Temporary matches 0 run data modify storage api: Argument.Damage set value 160.0f
+            execute if score $AttackStrength Temporary matches 1 run data modify storage api: Argument.Damage set value 180.0f
+            execute if score $AttackStrength Temporary matches 2 run data modify storage api: Argument.Damage set value 220.0f
+            execute if score $AttackStrength Temporary matches 3 run data modify storage api: Argument.Damage set value 270.0f
         # 属性なのでModifierを実行
-            function lib:damage/modifier
+            function api:damage/modifier
 
     # 演出
         # Particle
@@ -71,7 +72,7 @@
 
     # 効果
         # 通常Hit処理
-            execute as @e[type=#lib:living,tag=Hit,distance=..10] run function lib:damage/
+            execute as @e[type=#lib:living,tag=Hit,distance=..10] run function api:damage/
             effect clear @e[type=#lib:living,tag=Hit,distance=..10,limit=1] levitation
 
     # リセット
@@ -80,4 +81,4 @@
         scoreboard players reset $Weather Temporary
         scoreboard players reset $AroundWater Temporary
         scoreboard players reset $AttackStrength Temporary
-        function lib:damage/reset
+        function api:damage/reset

@@ -3,6 +3,7 @@
 #
 #
 # @within function asset:artifact/0105.secret_meat/trigger/3.main
+
 #> private
 # @private
     #declare score_holder $Random
@@ -13,22 +14,22 @@
     scoreboard players operation $Random Temporary %= $15 Const
 # ダメージランダム
     scoreboard players add $Random Temporary 1
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players get $Random Temporary
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get $Random Temporary
 # リセット
     scoreboard players reset $Random Temporary
 # ダメージ
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 耐性エフェクトを無視するか否か
-        data modify storage lib: Argument.FixedDamage set value true
+        data modify storage api: Argument.FixedDamage set value true
     # 補正はする
-        # data modify storage lib: Argument.FixedDamage set value false
+        # data modify storage api: Argument.FixedDamage set value false
     # 死亡メッセージ
-        data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは食べてはらない物を食べてしまった。","with":[{"selector":"@s"}]}]']
+        data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは食べてはらない物を食べてしまった。","with":[{"selector":"@s"}]}]']
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージを与える
-        function lib:damage/
+        function api:damage/
 
 # 演出
     tellraw @s {"text":"うっ...変な感じだ","bold":true}

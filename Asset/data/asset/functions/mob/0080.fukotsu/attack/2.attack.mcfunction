@@ -9,14 +9,14 @@
 
 # 引数の設定
     # 与えるダメージ = 7.5
-        data modify storage lib: Argument.Damage set value 19.5f
+        data modify storage api: Argument.Damage set value 19.5f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 範囲5m以内の攻撃先を対象に
-    execute as @a[tag=Victim,distance=..5] run function lib:damage/
+    execute as @a[tag=Victim,distance=..5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

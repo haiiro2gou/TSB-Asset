@@ -16,18 +16,18 @@
     effect give @a[gamemode=!spectator,distance=..1.5] saturation 3 0 true
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 15f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.Damage set value 15f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
 # デスログ
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって橙色になった。","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってみかんを食わされ窒息した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって橙色になった。","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってみかんを食わされ窒息した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 1%で蜜柑をドロップ
     execute if predicate lib:random_pass_per/1 run summon item ~ ~ ~ {Item:{id:"minecraft:player_head",Count:1b,tag:{display:{Name:'{"text":"みかん","color":"#FFAA00"}',Lore:['[{"text":"みかんを投げる者の落としたみかん"}]','{"text":"極稀に形が残るが"}','{"text":"食べることが出来ず"}','{"text":"飾ることしかできない"}']},SkullOwner:{Id:[I;463153349,-1660531863,-1823714981,703784498],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjViMWRiNTQ3ZDFiNzk1NmQ0NTExYWNjYjE1MzNlMjE3NTZkN2NiYzM4ZWI2NDM1NWEyNjI2NDEyMjEyIn19fQ=="}]}}}}}

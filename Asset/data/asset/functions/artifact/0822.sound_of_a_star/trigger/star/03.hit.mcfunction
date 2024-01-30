@@ -16,15 +16,15 @@
     tag @s add MU.This
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 800.0f
-    execute if entity @s[tag=MU.2] run data modify storage lib: Argument.Damage set value 1000.0f
-    execute if entity @s[tag=MU.3] run data modify storage lib: Argument.Damage set value 1200.0f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "None"
-    execute at @s as @a if score @s UserID = @e[type=marker,tag=MU.This,distance=..0.01,sort=nearest,limit=1] MU.UserID run function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0,sort=nearest,limit=1] run function lib:damage/
+    data modify storage api: Argument.Damage set value 800.0f
+    execute if entity @s[tag=MU.2] run data modify storage api: Argument.Damage set value 1000.0f
+    execute if entity @s[tag=MU.3] run data modify storage api: Argument.Damage set value 1200.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
+    execute at @s as @a if score @s UserID = @e[type=marker,tag=MU.This,distance=..0.01,sort=nearest,limit=1] MU.UserID run function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0,sort=nearest,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 消える
     kill @s

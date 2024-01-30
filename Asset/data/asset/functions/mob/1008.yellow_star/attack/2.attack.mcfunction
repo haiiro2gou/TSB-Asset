@@ -7,16 +7,16 @@
 # ダメージを与える
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 40.0f
+        data modify storage api: Argument.Damage set value 40.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=Victim,distance=..30] run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=Victim,distance=..30] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # プレイヤーの防具力を下げる(40)
     attribute @p[tag=Victim] minecraft:generic.armor modifier add 1-0-2-0-3f000000000 "1-2-1008-0" -0.4 multiply

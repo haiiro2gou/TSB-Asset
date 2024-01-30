@@ -12,16 +12,16 @@
 
 # 攻撃処理
     # 与えるダメージ = 45
-        data modify storage lib: Argument.Damage set value 45f
+        data modify storage api: Argument.Damage set value 45f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
-#ダメージ
-    execute as @p[tag=this] run function lib:damage/modifier
-    function lib:damage/
+        data modify storage api: Argument.ElementType set value "Water"
+# ダメージ
+    execute as @p[tag=this] run function api:damage/modifier
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     particle minecraft:rain ~ ~ ~ 0 2 0 1 100

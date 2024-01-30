@@ -10,12 +10,12 @@
 # ここから先は神器側の効果の処理を書く
 
 # 回復する量 = 全回復
-    data modify storage lib: Argument.Heal set value 10000f
+    data modify storage api: Argument.Heal set value 10000f
 # 実行者対象
-    function lib:heal/modifier
-    function lib:heal/
+    function api:heal/modifier
+    function api:heal/
 # リセット
-    function lib:heal/reset
+    function api:heal/reset
 
 # 演出
     execute at @s run playsound entity.cat.ambient player @a[distance=..10] ~ ~ ~ 3 1

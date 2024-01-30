@@ -11,17 +11,17 @@
     tag @s remove 25.Landing
 
 # 攻撃処理
-    # 与えるダメージ = 25
-        data modify storage lib: Argument.Damage set value 65.f
+    # 与えるダメージ = 20
+        data modify storage api: Argument.Damage set value 20f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
 #ダメージ
-    function lib:damage/modifier
-    execute as @e[tag=Enemy,distance=..4] run function lib:damage/
+    function api:damage/modifier
+    execute as @e[tag=Enemy,distance=..4] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     particle minecraft:rain ~ ~ ~ 1 1 1 1 100

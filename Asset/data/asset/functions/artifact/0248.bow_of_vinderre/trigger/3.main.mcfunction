@@ -15,12 +15,12 @@
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..100] run effect give @s poison 20 4
 
 # ダメージを与える
-    data modify storage lib: Argument.Damage set value 40.0f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..100,limit=1] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 40.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..100,limit=1] run function api:damage/
+    function api:damage/reset
 
 # テレポート処理
     execute if predicate lib:random_pass_per/25 as @e[type=#lib:living,type=!player,tag=Victim,distance=..100] run tag @s add RandomTP

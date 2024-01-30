@@ -13,10 +13,10 @@
     effect give @s invisibility 10 10 true
 
 # 周囲を回復
-    data modify storage lib: Argument.Heal set value 400f
-    function lib:heal/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=!this,tag=!Uninterferable,distance=..5] run function lib:heal/
-    function lib:heal/reset
+    data modify storage api: Argument.Heal set value 400f
+    function api:heal/modifier
+    execute as @e[type=#lib:living,tag=Enemy,tag=!this,tag=!Uninterferable,distance=..5] run function api:heal/
+    function api:heal/reset
 
 # 移動速度上昇を付与
     effect give @e[type=#lib:living,tag=Enemy,tag=!this,tag=!Uninterferable,distance=..5] speed 3 2 true

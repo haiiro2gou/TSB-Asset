@@ -10,13 +10,13 @@
     effect give @p[tag=Victim] slowness 7 0
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 7.0f
+        data modify storage api: Argument.Damage set value 7.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
     # ダメージ
-        function lib:damage/modifier
-        execute as @p[tag=Victim] run function lib:damage/
+        function api:damage/modifier
+        execute as @p[tag=Victim] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

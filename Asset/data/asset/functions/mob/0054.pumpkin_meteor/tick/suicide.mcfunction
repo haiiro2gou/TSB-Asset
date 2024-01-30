@@ -10,16 +10,16 @@
     playsound ogg:mob.pillager.celebrate2 hostile @a ~ ~ ~ 1 2
 
 # 割合ダメージ
-    execute store result storage lib: Argument.Damage float 0.0004 as @e[type=zombie,scores={MobID=59},distance=..3,sort=nearest,limit=1] run function api:mob/get_max_health
+    execute store result storage api: Argument.Damage float 0.0004 as @e[type=zombie,scores={MobID=59},distance=..3,sort=nearest,limit=1] run function api:mob/get_max_health
 # 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.FixedDamage set value 1b
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.FixedDamage set value 1b
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute as @e[type=zombie,scores={MobID=59},distance=..3,sort=nearest,limit=1] run function lib:damage/
+    execute as @e[type=zombie,scores={MobID=59},distance=..3,sort=nearest,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # キル
     kill @s

@@ -27,11 +27,11 @@
     scoreboard players operation $Count Temporary += $10 Const
     scoreboard players operation $Health Temporary *= $Count Temporary
     scoreboard players operation $Health Temporary /= $100 Const
-    execute store result storage lib: Argument.Heal float 0.01 run scoreboard players get $Health Temporary
+    execute store result storage api: Argument.Heal float 0.01 run scoreboard players get $Health Temporary
 
 # HP回復
-    function lib:heal/modifier
-    function lib:heal/
+    function api:heal/modifier
+    function api:heal/
 
 # リセット
-    function lib:heal/reset
+    function api:heal/reset

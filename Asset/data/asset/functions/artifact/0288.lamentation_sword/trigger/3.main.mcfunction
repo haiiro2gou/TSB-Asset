@@ -3,6 +3,7 @@
 # 神器のメイン処理部
 #
 # @within function asset:artifact/0288.lamentation_sword/trigger/2.check_condition
+
 #> private
 # @private
     #declare tag Hit
@@ -20,12 +21,12 @@
 
 # ダメージ設定
     # 与えるダメージ = 80
-        data modify storage lib: Argument.Damage set value 80.0f
+        data modify storage api: Argument.Damage set value 80.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
 
 # ダメージ
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

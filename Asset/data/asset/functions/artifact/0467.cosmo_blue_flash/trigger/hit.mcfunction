@@ -9,12 +9,12 @@
     playsound block.bubble_column.upwards_inside player @a ~ ~ ~ 1.0 1.0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 1029f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
-    execute as @p[tag=this] run function lib:damage/modifier
-    function lib:damage/
+    data modify storage api: Argument.Damage set value 1029f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    execute as @p[tag=this] run function api:damage/modifier
+    function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @s remove CZ.HitEntity

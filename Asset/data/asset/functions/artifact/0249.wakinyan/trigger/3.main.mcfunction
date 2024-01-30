@@ -3,6 +3,7 @@
 # 神器のメイン処理部
 #
 # @within function asset:artifact/0249.wakinyan/trigger/2.check_condition
+
 #> private
 # @private
     #declare tag Hit
@@ -34,13 +35,15 @@
         execute at @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] run playsound entity.lightning_bolt.thunder player @a[distance=..100] ~ ~ ~ 3 2 0
         # execute at @e[type=#lib:living,tag=Hit,distance=..100,limit=1] run summon lightning_bolt ~ ~ ~ {damage:0.001d,CustomName:'[{"text": "雷鳥の囃子","color":"yellow"}]'}
     # だめーーじ
-        data merge storage lib: {Argument:{Damage:60.0f,AttackType:Magic,ElementType:Thunder,FixedDamage:0b}}
-        execute if score @s Temporary matches 1 run data modify storage lib: Argument.Damage set value 120.0f
-        execute if score @s Temporary matches 2 run data modify storage lib: Argument.Damage set value 180.0f
-        execute if score @s Temporary matches 3 run data modify storage lib: Argument.Damage set value 240.0f
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] run function lib:damage/
+        data modify storage api: Argument.Damage set value 60.0f
+        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.ElementType set value "Thunder"
+        execute if score @s Temporary matches 1 run data modify storage api: Argument.Damage set value 120.0f
+        execute if score @s Temporary matches 2 run data modify storage api: Argument.Damage set value 180.0f
+        execute if score @s Temporary matches 3 run data modify storage api: Argument.Damage set value 240.0f
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] run function api:damage/
     # リセット
         scoreboard players reset @s Temporary
-        function lib:damage/reset
+        function api:damage/reset
         tag @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] remove Hit

@@ -22,17 +22,17 @@
 
 # 攻撃を与える
     # 与えるダメージ = 26
-        data modify storage lib: Argument.Damage set value 360f
+        data modify storage api: Argument.Damage set value 360f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    execute as @a if score @s UserID = @e[type=zombie,tag=M1.This,limit=1] M1.UserID run function lib:damage/modifier
+    execute as @a if score @s UserID = @e[type=zombie,tag=M1.This,limit=1] M1.UserID run function api:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[tag=M1.Target] run function lib:damage/
+    execute as @e[tag=M1.Target] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 #自身を殺す
     kill @s

@@ -9,14 +9,14 @@
 
 # HP、MP全快
     # HP回復
-        data modify storage lib: Argument.Heal set value 10000f
-        function lib:heal/modifier
-        function lib:heal/
+        data modify storage api: Argument.Heal set value 10000f
+        function api:heal/modifier
+        function api:heal/
     # リセット
-        function lib:heal/reset
+        function api:heal/reset
     # MP回復
-        scoreboard players set $Fluctuation Lib 10000
-        function lib:mp/fluctuation
+        data modify storage api: Argument.Fluctuation set value 10000
+        function api:mp/fluctuation
 
 # 演出
     tellraw @a [{"selector":"@s","bold":true},{"text":"は天国に上るような錯覚がした"}]

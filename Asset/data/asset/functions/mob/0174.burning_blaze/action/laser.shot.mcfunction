@@ -5,18 +5,20 @@
 # @within function asset:mob/0174.burning_blaze/action/laser.tick
 
 # ダメージ設定
-    data modify storage lib: Argument set value {Damage:30,AttackType:Physical,AttackElement:Fire}
+    data modify storage api: Argument.Damage set value 30f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
 
 # プレイヤー方向にレーザー発射
     execute facing entity @p[tag=!PlayerShouldInvulnerable,distance=..32] feet anchored eyes run function asset:mob/0174.burning_blaze/action/laser.shot.loop
 
 # ダメージ補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ヒット対象にダメージ
-    execute as @a[tag=Hit] run function lib:damage/
+    execute as @a[tag=Hit] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @a[tag=Hit] remove Hit
 
 # スコア戻す

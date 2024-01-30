@@ -16,20 +16,20 @@
 
 # 水属性ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 13.0
+        data modify storage api: Argument.Damage set value 13.0
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
     # デスログ
-        data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってスイカの爆発に巻き込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-        data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの爆発の衝撃波に巻き込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってスイカの爆発に巻き込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの爆発の衝撃波に巻き込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージ対象
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function lib:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset
 
 # 消滅
     kill @s

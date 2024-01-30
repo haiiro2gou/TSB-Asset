@@ -15,9 +15,9 @@
     execute positioned ~ ~4 ~ run function asset:artifact/0190.amor_wand/trigger/vfx/
 
 # 回復
-    data modify storage lib: Argument.Heal set value 7.6
-    function lib:heal/modifier
-    execute as @a[distance=..15] run function lib:heal/
+    data modify storage api: Argument.Heal set value 7.6
+    function api:heal/modifier
+    execute as @a[distance=..15] run function api:heal/
 
 # リセット
-    function lib:heal/reset
+    function api:heal/reset
