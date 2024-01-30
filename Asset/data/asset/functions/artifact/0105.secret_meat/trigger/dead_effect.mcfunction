@@ -17,9 +17,9 @@
     # 死亡メッセージ
         data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは食べてはらない物を食べてしまった。","with":[{"selector":"@s"}]}]']
     # 補正functionを実行
-        function api:damage/modifier
+        function lib:damage/modifier
     # ダメージを与える
-        function api:damage/
+        function lib:damage/
 
 # 目玉を召喚する場合に使うやつ
     data modify storage api: Argument.ID set value 21
@@ -46,7 +46,7 @@
     execute if score $Random Temporary matches 1 run scoreboard players set @s 2X.PanicTime 50
     execute if score $Random Temporary matches 1 run schedule function asset:artifact/0105.secret_meat/trigger/panic/schedule 1t
 # 内蔵が飛び出す（ダメージ二倍）
-    execute if score $Random Temporary matches 2 run function api:damage/
+    execute if score $Random Temporary matches 2 run function lib:damage/
     execute if score $Random Temporary matches 2 run tellraw @s {"text":"な、内蔵が飛び出た...！","bold":true}
 
 # リセット

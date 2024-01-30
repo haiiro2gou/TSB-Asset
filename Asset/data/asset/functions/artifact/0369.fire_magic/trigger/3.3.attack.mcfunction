@@ -26,11 +26,11 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=A9.This,limit=1] A9.UserID run function api:damage/modifier
+    execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=A9.This,limit=1] A9.UserID run function lib:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[tag=A9.Target] run function api:damage/
+    execute as @e[tag=A9.Target] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 #自身を殺す
     kill @s

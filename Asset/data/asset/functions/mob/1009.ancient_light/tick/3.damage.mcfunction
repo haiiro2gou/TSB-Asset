@@ -18,10 +18,10 @@
     # 属性
         data modify storage lib: Argument.ElementType set value "Water"
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
+        function lib:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # キル
     kill @s

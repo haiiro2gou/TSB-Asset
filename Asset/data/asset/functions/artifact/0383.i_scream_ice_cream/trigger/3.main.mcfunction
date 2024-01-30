@@ -61,8 +61,8 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 範囲5m以内のエンティティを対象に
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..5] run function api:damage/
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..5] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

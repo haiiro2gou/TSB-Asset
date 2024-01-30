@@ -21,10 +21,10 @@
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって狙撃された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって撃ち抜かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # ダメージ
-        function api:damage/modifier
-        execute as @p[gamemode=!creative,tag=LandingTarget] run function api:damage/
+        function lib:damage/modifier
+        execute as @p[gamemode=!creative,tag=LandingTarget] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 着弾タグを消す
     tag @p[tag=LandingTarget] remove LandingTarget

@@ -12,7 +12,7 @@
     data modify storage lib: Argument.Damage set value 1171.3d
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
-    function api:damage/modifier
+    function lib:damage/modifier
     data modify storage lib: Argument.Heal set value 53.1d
     function lib:heal/modifier
 # 対象探索
@@ -22,10 +22,10 @@
 # 対象を8体に絞る
     tag @e[type=#lib:living,tag=TargetCandidate,distance=..13,sort=nearest,limit=8] add Target
 # 処理
-    execute as @e[type=#lib:living,tag=Target,tag=Enemy,distance=..13] run function api:damage/
+    execute as @e[type=#lib:living,tag=Target,tag=Enemy,distance=..13] run function lib:damage/
     execute as @e[type=#lib:living,tag=Target,tag=Friend,distance=..13] run function lib:heal/
 # リセット
     tag @e[type=#lib:living,tag=TargetCandidate] remove TargetCandidate
     tag @e[type=#lib:living,tag=Target] remove Target
-    function api:damage/reset
+    function lib:damage/reset
     function lib:heal/reset

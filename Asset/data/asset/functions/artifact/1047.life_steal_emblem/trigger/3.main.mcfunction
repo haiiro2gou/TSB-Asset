@@ -25,9 +25,9 @@
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
     data modify storage lib: Argument.FixedDamage set value 1b
-    function api:damage/modifier
-    function api:damage/
-    function api:damage/reset
+    function lib:damage/modifier
+    function lib:damage/
+    function lib:damage/reset
 
 # 演出
     particle dust 0.45 0 0 1 ~ ~1 ~ 0.5 0.5 0.5 1 75 normal

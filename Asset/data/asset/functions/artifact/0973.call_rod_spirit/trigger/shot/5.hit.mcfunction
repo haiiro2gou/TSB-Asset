@@ -20,13 +20,13 @@
     data modify storage lib: Argument.ElementType set value "None"
 
 # マスターとして補正functionを実行
-    execute at @a if score @s R1.UserID = @p UserID as @p run function api:damage/modifier
+    execute at @a if score @s R1.UserID = @p UserID as @p run function lib:damage/modifier
 
 # ダメージ実行
-    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function api:damage/
+    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function lib:damage/
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     scoreboard players reset $RandomDamage Temporary
 
 # キル

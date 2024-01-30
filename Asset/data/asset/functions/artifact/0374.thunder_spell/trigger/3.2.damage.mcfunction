@@ -21,8 +21,8 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

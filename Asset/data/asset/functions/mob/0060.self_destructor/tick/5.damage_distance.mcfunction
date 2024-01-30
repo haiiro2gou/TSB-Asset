@@ -22,9 +22,9 @@
     execute if predicate api:global_vars/difficulty/min/hard store result storage lib: Argument.Damage int 2 run data get storage lib: Argument.Damage
 
 # modifier
-    execute as @e[type=zombie,tag=this,distance=..7.5,limit=1] run function api:damage/modifier
+    execute as @e[type=zombie,tag=this,distance=..7.5,limit=1] run function lib:damage/modifier
 
 # ダメージ
-    function api:damage/
+    function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

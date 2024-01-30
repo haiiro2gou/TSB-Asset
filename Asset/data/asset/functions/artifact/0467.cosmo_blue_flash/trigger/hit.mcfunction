@@ -12,9 +12,9 @@
     data modify storage lib: Argument.Damage set value 1029f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Water"
-    execute as @p[tag=this] run function api:damage/modifier
-    function api:damage/
+    execute as @p[tag=this] run function lib:damage/modifier
+    function lib:damage/
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     tag @s remove CZ.HitEntity

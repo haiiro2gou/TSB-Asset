@@ -12,11 +12,11 @@
     data modify storage lib: Argument.Damage set value 37f
     data modify storage lib: Argument.AttackType set value "Physical"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..6] run function api:damage/
+    execute as @p[tag=Victim,distance=..6] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 
 # 自身を回復

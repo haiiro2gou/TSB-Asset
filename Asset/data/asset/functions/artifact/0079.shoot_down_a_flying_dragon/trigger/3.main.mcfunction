@@ -55,7 +55,7 @@
             execute if score $AttackStrength Temporary matches 2 run data modify storage lib: Argument.Damage set value 220.0f
             execute if score $AttackStrength Temporary matches 3 run data modify storage lib: Argument.Damage set value 270.0f
         # 属性なのでModifierを実行
-            function api:damage/modifier
+            function lib:damage/modifier
 
     # 演出
         # Particle
@@ -71,7 +71,7 @@
 
     # 効果
         # 通常Hit処理
-            execute as @e[type=#lib:living,tag=Hit,distance=..10] run function api:damage/
+            execute as @e[type=#lib:living,tag=Hit,distance=..10] run function lib:damage/
             effect clear @e[type=#lib:living,tag=Hit,distance=..10,limit=1] levitation
 
     # リセット
@@ -80,4 +80,4 @@
         scoreboard players reset $Weather Temporary
         scoreboard players reset $AroundWater Temporary
         scoreboard players reset $AttackStrength Temporary
-        function api:damage/reset
+        function lib:damage/reset

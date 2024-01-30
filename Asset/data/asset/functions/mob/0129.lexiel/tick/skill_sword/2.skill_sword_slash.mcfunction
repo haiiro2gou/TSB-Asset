@@ -36,11 +36,11 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 前方にいたプレイヤーにダメージ
-    execute as @a[tag=3L.SkillSwordDamageThis] run function api:damage/
+    execute as @a[tag=3L.SkillSwordDamageThis] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     tag @a[tag=3L.SkillSwordDamageThis] remove 3L.SkillSwordDamageThis
 
 # 前方にテレポート

@@ -9,6 +9,6 @@
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Fire"
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの炎の薬品により焼け焦げた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:damage/
-    function api:damage/reset
+    function lib:damage/modifier
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function lib:damage/
+    function lib:damage/reset

@@ -19,8 +19,8 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sとの闘いに敗北した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにより殺された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 範囲
-    execute at @p[tag=Victim,distance=..32] as @a[gamemode=!spectator,distance=..2.5] run function api:damage/
+    execute at @p[tag=Victim,distance=..32] as @a[gamemode=!spectator,distance=..2.5] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

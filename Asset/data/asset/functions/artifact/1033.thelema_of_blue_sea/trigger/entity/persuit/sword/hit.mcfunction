@@ -13,15 +13,15 @@
     playsound block.amethyst_cluster.step neutral @a ~ ~ ~ 1 1.3 0
 
 # ダメージ 最大体力の200%分
-# api:damage/にif dataをつけているのはデバッグ中に引数Damageが足りませんと出たため
+# lib:damage/にif dataをつけているのはデバッグ中に引数Damageが足りませんと出たため
     execute at @a if score @s SP.UserID = @p UserID as @p run function api:modifier/max_health/get
     execute at @a if score @s SP.UserID = @p UserID store result storage lib: Argument.Damage double 1 run data get storage api: Return.MaxHealth 2
 
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
-    execute at @a if score @s SP.UserID = @p UserID as @p run function api:damage/modifier
-    execute if data storage lib: Argument.Damage as @e[type=#lib:living,tag=Enemy,distance=..2] run function api:damage/
-    function api:damage/reset
+    execute at @a if score @s SP.UserID = @p UserID as @p run function lib:damage/modifier
+    execute if data storage lib: Argument.Damage as @e[type=#lib:living,tag=Enemy,distance=..2] run function lib:damage/
+    function lib:damage/reset
 
 # 消滅
     kill @s

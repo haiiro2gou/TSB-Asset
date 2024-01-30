@@ -24,17 +24,17 @@
 # 敵へのダメージ(最大500)
     execute store result storage lib: Argument.Damage float 5 run scoreboard players get $DamageCoefficient Temporary
     data modify storage lib: Argument.AttackType set value "Physical"
-    execute as @p[tag=DA.Owner] run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=!Friend,distance=..5] run function api:damage/
-    function api:damage/reset
+    execute as @p[tag=DA.Owner] run function lib:damage/modifier
+    execute as @e[type=#lib:living,tag=!Friend,distance=..5] run function lib:damage/
+    function lib:damage/reset
 
 # 味方へのダメージ(最大100)
     execute store result storage lib: Argument.Damage float 1 run scoreboard players get $DamageCoefficient Temporary
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは鉄の雨に巻き込まれた。","with":[{"selector":"@s"}]}]']
-    execute as @p[tag=DA.Owner] run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Friend,distance=..5] run function api:damage/
-    function api:damage/reset
+    execute as @p[tag=DA.Owner] run function lib:damage/modifier
+    execute as @e[type=#lib:living,tag=Friend,distance=..5] run function lib:damage/
+    function lib:damage/reset
 
 # 音
     playsound entity.generic.explode player @a[distance=..100] ~ ~ ~ 1 1 1

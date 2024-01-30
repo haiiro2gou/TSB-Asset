@@ -30,10 +30,10 @@
     execute store result storage lib: Argument.Damage float 1.0 run scoreboard players get $Random Temporary
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Thunder"
-    function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
+    function lib:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     scoreboard players reset $Random Temporary
     scoreboard players reset $201 Temporary

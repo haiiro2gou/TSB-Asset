@@ -17,8 +17,8 @@
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
 # 補正function
-    execute as @p[tag=this] run function api:damage/modifier
+    execute as @p[tag=this] run function lib:damage/modifier
 # 対象に
-    function api:damage/
+    function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

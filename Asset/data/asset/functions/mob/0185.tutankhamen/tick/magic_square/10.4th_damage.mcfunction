@@ -12,8 +12,8 @@
 # デスログ
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの溢れる魔力に飲み込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..7] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..7] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

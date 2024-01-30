@@ -31,9 +31,9 @@
 # 第二属性
     data modify storage lib: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=PA.MeleeHit,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living,type=!player,tag=PA.MeleeHit,distance=..10] run function lib:damage/
 
 # 衝撃波演出
     execute positioned ~ ~1 ~ positioned ^ ^ ^0.5 run function asset:artifact/0910.ignite/trigger/particle
@@ -47,12 +47,12 @@
 # ダメージセット
     data modify storage lib: Argument.Damage set value 200.0f
 # 補正functionを実行
-    function api:damage/modifier_continuation
+    function lib:damage/modifier_continuation
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] run function lib:damage/
 
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     tag @e[type=#lib:living,type=!player,tag=PA.MeleeHit,distance=..10] remove PA.MeleeHit
     tag @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] remove PA.SlashHit

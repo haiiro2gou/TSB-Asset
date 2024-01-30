@@ -24,10 +24,10 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの稲妻に焼け落ちた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
+        function lib:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # キル
     kill @e[type=area_effect_cloud,tag=26.SkillThunderMarker,distance=..0.01,sort=nearest,limit=1]

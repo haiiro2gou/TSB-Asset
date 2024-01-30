@@ -21,11 +21,11 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって翻弄され、感電により心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの不意な電撃により、生命を終えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # ダメージ対象
-    execute as @p[tag=Victim,distance=..50] run function api:damage/
+    execute as @p[tag=Victim,distance=..50] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # マナ減少
     scoreboard players set $Fluctuation Lib -15

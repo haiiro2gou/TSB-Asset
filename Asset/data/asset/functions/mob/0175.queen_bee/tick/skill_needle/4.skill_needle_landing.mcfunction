@@ -14,10 +14,10 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] at @s run function api:damage/
+        function lib:damage/modifier
+        execute as @a[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] at @s run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 毒を付与する
     effect give @a[gamemode=!spectator,tag=LandingTarget,distance=..50,limit=1] poison 6 2

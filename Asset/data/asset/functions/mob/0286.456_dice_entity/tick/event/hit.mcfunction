@@ -35,11 +35,11 @@
                 execute if score @s Temporary matches 2 at @e[tag=LandingTarget,limit=1] run particle dust 10000000000 10000000000 1 1 ~ ~1 ~ 0.3 0.5 0.3 0.01 20 force
 
     # ダメージ
-        execute as @a if score @s UserID = @e[type=armor_stand,tag=CU.This,distance=..1,limit=1] CU.UserID run function api:damage/modifier
-        execute as @e[tag=LandingTarget] run function api:damage/
+        execute as @a if score @s UserID = @e[type=armor_stand,tag=CU.This,distance=..1,limit=1] CU.UserID run function lib:damage/modifier
+        execute as @e[tag=LandingTarget] run function lib:damage/
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     tag @s remove CU.This
 
 # 着弾タグを消す

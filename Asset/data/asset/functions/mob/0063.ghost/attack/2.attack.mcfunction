@@ -17,7 +17,7 @@
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Magic"
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=Victim] run function api:damage/
+        function lib:damage/modifier
+        execute as @a[tag=Victim] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

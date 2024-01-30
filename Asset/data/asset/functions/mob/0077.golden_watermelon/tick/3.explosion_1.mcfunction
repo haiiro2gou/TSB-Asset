@@ -21,11 +21,11 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの金色の爆発により消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの爆発により生命を終えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
-    function api:damage/modifier
+    function lib:damage/modifier
 # 実行
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 自身に二段目爆発のためのスコアを付与
     scoreboard players set @s 25.Tick 20

@@ -21,10 +21,10 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Fire"
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] at @s run function api:damage/
+        function lib:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] at @s run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 自害する
     kill @s

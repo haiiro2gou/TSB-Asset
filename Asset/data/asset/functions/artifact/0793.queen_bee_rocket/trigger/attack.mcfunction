@@ -28,11 +28,11 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    execute as @a if score @s UserID = @e[type=zombie,tag=M1.This,limit=1] M1.UserID run function api:damage/modifier
+    execute as @a if score @s UserID = @e[type=zombie,tag=M1.This,limit=1] M1.UserID run function lib:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[tag=M1.Target] run function api:damage/
+    execute as @e[tag=M1.Target] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 #自身を殺す
     kill @s

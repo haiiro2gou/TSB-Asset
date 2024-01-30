@@ -12,11 +12,11 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの金色の輝きにより心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの電撃により死亡した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
-    function api:damage/modifier
+    function lib:damage/modifier
 # ダメージ対象
-    execute as @p[tag=Victim,distance=..6] run function api:damage/
+    execute as @p[tag=Victim,distance=..6] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 #　雷属性ダメージ
     data modify storage lib: Argument.Damage set value 17f
@@ -26,11 +26,11 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの金色の輝きにより心停止した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの電撃により死亡した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # ダメージ対象
-    execute as @p[tag=Victim,distance=..6] run function api:damage/
+    execute as @p[tag=Victim,distance=..6] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1.8 0

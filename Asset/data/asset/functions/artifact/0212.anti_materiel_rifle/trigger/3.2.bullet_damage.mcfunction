@@ -23,10 +23,10 @@
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # ダメージ
-        function api:damage/modifier
-        execute as @e[tag=LandingTarget] at @s run function api:damage/
+        function lib:damage/modifier
+        execute as @e[tag=LandingTarget] at @s run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 着弾タグを消す
     tag @e[tag=LandingTarget] remove LandingTarget

@@ -10,8 +10,8 @@
     # 死亡ログ
         data modify storage lib: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの広範囲光線により跡形も残らず蒸発した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正 (厳密な紐付けではない)
-    execute as @e[type=zombie,scores={MobID=46},distance=..14,limit=1] run function api:damage/modifier
+    execute as @e[type=zombie,scores={MobID=46},distance=..14,limit=1] run function lib:damage/modifier
 # 与
-    function api:damage/
+    function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

@@ -18,9 +18,9 @@
         data modify storage lib: Argument.AttackType set value "Magic"
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージを与える
-        function api:damage/modifier
-        execute as @p[tag=Victim,tag=EmptyMP] run function api:damage/
-        function api:damage/reset
+        function lib:damage/modifier
+        execute as @p[tag=Victim,tag=EmptyMP] run function lib:damage/
+        function lib:damage/reset
 
 # マナが十分にあるプレイヤーを殴ったとき
     # ダメージ設定
@@ -28,9 +28,9 @@
         data modify storage lib: Argument.AttackType set value "Magic"
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージを与える
-        function api:damage/modifier
-        execute as @p[tag=Victim,tag=!EmptyMP] run function api:damage/
-        function api:damage/reset
+        function lib:damage/modifier
+        execute as @p[tag=Victim,tag=!EmptyMP] run function lib:damage/
+        function lib:damage/reset
 
 # マナを吸い取る
     scoreboard players set $Fluctuation Lib -80

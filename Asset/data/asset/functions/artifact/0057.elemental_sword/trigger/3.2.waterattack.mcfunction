@@ -19,7 +19,7 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
     # ダメージ
-        function api:damage/modifier
-        function api:damage/
+        function lib:damage/modifier
+        function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

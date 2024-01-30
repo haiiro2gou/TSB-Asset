@@ -12,9 +12,9 @@
 # デスログ
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって灰塵と化した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute as @a[tag=LandingTarget,distance=..30] run function api:damage/
+    execute as @a[tag=LandingTarget,distance=..30] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     tag @a[tag=LandingTarget,distance=..30] remove LandingTarget

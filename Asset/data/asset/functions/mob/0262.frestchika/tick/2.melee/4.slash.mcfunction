@@ -12,10 +12,10 @@
     # 無属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] at @s run function api:damage/
+        function lib:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] at @s run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 演出
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2

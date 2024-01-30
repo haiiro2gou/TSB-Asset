@@ -14,10 +14,10 @@
         data modify storage lib: Argument.Damage set value 80.0f
         data modify storage lib: Argument.AttackType set value "Physical"
         data modify storage lib: Argument.ElementType set value "Fire"
-        function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run function api:damage/
+        function lib:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # クールタイム設定
     scoreboard players set @s IG.AttackCT 20

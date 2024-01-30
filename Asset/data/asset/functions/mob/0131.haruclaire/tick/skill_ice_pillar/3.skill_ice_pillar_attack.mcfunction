@@ -23,11 +23,11 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象に
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 # あたったらAECkill
     execute if entity @a[gamemode=!spectator,distance=..2] run kill @e[type=area_effect_cloud,tag=3N.SkillPillarMaker,distance=0..1,sort=nearest,limit=1]
 # スコアが50なら死ぬ

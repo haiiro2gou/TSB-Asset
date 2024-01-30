@@ -23,7 +23,7 @@
     # 第一属性 (第二属性なし)
         data modify storage lib: Argument.AttackType set value "Magic"
     # ダメージを与える
-        function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10] run function api:damage/
+        function lib:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

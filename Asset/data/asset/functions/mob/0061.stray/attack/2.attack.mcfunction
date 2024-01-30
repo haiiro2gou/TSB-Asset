@@ -15,8 +15,8 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象に
-    execute as @p[tag=Victim,distance=..32] run function api:damage/
+    execute as @p[tag=Victim,distance=..32] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

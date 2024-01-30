@@ -31,8 +31,8 @@
         data modify storage lib: Argument.BypassModifier set value 1b
     # ダメージ
         data modify storage lib: Argument.Damage set value 125
-        execute as @p[tag=T1.Owner] run function api:damage/modifier
-        execute as @e[tag=Enemy,tag=T1.Landing,distance=..8] run function api:damage/
+        execute as @p[tag=T1.Owner] run function lib:damage/modifier
+        execute as @e[tag=Enemy,tag=T1.Landing,distance=..8] run function lib:damage/
 
 # 敵吸い込み
     execute at @s as @e[tag=Enemy,tag=!Enemy.Boss,distance=..15] run function asset:artifact/1045.mini_black_hole/trigger/schedule/4.enemy_suction
@@ -49,7 +49,7 @@
     execute if score $T1.LandingTick Temporary matches 0 run playsound entity.enderman.teleport master @a[distance=..32] ~ ~ ~ 1 0
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     scoreboard players reset $T1.OwnerId Temporary
     scoreboard players reset $T1.LandingTick Temporary
     tag @a[tag=T1.Owner] remove T1.Owner

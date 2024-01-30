@@ -22,8 +22,8 @@
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって炎の中で燃え尽きた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの炎の延焼で灰となった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute at @p[tag=Victim,distance=..6] as @a[gamemode=!spectator,predicate=lib:is_burning,distance=..4.0] run function api:damage/
+    execute at @p[tag=Victim,distance=..6] as @a[gamemode=!spectator,predicate=lib:is_burning,distance=..4.0] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

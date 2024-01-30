@@ -19,11 +19,11 @@
     # 耐性エフェクトを無視するか否か
         data modify storage lib: Argument.FixedDamage set value false
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 自身にエフェクト付与
     effect give @s minecraft:haste 60 3 true

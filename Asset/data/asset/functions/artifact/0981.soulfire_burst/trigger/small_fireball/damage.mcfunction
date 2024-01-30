@@ -20,11 +20,11 @@
     data modify storage lib: Argument.ElementType set value "Fire"
 
 # マスターとして補正functionを実行
-    execute as @p[tag=R9.OwnerPlayer] run function api:damage/modifier
+    execute as @p[tag=R9.OwnerPlayer] run function lib:damage/modifier
 
 # ダメージ実行
-    function api:damage/
+    function lib:damage/
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     scoreboard players reset $RandomDamage Temporary

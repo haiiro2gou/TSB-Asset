@@ -14,8 +14,8 @@
     data modify storage lib: Argument.ElementType set value "Fire"
     data modify storage lib: Argument.DisableParticle set value true
 # 補正
-    function api:damage/modifier
+    function lib:damage/modifier
 # 実行
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

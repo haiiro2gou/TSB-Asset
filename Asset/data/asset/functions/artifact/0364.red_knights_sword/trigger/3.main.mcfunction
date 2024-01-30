@@ -40,8 +40,8 @@
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # ダメージ
-        function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+        function lib:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
 
 # 自身に5の防御貫通ダメージを与える
     # ダメージ量
@@ -53,7 +53,7 @@
     # 死亡メッセージ
         data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた。","with":[{"selector":"@s"}]}]']
     # ダメージ
-        function api:damage/modifier_continuation
-        execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
+        function lib:damage/modifier_continuation
+        execute as @s[tag=!PlayerShouldInvulnerable] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

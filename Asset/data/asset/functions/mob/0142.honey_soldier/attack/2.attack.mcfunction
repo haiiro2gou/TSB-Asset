@@ -23,8 +23,8 @@
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによってべとべとに斬り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにハチの巣の材料にされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..32] run function api:damage/
+    execute as @p[tag=Victim,distance=..32] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

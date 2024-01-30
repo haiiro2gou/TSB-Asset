@@ -25,11 +25,11 @@
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってスイカの爆発に巻き込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの爆発の衝撃波に巻き込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # 補正functionを実行
-        function api:damage/modifier
+        function lib:damage/modifier
     # ダメージ対象
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function lib:damage/
     # リセット
-        function api:damage/reset
+        function lib:damage/reset
 
 # 消滅
     kill @s

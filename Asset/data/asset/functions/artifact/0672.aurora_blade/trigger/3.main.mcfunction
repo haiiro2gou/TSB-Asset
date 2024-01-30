@@ -49,12 +49,12 @@
     data modify storage lib: Argument.ElementType set value "Thunder"
 
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     scoreboard players reset $CalcRandom Temporary
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $MP Temporary

@@ -24,10 +24,10 @@
 # ダメージ設定
     data modify storage lib: Argument.Damage set value 50f
     data modify storage lib: Argument.AttackType set value "Magic"
-    function api:damage/modifier
-    execute as @a[tag=LandingTarget,distance=..60] run function api:damage/
+    function lib:damage/modifier
+    execute as @a[tag=LandingTarget,distance=..60] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # Tag削除
     tag @a[tag=LandingTarget,distance=..60] remove LandingTarget

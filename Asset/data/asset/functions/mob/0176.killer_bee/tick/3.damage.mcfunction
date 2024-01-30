@@ -18,11 +18,11 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
+    execute as @p[tag=!PlayerShouldInvulnerable,dx=0] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 自爆ダメージ
     data modify storage lib: Argument.Damage set value 103
@@ -31,6 +31,6 @@
 # 耐性を無視する
     data modify storage lib: Argument.FixedDamage set value true
 # 自爆する
-    function api:damage/
+    function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

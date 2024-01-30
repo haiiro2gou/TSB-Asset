@@ -16,10 +16,10 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
     # ダメージ
-        execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=4S.This,distance=..100,limit=1] 4S.UserID run function api:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,distance=..4] run function api:damage/
+        execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=4S.This,distance=..100,limit=1] 4S.UserID run function lib:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,distance=..4] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 演出
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 0

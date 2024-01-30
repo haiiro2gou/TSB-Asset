@@ -38,14 +38,14 @@
 # MatchlockIndicatorの前方かつ、MatchlockIndicatorの視線の直線上かつブロック検知用のdummyの手前にいる敵にダメージ
     execute as @e[type=#lib:living,type=!player,distance=..6] anchored eyes positioned as @s positioned ^ ^ ^1000 facing entity @e[type=area_effect_cloud,tag=5.HitPosition] eyes positioned ^ ^ ^1000 positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0,dy=0,dz=0] run tag @s add 5.BulletHit
     execute as @e[type=#lib:living,tag=5.BulletHit,distance=..6] positioned as @s positioned ^ ^ ^-5 if entity @e[type=area_effect_cloud,tag=5.BlockChecker,distance=..4] run tag @s remove 5.BulletHit
-    execute as @p[tag=5.Owner] run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=5.BulletHit,distance=..6,sort=nearest,limit=1] run function api:damage/
+    execute as @p[tag=5.Owner] run function lib:damage/modifier
+    execute as @e[type=#lib:living,tag=5.BulletHit,distance=..6,sort=nearest,limit=1] run function lib:damage/
 
 # Indicator削除
     kill @s
 
 # reset
-    function api:damage/reset
+    function lib:damage/reset
     tag @a[tag=5.Owner] remove 5.Owner
     tag @e[type=#lib:living,tag=5.BulletHit,distance=..6] remove 5.BulletHit
     tag 0-0-0-0-0 remove 5.BlockChecker

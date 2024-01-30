@@ -16,8 +16,8 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
     # 補正functionを実行
-        function api:damage/modifier
+        function lib:damage/modifier
     # 攻撃対象に
-        execute as @p[tag=Victim] run function api:damage/
+        execute as @p[tag=Victim] run function lib:damage/
     # リセット
-        function api:damage/reset
+        function lib:damage/reset

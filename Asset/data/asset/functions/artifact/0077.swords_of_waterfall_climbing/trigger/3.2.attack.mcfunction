@@ -18,10 +18,10 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Water"
 #ダメージ
-    execute as @p[tag=this] run function api:damage/modifier
-    function api:damage/
+    execute as @p[tag=this] run function lib:damage/modifier
+    function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 演出
     particle minecraft:rain ~ ~ ~ 0 2 0 1 100

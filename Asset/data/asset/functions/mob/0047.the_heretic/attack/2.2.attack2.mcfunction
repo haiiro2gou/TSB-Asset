@@ -18,8 +18,8 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute as @p[tag=Victim] run function api:damage/
+    execute as @p[tag=Victim] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

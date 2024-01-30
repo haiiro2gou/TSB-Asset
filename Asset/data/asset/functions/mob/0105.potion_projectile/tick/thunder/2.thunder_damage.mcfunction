@@ -12,9 +12,9 @@
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Thunder"
     data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷の薬品により感電死した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
-    function api:damage/reset
+    function lib:damage/modifier
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+    function lib:damage/reset
 
 # MP減少
     execute as @a[distance=..3] run function asset:mob/0105.potion_projectile/tick/thunder/mp_reduce

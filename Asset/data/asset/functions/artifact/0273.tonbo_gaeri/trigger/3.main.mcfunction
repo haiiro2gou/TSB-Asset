@@ -17,10 +17,10 @@
     data modify storage lib: Argument.Damage set value 555.0f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
-    function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] run function api:damage/
+    function lib:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 低速落下を付与する
     effect give @s slow_falling 1 1

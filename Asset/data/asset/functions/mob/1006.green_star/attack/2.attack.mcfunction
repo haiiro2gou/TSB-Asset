@@ -16,7 +16,7 @@
     # 属性
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=Victim,distance=..30] run function api:damage/
+        function lib:damage/modifier
+        execute as @a[tag=Victim,distance=..30] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

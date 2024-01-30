@@ -13,11 +13,11 @@
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Water"
 # 補正
-    execute at @a[distance=..160] if score @s KA.UserID = @p UserID as @p run function api:damage/modifier
+    execute at @a[distance=..160] if score @s KA.UserID = @p UserID as @p run function lib:damage/modifier
 # 実行
-    execute as @e[type=#lib:living,tag=Enemy,distance=..2] run function api:damage/
+    execute as @e[type=#lib:living,tag=Enemy,distance=..2] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 消滅
     kill @s

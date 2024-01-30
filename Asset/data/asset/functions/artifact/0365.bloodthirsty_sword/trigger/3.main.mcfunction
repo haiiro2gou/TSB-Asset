@@ -30,7 +30,7 @@
     # 死亡メッセージ
         data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた。","with":[{"selector":"@s"}]}]']
     # ダメージ
-        function api:damage/modifier
-        function api:damage/
+        function lib:damage/modifier
+        function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

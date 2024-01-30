@@ -23,10 +23,10 @@
     # 無属性
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=AJ.Magic,scores={AJ.CoolTime=0},sort=nearest,limit=1] AJ.UserID run function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] run function api:damage/
+        execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=AJ.Magic,scores={AJ.CoolTime=0},sort=nearest,limit=1] AJ.UserID run function lib:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 着弾タグを消す
     tag @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] remove LandingTarget

@@ -20,10 +20,10 @@
     # 無属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
-        execute at @a if score @s T4.OwnerID = @p UserID as @p run function api:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..6] run function api:damage/
+        execute at @a if score @s T4.OwnerID = @p UserID as @p run function lib:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..6] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # リセット
     scoreboard players reset $T4.Temp Temporary

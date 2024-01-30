@@ -34,10 +34,10 @@
         execute if score @s Temporary matches 1 run data modify storage lib: Argument.Damage set value 120.0f
         execute if score @s Temporary matches 2 run data modify storage lib: Argument.Damage set value 160.0f
         execute if score @s Temporary matches 3 run data modify storage lib: Argument.Damage set value 180.0f
-        function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] run function api:damage/
+        function lib:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] run function lib:damage/
         data modify entity @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] Fire set value 200s
     # リセット
         scoreboard players reset @s Temporary
-        function api:damage/reset
+        function lib:damage/reset
         tag @e[type=#lib:living,type=!player,tag=Victim,tag=Hit,distance=..100,limit=1] remove Hit

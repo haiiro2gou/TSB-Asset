@@ -24,9 +24,9 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
 # 補正
-    function api:damage/modifier
+    function lib:damage/modifier
 # ダメージ
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] as @e[type=#lib:living,type=!player,tag=!Victim,tag=!Friend,tag=!Uninterferable,tag=!Object,distance=..3] at @s run function api:damage/
+    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] as @e[type=#lib:living,type=!player,tag=!Victim,tag=!Friend,tag=!Uninterferable,tag=!Object,distance=..3] at @s run function lib:damage/
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset

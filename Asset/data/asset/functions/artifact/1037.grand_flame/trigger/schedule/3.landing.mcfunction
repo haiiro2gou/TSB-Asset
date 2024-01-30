@@ -27,8 +27,8 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Fire"
     # ダメージ
-        execute as @p[tag=ST.Owner] run function api:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run function api:damage/
+        execute as @p[tag=ST.Owner] run function lib:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run function lib:damage/
 
 # 球体演出
     function asset:artifact/1037.grand_flame/trigger/schedule/3.1.vfx
@@ -59,7 +59,7 @@
     playsound entity.generic.explode player @a[distance=..32] ~ ~ ~ 2 1
 
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     scoreboard players reset $ST.OwnerId Temporary
     scoreboard players reset $ST.Damage Temporary
     scoreboard players reset $ST.PercentHP Temporary

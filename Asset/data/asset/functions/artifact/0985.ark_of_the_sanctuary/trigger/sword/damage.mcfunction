@@ -18,9 +18,9 @@
         data modify storage lib: Argument.AttackType set value "Magic"
         data modify storage lib: Argument.ElementType set value "None"
     # 補正function
-        execute as @a if score @s UserID = @e[type=armor_stand,tag=RD.This,distance=..50,limit=1] RD.SwordUserID run function api:damage/modifier
+        execute as @a if score @s UserID = @e[type=armor_stand,tag=RD.This,distance=..50,limit=1] RD.SwordUserID run function lib:damage/modifier
     # 対象に
-        execute as @e[type=#lib:living,tag=Enemy,distance=..4] run function api:damage/
+        execute as @e[type=#lib:living,tag=Enemy,distance=..4] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
     tag @s remove RD.This

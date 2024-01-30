@@ -27,8 +27,8 @@
     execute as @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,distance=..6] store result storage lib: Argument.Damage float 0.01 run function api:mob/get_max_health
 
 # ダメージ
-    function api:damage/modifier
-    execute if data storage lib: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
+    function lib:damage/modifier
+    execute if data storage lib: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
 
 # 色々リセット
-    function api:damage/reset
+    function lib:damage/reset

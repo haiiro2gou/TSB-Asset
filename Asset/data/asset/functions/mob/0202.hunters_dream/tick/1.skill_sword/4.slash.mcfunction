@@ -18,11 +18,11 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 前方にいたプレイヤーにダメージ
-    execute positioned ^ ^ ^1 as @p[distance=..2.5] run function api:damage/
+    execute positioned ^ ^ ^1 as @p[distance=..2.5] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
 # 演出
     execute positioned ^ ^ ^1 as @p[distance=..2.5] at @s run function asset:mob/0202.hunters_dream/tick/1.skill_sword/5.vfx
