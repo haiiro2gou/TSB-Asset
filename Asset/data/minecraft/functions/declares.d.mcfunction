@@ -209,26 +209,15 @@
     #declare function lib:array/sort_descend                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/array/sort_descend.mcfunction#L1
     #declare function lib:array/sum                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/array/sum.mcfunction#L1
     #declare function lib:bit_array_to_integer/                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/bit_array_to_integer/.mcfunction#L1
-    #declare function api:damage/                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/.mcfunction#L1
-    #declare function api:damage/modifier                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/modifier.mcfunction#L1
-    #declare function api:damage/modifier_continuation                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/modifier_continuation.mcfunction#L1
-    #declare function api:damage/reset                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/damage/reset.mcfunction#L1
     #declare function lib:dimension/get                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/dimension/get.mcfunction#L1
     #declare function lib:forward_spreader/circle                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/forward_spreader/circle.mcfunction#L1
     #declare function lib:forward_spreader/square                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/forward_spreader/square.mcfunction#L1
     #declare function lib:get_name/                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/get_name/.mcfunction#L1
-    #declare function api:heal/                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/heal/.mcfunction#L1
-    #declare function api:heal/modifier                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/heal/modifier.mcfunction#L1
-    #declare function api:heal/reset                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/heal/reset.mcfunction#L1
     #declare function lib:integer_to_bit_array/                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/integer_to_bit_array/.mcfunction#L1
     #declare function lib:message/artifact/can_not_use_here                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/message/artifact/can_not_use_here.mcfunction#L1
     #declare function lib:message/artifact/dont_have_require_items                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/message/artifact/dont_have_require_items.mcfunction#L1
     #declare function lib:message/invalid_operation                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/message/invalid_operation.mcfunction#L1
     #declare function lib:motion/                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/motion/.mcfunction#L1
-    #declare function api:mp/fluctuation                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/mp/fluctuation.mcfunction#L1
-    #declare function api:mp/get                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/mp/get.mcfunction#L1
-    #declare function api:mp/get_max                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/mp/get_max.mcfunction#L1
-    #declare function api:mp/set                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/mp/set.mcfunction#L1
     #declare function lib:random/                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/.mcfunction#L1
     #declare function lib:random/with_biased/m                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/with_biased/m.mcfunction#L1
     #declare function lib:random/with_biased/manual.m                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/with_biased/manual.m.mcfunction#L1
