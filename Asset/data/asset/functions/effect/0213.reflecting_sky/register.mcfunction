@@ -5,7 +5,7 @@
 # @within function asset:effect/0213.reflecting_sky/_/register
 
 # ExtendsSafe (boolean) (オプション)
-    data modify storage asset:effect ExtendsSafe set value true
+    data modify storage asset:effect ExtendsSafe set value false
 # ID
     data modify storage asset:effect ID set value 213
 # 名前
@@ -29,6 +29,6 @@
 # 死亡時のエフェクトの処遇 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # エフェクトを消す際に必要なLv (default = 1)
-    # data modify storage asset:effect RequireClearLv set value
+    data modify storage asset:effect RequireClearLv set value 3
 # フィールド (本当はこういうのはスタックでやったほうがいい)
     # data modify storage asset:effect Field
