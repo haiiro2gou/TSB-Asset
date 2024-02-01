@@ -46,5 +46,7 @@
         "asset:effect/0206.spirit_state/_/register",
         "asset:effect/0212.lunatic_moon/_/register",
         "asset:effect/0213.reflecting_sky/_/register"
+        "asset:effect/0608.sinking/_/register",
+        "asset:effect/0612.infringement/_/register"
     ]
 }
