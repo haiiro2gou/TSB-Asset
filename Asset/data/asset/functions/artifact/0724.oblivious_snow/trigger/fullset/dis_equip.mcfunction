@@ -18,10 +18,6 @@
     data modify storage api: Argument.UUID set value [I;1,1,724,0]
     function api:modifier/attack/water/remove
 
-# mp回復
-    data modify storage api: Argument.UUID set value [I;1,1,724,0]
-    function api:modifier/mp_regen/remove
-
 # 被回復量
     data modify storage api: Argument.UUID set value [I;1,1,724,0]
     function api:modifier/receive_heal/remove
