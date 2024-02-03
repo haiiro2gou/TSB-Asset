@@ -19,7 +19,7 @@
 
 # MP回復
     function api:mp/get_max
-    execute store result storage api: Argument.Fluctuation double 0.75 run data get storage api: Argument.MaxMP
+    execute store result storage api: Argument.Fluctuation double 0.75 run data get storage api: Return.MaxMP
     function api:mp/fluctuation
 
 # リセット

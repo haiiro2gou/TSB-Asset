@@ -21,7 +21,7 @@
 
 # HP回復
     function api:modifier/max_health/get
-    execute store result storage api: Argument.Heal double 0.40 run data get storage api: Argument.MaxHealth
+    execute store result storage api: Argument.Heal double 0.40 run data get storage api: Return.MaxHealth
     function api:heal/modifier
     function api:heal/
 
