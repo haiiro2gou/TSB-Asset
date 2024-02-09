@@ -10,7 +10,7 @@
     #declare tag EmptyMP
 
 # プレイヤーのマナを検知する
-    function api:mp/get_current
+    execute as @p[tag=Victim] run function api:mp/get_current
     execute as @p[tag=Victim] store result score $EctoplasmMPCheck Temporary run data get storage api: Return.CurrentMP 1
     execute if score $EctoplasmMPCheck Temporary matches ..15 run tag @p[tag=Victim] add EmptyMP
 

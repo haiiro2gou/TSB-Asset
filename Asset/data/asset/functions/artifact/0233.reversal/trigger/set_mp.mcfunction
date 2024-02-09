@@ -14,7 +14,7 @@
     function api:mp/get_max
 
 # MPを反転
-    execute store result score $6H.MP Temporary run data get storage api: Return.MP 1
+    execute store result score $6H.MP Temporary run data get storage api: Return.CurrentMP 1
     execute store result score $6H.SetMP Temporary run data get storage api: Return.MaxMP 1
     scoreboard players operation $6H.SetMP Temporary -= $6H.MP Temporary
     execute store result storage api: Argument.MP int 1 run scoreboard players get $6H.SetMP Temporary

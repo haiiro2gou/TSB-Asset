@@ -9,7 +9,8 @@
     #declare tag EmptyMP
 
 # プレイヤーのマナを検知する
-    execute as @p[tag=Victim] store result score $MPCheck Temporary run function api:mp/get
+    execute as @p[tag=Victim] run function api:mp/get_current
+    execute as @p[tag=Victim] store result score $MPCheck Temporary run data get storage api: Return.MaxMP 1
     execute if score $MPCheck Temporary matches ..80 run tag @p[tag=Victim] add EmptyMP
 
 # マナが無いプレイヤーを殴った時

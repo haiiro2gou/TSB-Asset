@@ -11,9 +11,11 @@
 
 # MP減少率を計算
 # 最大MPを取得する
-    execute store result score $MPMaxValue Temporary run function api:mp/get_max
+    function api:mp/get_max
+    execute store result score $MPMaxValue Temporary run data get storage api: Return.MaxMP
 # 使用直前のMPを取得する
-    execute store result score $MPValue Temporary run function api:mp/get
+    function api:mp/get_current
+    execute store result score $MPValue Temporary run data get storage api: Return.CurrentMP
 
 # MP現在量を100倍する
     scoreboard players operation $MPValue Temporary *= $100 Const
