@@ -8,20 +8,22 @@
     execute at @a[tag=Victim] run playsound block.anvil.land hostile @a ~ ~ ~ 1 1.3
 
 # 与えるダメージ
-    data modify storage api: Argument.Damage set value 33f
+    data modify storage lib: Argument.Damage set value 33f
 # 属性
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "Thunder"
+    data modify storage lib: Argument.AttackType set value "Physical"
+    data modify storage lib: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function api:damage/modifier
+    function lib:damage/modifier
 # 対象
-    execute as @p[tag=Victim] run function api:damage/
+    execute as @p[tag=Victim] run function lib:damage/
 # リセット
-    function api:damage/reset
+    function lib:damage/reset
 
-# プレイヤーをパニック状態にする
-# プレイヤーにタグ、スコアを付与する
-    tag @p[tag=Victim] add 49.Panic
-    scoreboard players set @p[tag=Victim] 49.PanicTime 50
-# Scheduleループをする
-    schedule function asset:mob/0153.domination/attack/3.scheduleloop 1t
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# プレイヤーを支配デバフを付与
+# 効果時間 (20 × 難易度値)tick
+    data modify storage api: Argument.ID set value 603
+    execute store result storage api: Argument.Duration int 20 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim] run function api:entity/mob/effect/give
