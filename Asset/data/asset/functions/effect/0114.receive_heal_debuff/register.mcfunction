@@ -9,7 +9,7 @@
 # ID
     data modify storage asset:effect ID set value 114
 # 名前
-    data modify storage asset:effect Name set value '{"text":"被回復量低下"}'
+    data modify storage asset:effect Name set value ['{"text":"被回復量低下"}']
 # 説明文
     data modify storage asset:effect Description set value '{"text":"自分が受ける回復量が5%減少する"}'
 # 残り時間 (default = API || error)

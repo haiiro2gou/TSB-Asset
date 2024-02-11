@@ -11,7 +11,7 @@
 # 名前
     data modify storage asset:effect Name set value '{"text":"MP毒"}'
 # 説明文
-    data modify storage asset:effect Description set value '{"text":"MPが1秒あたり1減少する"}'
+    data modify storage asset:effect Description set value ['{"text":"MPが1秒あたり1減少する"}']
 # 残り時間 (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (default = API || 1)
