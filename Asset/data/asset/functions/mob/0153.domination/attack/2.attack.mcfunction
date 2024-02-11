@@ -8,16 +8,16 @@
     execute at @a[tag=Victim] run playsound block.anvil.land hostile @a ~ ~ ~ 1 1.3
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 33f
+    data modify storage api: Argument.Damage set value 33f
 # 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[tag=Victim] run function lib:damage/
+    execute as @p[tag=Victim] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 難易度値を取得
     function api:global_vars/get_difficulty
