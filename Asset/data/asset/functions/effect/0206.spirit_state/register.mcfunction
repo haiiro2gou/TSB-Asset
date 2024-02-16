@@ -30,10 +30,3 @@
     # data modify storage asset:effect ProcessOnDied set value
 # エフェクトを消す際に必要なLv (default = 1)
     data modify storage asset:effect RequireClearLv set value 4
-# フィールド
-    function api:data_get/player_game_type
-    data modify storage asset:effect Field.PrevMode set from storage api: playerGameType
-    function api:data_get/pos
-    data modify storage asset:effect Field.PrevPos set from storage api: Pos
-    function api:data_get/dimension
-    data modify storage asset:effect Field.PrevDim set from storage api: Dimension

@@ -2,8 +2,7 @@
 # @within function asset:effect/0206.spirit_state/recover/
 
 # ダメージ
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage float 10 run data get storage api: Return.MaxHealth 1
+    execute store result storage api: Argument.Damage float 10 run attribute @s generic.max_health get 1
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.FixedDamage set value true
     data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは戻ってこなかった…","with":[{"selector":"@s"}]}]']
