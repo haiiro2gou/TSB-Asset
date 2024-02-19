@@ -11,8 +11,8 @@
     data modify storage api: Argument.Damage set value 20.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに精神を破壊された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに魂を撃ち抜かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに精神を破壊された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに魂を撃ち抜かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     execute as @e[type=zombie,tag=this,distance=..25,sort=nearest,limit=1] run function api:damage/modifier
     execute unless entity @s[gamemode=creative] run function api:damage/
     function api:damage/reset
