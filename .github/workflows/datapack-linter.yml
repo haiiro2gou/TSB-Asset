@@ -21,4 +21,3 @@ jobs:
             with:
                 muteSuccessResult: true
                 ignoreLintPathPattern: |
-                    animated_java:**
