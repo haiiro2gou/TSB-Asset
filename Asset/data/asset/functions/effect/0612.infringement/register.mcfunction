@@ -5,7 +5,7 @@
 # @within function asset:effect/0612.infringement/_/register
 
 # ExtendsSafe (boolean) (default = false)
-    data modify storage asset:effect ExtendsSafe set value true
+    data modify storage asset:effect ExtendsSafe set value false
 # ID (int)
     data modify storage asset:effect ID set value 612
 # 名前 (TextComponentString)
@@ -23,7 +23,7 @@
 # 最大効果時間 (int) (default = 2147483647)
     data modify storage asset:effect MaxDuration set value 60
 # 最大スタック (int) (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 2
+    # data modify storage asset:effect MaxStack set value
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value true
 # 死亡時のエフェクトの処理 (default = "remove")
