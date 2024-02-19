@@ -5,7 +5,7 @@
     "datapack.env.dependsOnVanilla": true,
     "datapack.env.detectionDepth": 2,
     "datapack.env.exclude": [
-        "AnimatedJava/**"
+        "**/animated_java/**",
     ],
     "datapack.env.include": [],
     "datapack.env.permissionLevel": 2,
