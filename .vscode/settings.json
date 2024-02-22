@@ -2476,5 +2476,7 @@
             "shortcode": ":balance_scale:",
             "emoji": "⚖️"
         }
-    ]
+    ],
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
 }
