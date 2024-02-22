@@ -1,4 +1,4 @@
-#> asset:effect/0213.reflecting_sky/remove_modifier
+#> asset:effect/0213.reflecting_sky/modifier/remove
 #
 # 補正を削除する
 #
@@ -7,5 +7,5 @@
 #   asset:effect/0213.reflecting_sky/remove/
 
 # 水攻撃補正を削除
-    data modify storage api: Argument.UUID set value [I;1,1,213,0]
+    data modify storage api: Argument.UUID set value [I;1,3,213,0]
     function api:modifier/attack/water/remove
