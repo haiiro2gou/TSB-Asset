@@ -16,6 +16,7 @@
     #declare advancement asset_manager:artifact/damage/from_entity/projectile         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/advancements/artifact/damage/from_entity/projectile.json#L1
     #declare advancement asset_manager:artifact/killed/melee                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/advancements/artifact/killed/melee.json#L1
     #declare advancement asset_manager:artifact/killed/projectile                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/advancements/artifact/killed/projectile.json#L1
+    #declare advancement core:handler/attack                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/advancements/handler/attack.json#L1
     #declare advancement core:handler/consume_item                                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/advancements/handler/consume_item.json#L1
     #declare advancement core:handler/damage                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/advancements/handler/damage.json#L1
     #declare advancement core:handler/inventory_change                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/advancements/handler/inventory_change.json#L1
@@ -877,23 +878,23 @@
 
 #> declare
 # @within
-#   core:tick/player/
-#   player_manager:vanilla_attack
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
-#   asset_manager:teleporter/tick/**
-#   core:handler/attack
 #   function asset_manager:island/dispel/boss/*
 #   asset_manager:mob/triggers/
 #   asset_manager:mob/triggers/death/
 #   asset:mob/**
 #   function asset_manager:mob/common_tag/anti_void_action/**
 #   asset_manager:spawner/tick/*
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
+#   core:tick/player/
+#   player_manager:vanilla_attack
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
+#   asset_manager:teleporter/tick/**
+#   core:handler/attack
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L43
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L87
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 #declare tag this
 
 #> declare
