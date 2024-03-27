@@ -10,9 +10,9 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute unless data storage asset:context id.all{head:787,chest:788,legs:789,feet:790} rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/0790.aurora_boots/trigger/4.vfx
-    execute unless data storage asset:context id.all{head:787,chest:788,legs:789,feet:790} run playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.5 2 0
-    execute unless data storage asset:context id.all{head:787,chest:788,legs:789,feet:790} run playsound block.beacon.activate player @a ~ ~ ~ 0.5 2 0
+    execute unless data storage asset:context id{head:787,chest:788,legs:789,feet:790} rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/0790.aurora_boots/trigger/4.vfx
+    execute unless data storage asset:context id{head:787,chest:788,legs:789,feet:790} run playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.5 2 0
+    execute unless data storage asset:context id{head:787,chest:788,legs:789,feet:790} run playsound block.beacon.activate player @a ~ ~ ~ 0.5 2 0
 
 
 # 魔法耐性+5%
@@ -46,4 +46,4 @@
     function api:modifier/defense/physical/add
 
 # フルセット検知
-    execute if data storage asset:context id.all{head:787,chest:788,legs:789,feet:790} run function asset:artifact/0787.aurora_helm/trigger/fullset/equip
+    execute if data storage asset:context id{head:787,chest:788,legs:789,feet:790} run function asset:artifact/0787.aurora_helm/trigger/fullset/equip
