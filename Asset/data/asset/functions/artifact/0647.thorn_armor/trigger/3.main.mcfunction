@@ -29,4 +29,4 @@
     playsound minecraft:block.sweet_berry_bush.place player @a ~ ~ ~ 1 1 0
 
 # フルセット
-    execute if data storage asset:context id{head:646,chest:647,legs:648,feet:649} run function asset:artifact/0647.thorn_armor/trigger/4.fullset
+    execute if data storage asset:context id.all{head:646,chest:647,legs:648,feet:649} run function asset:artifact/0647.thorn_armor/trigger/4.fullset

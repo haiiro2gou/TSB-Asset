@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute unless data storage asset:context id{head:664,chest:665,legs:666,feet:667} positioned ~ ~0.2 ~ facing entity @s eyes rotated ~ 0 run function asset:artifact/0664.soul_fire_armor/trigger/particle
+    execute unless data storage asset:context id.all{head:664,chest:665,legs:666,feet:667} positioned ~ ~0.2 ~ facing entity @s eyes rotated ~ 0 run function asset:artifact/0664.soul_fire_armor/trigger/particle
     playsound block.fire.ambient player @a ~ ~ ~ 1.5 0.8 0
     playsound particle.soul_escape player @a ~ ~ ~ 2 0 0
     playsound block.sculk_sensor.clicking player @a ~ ~ ~ 0.8 0 0
@@ -47,4 +47,4 @@
     function api:modifier/max_health/add
 
 # フルセット検知
-    execute if data storage asset:context id{head:664,chest:665,legs:666,feet:667} run function asset:artifact/0664.soul_fire_armor/trigger/fullset/
+    execute if data storage asset:context id.all{head:664,chest:665,legs:666,feet:667} run function asset:artifact/0664.soul_fire_armor/trigger/fullset/

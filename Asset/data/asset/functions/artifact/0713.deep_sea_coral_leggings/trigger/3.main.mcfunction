@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute unless data storage asset:context id{head:711,chest:712,legs:713,feet:714} run function asset:artifact/0713.deep_sea_coral_leggings/trigger/4.vfx
+    execute unless data storage asset:context id.all{head:711,chest:712,legs:713,feet:714} run function asset:artifact/0713.deep_sea_coral_leggings/trigger/4.vfx
 
 # 水耐性+10%
     data modify storage api: Argument.UUID set value [I;1,1,713,4]
@@ -37,4 +37,4 @@
     function api:modifier/defense/fire/add
 
 # フルセット
-    execute if data storage asset:context id{head:711,chest:712,legs:713,feet:714} run function asset:artifact/0711.deep_sea_coral_crown/trigger/fullset/equip
+    execute if data storage asset:context id.all{head:711,chest:712,legs:713,feet:714} run function asset:artifact/0711.deep_sea_coral_crown/trigger/fullset/equip

@@ -27,4 +27,4 @@
     playsound minecraft:entity.firework_rocket.twinkle player @a ~ ~ ~ 0.4 1.5 0
 
 # 一式効果
-    execute if data storage asset:context id{head:632,chest:633,legs:634,feet:635} run function asset:artifact/0633.elec_armor/trigger/4.fullset
+    execute if data storage asset:context id.all{head:632,chest:633,legs:634,feet:635} run function asset:artifact/0633.elec_armor/trigger/4.fullset

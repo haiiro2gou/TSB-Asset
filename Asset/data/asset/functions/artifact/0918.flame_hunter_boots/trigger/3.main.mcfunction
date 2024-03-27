@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute unless data storage asset:context id{head:915,chest:916,legs:917,feet:918} run function asset:artifact/0918.flame_hunter_boots/trigger/vfx
+    execute unless data storage asset:context id.all{head:915,chest:916,legs:917,feet:918} run function asset:artifact/0918.flame_hunter_boots/trigger/vfx
 
 # 火耐性+5%
     data modify storage api: Argument.UUID set value [I;1,1,918,3]
@@ -34,4 +34,4 @@
     attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-039600000003 "918.Speed" 0.05 multiply_base
 
 # フルセット処理
-    execute if data storage asset:context id{head:915,chest:916,legs:917,feet:918} run function asset:artifact/0915.flame_hunter_hat/trigger/fullset/equip
+    execute if data storage asset:context id.all{head:915,chest:916,legs:917,feet:918} run function asset:artifact/0915.flame_hunter_hat/trigger/fullset/equip
