@@ -834,7 +834,8 @@
 #   function asset:effect/*/register
 #   function asset:effect/*/
 #   function asset_manager:effect/**
-#declare storage asset:effect from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L12
+#   function asset_manager:artifact/create/set_equipment
+#declare storage asset:effect from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L13
 
 #> declare
 # @within asset:**
