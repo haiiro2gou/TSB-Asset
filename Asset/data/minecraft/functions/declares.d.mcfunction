@@ -283,6 +283,7 @@
     #declare loot_table asset_manager:artifact/generate_lore/condition                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/condition.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/cooldown                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/cooldown.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/cost_item                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/cost_item.json#L1
+    #declare loot_table asset_manager:artifact/generate_lore/equipment                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/equipment.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/god                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/god.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/modifier                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/modifier.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/mp_cost                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/mp_cost.json#L1
