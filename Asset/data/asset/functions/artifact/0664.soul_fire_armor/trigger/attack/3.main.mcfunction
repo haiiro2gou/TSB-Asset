@@ -5,6 +5,7 @@
 # @within function asset:artifact/0664.soul_fire_armor/trigger/attack/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
+    data modify storage asset:artifact Index set value 1
     function asset:artifact/common/use/head
 
 # 演出
