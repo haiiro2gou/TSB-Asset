@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"エレキブーツ","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"雷耐性+3% 雷攻撃+3%","color":"yellow"}']
+    data modify storage asset:artifact Lore set value []
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,12 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# EquipID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 235
+# Modifiers (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackThunder",Slot:"feet",Amount:0.03d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseThunder",Slot:"feet",Amount:0.03d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
