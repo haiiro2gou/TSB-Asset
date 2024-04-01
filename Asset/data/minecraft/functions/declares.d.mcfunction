@@ -198,12 +198,10 @@
     #declare function api:teleporter/set_activation_state/from_nearest                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_nearest.mcfunction#L1
     #declare function api:version/check/                                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/version/check/.mcfunction#L1
     #declare function api:version/parser/                                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/version/parser/.mcfunction#L1
-    #declare function asset_manager:artifact/check/.m                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/check/.m.mcfunction#L1
     #declare function asset_manager:artifact/triggers/equipments/update_effect/equip_set                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/triggers/equipments/update_effect/equip_set.mcfunction#L1
     #declare function asset_manager:artifact/triggers/equipments/update_effect/mask_condition/trigger.m from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/triggers/equipments/update_effect/mask_condition/trigger.m.mcfunction#L1
     #declare function asset_manager:artifact/triggers/equipments/update_effect/modifier/add/            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/triggers/equipments/update_effect/modifier/add/.mcfunction#L1
     #declare function asset_manager:artifact/triggers/equipments/update_effect/modifier/remove/         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/triggers/equipments/update_effect/modifier/remove/.mcfunction#L1
-    #declare function asset_manager:artifact/use/.m                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/use/.m.mcfunction#L1
     #declare function asset_manager:artifact/use/item/update_local_cooldown/hotbar.m                    from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/use/item/update_local_cooldown/hotbar.m.mcfunction#L1
     #declare function asset_manager:artifact/use/item/update_local_cooldown/non-hotbar.m                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/use/item/update_local_cooldown/non-hotbar.m.mcfunction#L1
     #declare function asset_manager:artifact/use/remove_mp.m                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/use/remove_mp.m.mcfunction#L1
@@ -875,22 +873,22 @@
 
 #> declare
 # @within
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
 #   asset_manager:mob/triggers/
 #   asset:mob/*/hurt/**
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L63
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
 #declare tag Attacker
 
 #> declare
 # @within
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
 #   asset_manager:mob/triggers/
 #   asset:mob/*/attack/**
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L58
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L57
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L58
 #declare tag Victim
 
 #> declare
