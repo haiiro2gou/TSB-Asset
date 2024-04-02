@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魔法使いの靴","color":"#651DA3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+2.5% 魔法攻撃+2.5%","color":"dark_purple"}]','[{"text":"MP回復量+2.5%","color":"green"}]','[{"text":"物理耐性-2.5% 物理攻撃-2.5%","color":"dark_red"}]','[{"text":"魔法使いが普段身に着けている靴。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"魔法使いが普段身に着けている靴。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,13 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackMagic",Slot:"feet",Amount:0.025d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseMagic",Slot:"feet",Amount:0.025d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"mpRegen",Slot:"feet",Amount:0.025d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackPhysical",Slot:"feet",Amount:-0.025d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defensePhysical",Slot:"feet",Amount:-0.025d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイディアル","color":"#E6FFF4","underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"最も理想的な装備","color":"#FF78ED"}','{"text":"全ての耐性を持ちあらゆる状況に","color":"#FF78ED"}','{"text":"対応出来る万能な防具","color":"#FF78ED"}','{"text":"全耐性+5%","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"最も理想的な装備","color":"#FF78ED"}','{"text":"全ての耐性を持ちあらゆる状況に","color":"#FF78ED"}','{"text":"対応出来る万能な防具","color":"#FF78ED"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value [{Type:"defenseBase",Slot:"legs",Amount:0.05d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

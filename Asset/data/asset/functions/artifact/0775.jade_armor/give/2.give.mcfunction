@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"翡翠の鎧","color":"#38b48b"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+5% 水攻撃+5% ","color":"aqua"},{"text":"MP回復量+4% ","color":"green"}]','[{"text":"雷耐性-5%","color":"dark_red"}]','[{"text":"美しい渓流で取れた翡翠で作られた鎧。","color":"#38B48B"}]','[{"text":"装着者は水の加護を得る。","color":"#38B48B"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"美しい渓流で取れた翡翠で作られた鎧。","color":"#38B48B"}]','[{"text":"装着者は水の加護を得る。","color":"#38B48B"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -48,6 +48,12 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"head",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseWater",Slot:"head",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseThunder",Slot:"head",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"mpRegen",Slot:"head",Amount:0.04d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

@@ -4,20 +4,14 @@
 #
 # @within function asset:artifact/0986.order_of_healing/trigger/dis_equip/main
 
+#> Private
+# @private
+    #declare score_holder $Fluctuation
+
 # MP消費
     data modify storage api: Argument.Fluctuation set value -150
+    data modify storage api: Argument.DisableLog set value 1b
     function api:mp/fluctuation
 
-# 体力回復量
-    data modify storage api: Argument.UUID set value [I;1,1,986,7]
-    function api:modifier/heal/remove
-
-# MP回復量
-    data modify storage api: Argument.UUID set value [I;1,1,986,7]
-    function api:modifier/mp_regen/remove
-
-# 攻撃力
-    data modify storage api: Argument.UUID set value [I;1,1,986,7]
-    function api:modifier/attack/base/remove
-
-tag @s remove RE.Modifier
+# Tag削除
+    tag @s remove RE.Modifier

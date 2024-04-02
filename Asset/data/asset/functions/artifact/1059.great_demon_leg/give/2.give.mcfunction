@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"豪鬼","color":"#A6A6A6","bold":true},{"text":"の脛当","color":"white","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+5% 物理耐性+7.5%","color":"dark_green"}]','[{"text":"魔法攻撃-5% 魔法耐性-5%","color":"dark_red"}]','[{"text":"人々に倒された鬼は地下に幽閉された","color":"#A6A6A6","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"人々に倒された鬼は地下に幽閉された","color":"#A6A6A6","italic":true}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セットID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 247
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackPhysical",Slot:"legs",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defensePhysical",Slot:"legs",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackMagic",Slot:"legs",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseMagic",Slot:"legs",Amount:-0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

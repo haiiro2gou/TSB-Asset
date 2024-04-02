@@ -16,40 +16,11 @@
     data modify storage asset:artifact Name set value '[{"text":"۞","color":"dark_gray"},{"text":"ソリタリネス","color":"gray"},{"text":"۞","color":"dark_gray"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"孤独が唯一の友人だった。"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
-# 使用回数 (int) (オプション)
-    # data modify storage asset:artifact RemainingCount set value
-# 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "chest"
-# 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttackByMelee"
-# 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"繋がる総てを身に纏い、蕭然の中に在る"}]'
-# 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value 10
-# 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
-# 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.ElementType set value [None]
-# 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.BypassResist set value false
-# 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value
-# 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value
-# MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 5
-# MP必要量 (int) (オプション)
-    # data modify storage asset:artifact MPRequire set value
-# 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 5
-# グローバルクールダウン (int) (オプション)
-    # data modify storage asset:artifact SpecialCooldown set value
-# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
-# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+# トリガー (Component[])
+    data modify storage asset:artifact Triggers set value []
+    data modify storage asset:artifact Triggers append value {Trigger:"onAttackByMelee",Slot:"chest",MPCost:5,Condition:'[{"text":"繋がる総てを身に纏い、蕭然の中に在る"}]',AttackInfo:{Damage:60,AttackType:[Physical],ElementType:[None],BypassResist:false}}
+# セットID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 236
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

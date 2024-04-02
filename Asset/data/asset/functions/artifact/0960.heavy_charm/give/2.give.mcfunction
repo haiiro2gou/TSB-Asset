@@ -50,6 +50,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"generic.armor",Slot:"hotbar",Amount:2d,Operation:"add",MaxStack:9}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Slot:"hotbar",Amount:-0.02d,Operation:"add",MaxStack:9}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

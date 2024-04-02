@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"炎を追う狩人の狩猟服(上)","color":"#C92A2A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火耐性+5% 火攻撃+5%","color":"red"}','[{"text":"移動速度+5% ","color":"white"},{"text":"水耐性-5% ","color":"dark_red"}]','{"text":"フルセット時、","color":"white"}','[{"text":"火耐性+5% 火攻撃+5% ","color":"red"},{"text":"移動速度+10%","color":"white"}]','{"text":"「ある時、その者は森が燃えているのを見た。","color":"gray","italic":true}','{"text":"その炎を追い、狩人は獣を炎から守った。」","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"「ある時、その者は森が燃えているのを見た。","color":"gray","italic":true}','{"text":"その炎を追い、狩人は獣を炎から守った。」","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セットID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 245
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackFire",Slot:"chest",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseFire",Slot:"chest",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseWater",Slot:"chest",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Slot:"chest",Amount:0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

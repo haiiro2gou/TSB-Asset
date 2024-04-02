@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"朧月の妖花","color":"#FFFFA3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法攻撃+15% ","color":"dark_purple"},{"text":"被回復量-25%","color":"dark_red"}]','[{"text":"微かに月光が射す時のみに咲く花","color":"gray"}]','[{"text":"見た者の心を惑わし、狂わせる。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"微かに月光が射す時のみに咲く花","color":"gray"}]','[{"text":"見た者の心を惑わし、狂わせる。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackMagic",Slot:"hotbar",Amount:0.15d,Operation:"multiply_base",MaxStack:1}
+    data modify storage asset:artifact Modifiers append value {Type:"receiveHeal",Slot:"hotbar",Amount:-0.25d,Operation:"multiply_base",MaxStack:1}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

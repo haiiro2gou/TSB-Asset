@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーロラレギンス","color":"#00acf6"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+5% ","color":"dark_purple"},{"text":"雷耐性+10% 雷攻撃+5%","color":"yellow"}]','[{"text":"MP回復+5% ","color":"green"},{"text":"物理耐性-10%","color":"dark_red"}]','[{"text":"夜空に輝くオーロラを封じ込めた鎧。","color":"gray"}]','[{"text":"その蒼翠の光は進むべき道を照らす。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"夜空に輝くオーロラを封じ込めた鎧。","color":"gray"}]','[{"text":"その蒼翠の光は進むべき道を照らす。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,15 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セットID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 244
+# Modifiers (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackThunder",Slot:"legs",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseThunder",Slot:"legs",Amount:0.1d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defensePhysical",Slot:"legs",Amount:-0.1d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseMagic",Slot:"legs",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"mpRegen",Slot:"legs",Amount:0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

@@ -31,7 +31,7 @@
         "asset:artifact/0605.ambition/trigger/1.trigger",
         "asset:artifact/0606.traffic_sign/trigger/1.trigger",
         "asset:artifact/0615.censored/trigger/1.trigger",
-        "asset:artifact/0643.raimei_chestplate/trigger/1.1.attacktrigger",
+        "asset:artifact/0643.raimei_chestplate/trigger/attack/1.trigger",
         "asset:artifact/0672.aurora_blade/trigger/1.trigger",
         "asset:artifact/0719.sword_of_divine_sound/trigger/1.trigger",
         "asset:artifact/0729.bloody_pride/trigger/1.trigger",

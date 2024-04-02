@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"世界樹の樹冠","color":"#80FF9D"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"最大体力+5% ","color":"light_purple"},{"text":"MP回復量+7.5%","color":"green"}]','[{"text":"移動速度+5% ","color":"white"},{"text":"攻撃-5%","color":"dark_red"}]','[{"text":"世界を見据える大樹に祝福を。","color":"gray","italic":true}]','[{"text":"冠絶という世界樹の冠。","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"世界を見据える大樹に祝福を。","color":"gray","italic":true}]','[{"text":"冠絶という世界樹の冠。","color":"gray","italic":true}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,12 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"maxHealth",Slot:"head",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"mpRegen",Slot:"head",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Slot:"head",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackBase",Slot:"head",Amount:-0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

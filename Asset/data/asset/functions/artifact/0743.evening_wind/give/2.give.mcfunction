@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"夕焼けの風","color":"#FF8000"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"火攻撃+15% ","color":"red"},{"text":"移動速度+15%","color":"white"}]','[{"text":"水攻撃-20%","color":"dark_red"}]','[{"text":"黄昏の輝きを秘めた羽。","color":"gray"}]','[{"text":"淡い茜色の光を放っている。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"黄昏の輝きを秘めた羽。","color":"gray"}]','[{"text":"淡い茜色の光を放っている。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,11 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackFire",Slot:"hotbar",Amount:0.15d,Operation:"multiply_base",MaxStack:1}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Slot:"hotbar",Amount:0.15d,Operation:"multiply_base",MaxStack:1}
+    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"hotbar",Amount:-0.25d,Operation:"multiply_base",MaxStack:1}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

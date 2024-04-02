@@ -12,7 +12,7 @@
     execute store result score $TB.ItemCount Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1055}}}]
 
 # なければ削除
-    execute if score $TB.ItemCount Temporary matches ..0 run function asset:artifact/1055.compass_of_sea_abyss/trigger/dis_equip/remove_modifier
+    execute if score $TB.ItemCount Temporary matches ..0 run tag @s remove TB.Modifier
 
 # リセット
     scoreboard players reset $TB.ItemCount Temporary

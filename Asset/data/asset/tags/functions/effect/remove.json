@@ -50,6 +50,10 @@
         "asset:effect/0233.flame_armor/_/remove",
         "asset:effect/0234.ice_armor/_/remove",
         "asset:effect/0235.elec_armor/_/remove",
+        "asset:effect/0238.raimei/_/remove",
+        "asset:effect/0240.bless_of_deep_sea_coral/_/remove",
+        "asset:effect/0243.oblivious_snow/_/remove",
+        "asset:effect/0245.flame_hunter_attire/_/remove",
         "asset:effect/0608.sinking/_/remove",
         "asset:effect/0612.infringement/_/remove"
     ]

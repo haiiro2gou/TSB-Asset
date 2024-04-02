@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"深海珊瑚の羽衣","color":"#c3c9ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+10% 水攻撃+5% ","color":"aqua"}]','[{"text":"回復量+5% ","color":"light_purple"},{"text":"火耐性-10%","color":"dark_red"}]','[{"text":"全て装備した時、追加で","color":"white"},{"text":"水攻撃+5%","color":"aqua"},{"text":"を得て、","color":"white"}]','[{"text":"水に触れていると特殊な効果を得る。","color":"white"}]','{"text":"暗き底の水圧に耐えていたとされる","color":"gray"}','{"text":"自然から賜った神秘の珊瑚の羽衣。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"暗き底の水圧に耐えていたとされる","color":"gray"}','{"text":"自然から賜った神秘の珊瑚の羽衣。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セットID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 240
+# Modifier (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"chest",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseWater",Slot:"chest",Amount:0.1d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"heal",Slot:"chest",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseFire",Slot:"chest",Amount:-0.1d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

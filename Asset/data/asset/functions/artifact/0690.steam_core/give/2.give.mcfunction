@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"スチームコア","color":"#BF675A","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"火攻撃+15% ","color":"red"},{"text":"水攻撃+15% ","color":"aqua"},{"text":"被回復量-15%","color":"dark_red"}]','[{"text":"凄まじい効率を誇る蒸気機関の鎧。","color":"gray"}]','[{"text":"着用すると蒸気が体中から溢れてくる。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"凄まじい効率を誇る蒸気機関の鎧。","color":"gray"}]','[{"text":"着用すると蒸気が体中から溢れてくる。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -50,6 +50,11 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# Modifiers (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attackFire",Slot:"chest",Amount:0.15d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"chest",Amount:0.15d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"receiveHeal",Slot:"chest",Amount:-0.15d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

@@ -5,7 +5,7 @@
 # @within function asset:effect/0235.elec_armor/_/remove
 
 # フルセット効果を削除
-    execute if data storage asset:context this{PrevStack:4} unless data storage asset:context {Stack:4} run function asset:effect/0235.elec_armor/fullset/dis_equip
+    execute if data storage asset:context {Stack:4} run function asset:effect/0235.elec_armor/fullset/dis_equip
 
 # スタックを記録
     data modify storage asset:context this.PrevStack set from storage asset:context Stack
