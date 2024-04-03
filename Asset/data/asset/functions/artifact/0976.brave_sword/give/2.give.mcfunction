@@ -18,8 +18,8 @@
     data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む、強力な斬撃を放つ。"}','{"text":"\\"勇気を刃に込めて！\\"","color":"gray"}']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"onAttackByMelee",Slot:"mainhand",MPCost:0,LocalCooldown:15,AttackInfo:{Damage:100,AttackType:[Physical],ElementType:[None],IsRangeAttack:"never",DisableCooldownMessage:true}}
-    data modify storage asset:artifact Triggers append value {Trigger:"onClick",Slot:"auto",MPCost:15,LocalCooldown:5,AttackInfo:{Damage:["300-350 / 250-300"],AttackType:[Physical],ElementType:[None],IsRangeAttack:"never",DisableCooldownMessage:true}}
+    data modify storage asset:artifact Triggers append value {Trigger:"onAttackByMelee",Slot:"mainhand",MPCost:0,LocalCooldown:15,AttackInfo:{Damage:100,AttackType:[Physical],ElementType:[None],IsRangeAttack:"never"},DisableCooldownMessage:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onClick",Slot:"auto",MPCost:15,LocalCooldown:5,AttackInfo:{Damage:["300-350 / 250-300"],AttackType:[Physical],ElementType:[None],IsRangeAttack:"never"},DisableCooldownMessage:true}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
