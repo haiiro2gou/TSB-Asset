@@ -309,6 +309,7 @@
         "asset:artifact/1060.great_demon_boots/register",
         "asset:artifact/1068.dream_of_burning_butterfly/register",
         "asset:artifact/1075.fairy_vial/register",
-        "asset:artifact/1081.wandering_piece_of_dream/register"
+        "asset:artifact/1081.wandering_piece_of_dream/register",
+        "asset:artifact/1082.cursed_straw_doll/register"
     ]
 }
