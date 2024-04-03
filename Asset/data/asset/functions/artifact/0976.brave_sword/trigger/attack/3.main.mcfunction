@@ -5,7 +5,7 @@
 # @within function asset:artifact/0976.brave_sword/trigger/attack/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # ダメージ
     data modify storage api: Argument.Damage set value 100.0f
