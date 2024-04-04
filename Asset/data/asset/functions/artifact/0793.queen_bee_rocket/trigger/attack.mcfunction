@@ -20,18 +20,12 @@
     playsound entity.blaze.burn player @a[distance=..50] ~ ~ ~ 1 1 0.3
     summon firework_rocket ~ ~ ~ {Silent:1b,FireworksItem:{id:"firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:0b,Colors:[I;16774912],FadeColors:[I;0,5526612]}]}}}}
 
-# 攻撃を与える
-    # 与えるダメージ = 26
-        data modify storage api: Argument.Damage set value 360f
-    # 魔法属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 雷属性
-        data modify storage api: Argument.ElementType set value "Fire"
-# 補正functionを実行
-    execute as @a if score @s UserID = @e[type=item_display,tag=M1.This,limit=1] M1.UserID run function api:damage/modifier
-# 攻撃した対象に実行
-    execute as @e[tag=M1.Target] run function api:damage/
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set value 360f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    execute as @a if score @s UserID = @e[type=item_display,tag=M1.This,distance=..0.01,limit=1] M1.UserID run function api:damage/modifier
+    execute as @e[type=#lib:living,tag=M1.Target,distance=..2] run function api:damage/
     function api:damage/reset
 
 # 自身を殺す
