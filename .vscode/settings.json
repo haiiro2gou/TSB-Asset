@@ -2103,6 +2103,10 @@
                         "#",
                         "# @within function asset:effect/%namespace%/_/register",
                         "",
+                        "# 継承 (int)",
+                        "    # data modify storage asset:effect Extends append value ",
+                        "    # function asset:effect/extends",
+                        "",
                         "# ExtendsSafe (boolean) (default = false)",
                         "    # data modify storage asset:effect ExtendsSafe set value true",
                         "# ID (int)",
@@ -2131,7 +2135,7 @@
                         "    # data modify storage asset:effect RequireClearLv set value ",
                         "",
                         "# フィールド",
-                        "    # data modify storage asset:effect Field.myValue set value "
+                        "    # data modify storage asset:effect Field set value {}"
                     ]
                 },
                 {
