@@ -575,6 +575,7 @@
     #declare tag/block lib:torches                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/blocks/torches.json#L1
     #declare tag/block lib:unbreakable                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/blocks/unbreakable.json#L1
     #declare tag/block minecraft:enderman_holdable                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/blocks/enderman_holdable.json#L1
+    #declare tag/damage_type minecraft:bypasses_cooldown                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/damage_type/bypasses_cooldown.json#L1
     #declare tag/entity_type lib:drownable                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/entity_types/drownable.json#L1
     #declare tag/entity_type lib:hostile                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/entity_types/hostile.json#L1
     #declare tag/entity_type lib:living                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/entity_types/living.json#L1
