@@ -20,6 +20,7 @@
     # 属性
         data modify storage api: Argument.AttackType set value "Physical"
         data modify storage api: Argument.ElementType set value "Water"
+        data modify storage api: Argument.DamageType set value "Projectile"
     # 補正function
         execute as @a if score @s UserID = @e[type=cod,tag=GY.This,limit=1] GY.UserID run function api:damage/modifier
     # 対象に

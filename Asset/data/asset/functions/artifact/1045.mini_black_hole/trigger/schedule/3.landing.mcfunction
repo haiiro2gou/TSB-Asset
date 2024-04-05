@@ -25,14 +25,12 @@
     data remove storage asset:temp T1.Num
 
 # ダメージ付与
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Magic"
-    # 耐性貫通
-        data modify storage api: Argument.BypassModifier set value 1b
-    # ダメージ
-        data modify storage api: Argument.Damage set value 125
-        execute as @p[tag=T1.Owner] run function api:damage/modifier
-        execute as @e[tag=Enemy,tag=T1.Landing,distance=..8] run function api:damage/
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.DamageType set value "Projectile"
+    data modify storage api: Argument.BypassModifier set value 1b
+    data modify storage api: Argument.Damage set value 125
+    execute as @p[tag=T1.Owner] run function api:damage/modifier
+    execute as @e[tag=Enemy,tag=T1.Landing,distance=..8] run function api:damage/
 
 # 敵吸い込み
     execute at @s as @e[tag=Enemy,tag=!Enemy.Boss,distance=..15] run function asset:artifact/1045.mini_black_hole/trigger/schedule/4.enemy_suction

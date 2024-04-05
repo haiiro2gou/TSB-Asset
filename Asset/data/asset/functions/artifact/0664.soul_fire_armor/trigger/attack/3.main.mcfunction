@@ -18,6 +18,7 @@
     data modify storage api: Argument.Damage set value 80.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run function api:damage/
 

@@ -23,6 +23,7 @@
 # ヒットした対象にダメージ distance=..40なのは広めに判定をとっているため
     data modify storage api: Argument.Damage set value 2000.0f
     data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Hit,distance=..40] run function api:damage/
     function api:damage/reset

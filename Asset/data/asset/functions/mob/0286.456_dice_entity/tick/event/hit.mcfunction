@@ -15,6 +15,7 @@
         data modify storage api: Argument.Damage set value 50.0f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.DamageType set value "Projectile"
     # 第二属性
         # 属性をランダムに決定する
             # 疑似乱数取得

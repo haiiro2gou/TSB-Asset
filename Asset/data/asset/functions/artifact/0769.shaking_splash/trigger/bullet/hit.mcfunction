@@ -17,6 +17,7 @@
     data modify storage api: Argument.Damage set value 450.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DamageType set value "Projectile"
     execute at @a if score @s LD.UserID = @p UserID as @p run function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,distance=..2.5] run function api:damage/
 # リセット

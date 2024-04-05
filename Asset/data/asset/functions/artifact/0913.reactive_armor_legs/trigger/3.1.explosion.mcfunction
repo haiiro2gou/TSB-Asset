@@ -8,6 +8,7 @@
     data modify storage api: Argument.Damage set value 500f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,distance=..3] run function api:damage/
     function api:damage/reset
@@ -16,6 +17,7 @@
     data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DamageType set value "Projectile"
     data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sはリアクティブアーマーの爆発に巻き込まれた。","with":[{"selector":"@s"}]}]']
     function api:damage/modifier
     execute as @a[tag=!this,distance=..3] run function api:damage/

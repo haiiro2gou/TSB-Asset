@@ -12,6 +12,7 @@
     data modify storage api: Argument.Damage set value 1171.3d
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     data modify storage api: Argument.Heal set value 53.1d
     function api:heal/modifier

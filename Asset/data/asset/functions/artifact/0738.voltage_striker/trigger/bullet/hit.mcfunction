@@ -15,6 +15,7 @@
     data modify storage api: Argument.Damage set value 250.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.DamageType set value "Projectile"
 # 補正
     execute at @a[distance=..160] if score @s KI.UserID = @p UserID as @p run function api:damage/modifier
 # 実行

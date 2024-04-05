@@ -7,6 +7,7 @@
 # ダメージ
     data modify storage api: Argument.Damage set value 180f
     data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.DamageType set value "Projectile"
 # 補正
     execute at @a if score @s L2.UserID = @p UserID as @p run function api:damage/modifier
 # 実行

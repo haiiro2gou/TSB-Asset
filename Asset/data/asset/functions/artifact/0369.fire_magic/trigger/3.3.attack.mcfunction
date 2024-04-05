@@ -19,17 +19,12 @@
     playsound entity.blaze.burn neutral @a ~ ~ ~ 1 1
 
 # 攻撃を与える
-    # 与えるダメージ = 100
-        data modify storage api: Argument.Damage set value 100f
-    # 魔法属性
-        data modify storage api: Argument.AttackType set value "Magic"
-    # 雷属性
-        data modify storage api: Argument.ElementType set value "Fire"
-# 補正functionを実行
+    data modify storage api: Argument.Damage set value 100f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DamageType set value "Projectile"
     execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=A9.This,limit=1] A9.UserID run function api:damage/modifier
-# 攻撃した対象に実行
     execute as @e[tag=A9.Target] run function api:damage/
-# リセット
     function api:damage/reset
 
 # 自身を殺す

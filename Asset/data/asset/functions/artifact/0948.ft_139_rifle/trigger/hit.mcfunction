@@ -17,6 +17,7 @@
     # 属性
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.DamageType set value "Projectile"
     # もし、適正距離じゃなかった場合、距離-適正距離=減少ダメージにする
         execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/0948.ft_139_rifle/trigger/damage_attenuation
     # ダメージ量確定

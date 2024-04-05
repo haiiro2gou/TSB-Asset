@@ -7,8 +7,8 @@
 # ダメージ
     # 魔法属性
         data modify storage api: Argument.AttackType set value "Magic"
-    # 防御貫通
-        # data modify storage api: Argument.FixedDamage set value true
+    # 飛び道具
+        data modify storage api: Argument.DamageType set value "Projectile"
     # 属性が変わる
         execute if score $Random Temporary matches 0 run data modify storage api: Argument.ElementType set value "None"
         execute if score $Random Temporary matches 1 run data modify storage api: Argument.ElementType set value "Fire"

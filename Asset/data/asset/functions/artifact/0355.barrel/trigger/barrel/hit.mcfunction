@@ -8,6 +8,7 @@
     # 引数の設定
         data modify storage api: Argument.Damage set value 70.0f
         data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.DamageType set value "Projectile"
     # 補正
         function api:damage/modifier
     # 実行

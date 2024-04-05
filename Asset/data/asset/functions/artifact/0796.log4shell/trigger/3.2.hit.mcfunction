@@ -11,15 +11,12 @@
 # 演出
     execute at @e[tag=M4.LandingTarget,limit=1] run particle minecraft:block oak_log ~ ~1.2 ~ 0.4 0.4 0.4 0 4
 
-# ダメージ設定
-    # ダメージ
-        data modify storage api: Argument.Damage set value 45.0f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # ダメージ
-        function api:damage/modifier
-        execute as @e[tag=M4.LandingTarget] run function api:damage/
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set value 45.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.DamageType set value "Projectile"
+    function api:damage/modifier
+    execute as @e[tag=M4.LandingTarget] run function api:damage/
     function api:damage/reset
 
 # 着弾タグを消す

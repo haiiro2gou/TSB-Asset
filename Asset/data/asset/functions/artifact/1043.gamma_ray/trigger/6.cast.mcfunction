@@ -24,6 +24,7 @@
 # ダメージ
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     execute as @e[tag=SZ.Landing,distance=..28] run function api:damage/
 
