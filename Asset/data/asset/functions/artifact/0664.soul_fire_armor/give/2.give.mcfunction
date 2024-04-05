@@ -19,7 +19,7 @@
 # トリガー (Component) (オプション)
     data modify storage asset:artifact Triggers set value []
     data modify storage asset:artifact Triggers append value {Slot:"head",Trigger:"equipping",MPCost:0}
-    data modify storage asset:artifact Triggers append value {Slot:"head",Trigger:"onAttack",AttackInfo:{Damage:"80",AttackType:[Physical],ElementType:[Fire],IsRangeAttack:"never"},MPCost:0,LocalCooldown:20}
+    data modify storage asset:artifact Triggers append value {Slot:"head",Trigger:"onAttack",AttackInfo:{Damage:"80",AttackType:[Physical],ElementType:[Fire],IsRangeAttack:"never"},MPCost:0,LocalCooldown:20,DisableCooldownMessage:true,DisableMPMessage:true}
 # 装備セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 232
 # 装備時効果 (Component[]) (オプション)
