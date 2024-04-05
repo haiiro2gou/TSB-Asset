@@ -19,6 +19,7 @@
 
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DamageType set value "Projectile"
     execute at @a if score @s SP.UserID = @p UserID as @p run function api:damage/modifier
     execute if data storage api: Argument.Damage as @e[type=#lib:living,tag=Enemy,distance=..2] run function api:damage/
     function api:damage/reset

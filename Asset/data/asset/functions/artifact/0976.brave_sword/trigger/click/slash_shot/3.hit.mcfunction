@@ -9,19 +9,18 @@
     effect give @s[type=!#lib:undead] instant_damage
 
 # 引数の設定
-    #ダメージブレのための処理
-        # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
-        # 剰余算する。0~50の追加ダメージ
-            scoreboard players operation $RandomDamage Temporary %= $51 Const
-        # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 250
-    #ダメージセット
-        execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "None"
+    # 疑似乱数取得
+        execute store result score $RandomDamage Temporary run function lib:random/
+    # 剰余算する。0~50の追加ダメージ
+        scoreboard players operation $RandomDamage Temporary %= $51 Const
+    # 最低ダメージ設定
+        scoreboard players add $RandomDamage Temporary 250
+# ダメージセット
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+# 属性
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.DamageType set value "Projectile"
+    data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
     execute as @a[tag=R4.OwnerPlayer] run function api:damage/modifier
 # ダメージ

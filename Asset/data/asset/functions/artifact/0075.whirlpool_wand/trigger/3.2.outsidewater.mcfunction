@@ -5,16 +5,12 @@
 # @within function asset:artifact/0075.whirlpool_wand/trigger/3.main
 
 # ダメージ
-    # 与えるダメージ = 100
-        data modify storage api: Argument.Damage set value 100f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Magic"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "Water"
-    # ダメージを与える
-        function api:damage/modifier
-        function api:damage/
-# リセット
+    data modify storage api: Argument.Damage set value 100f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DamageType set value "Projectile"
+    function api:damage/modifier
+    function api:damage/
     function api:damage/reset
 
 # 演出

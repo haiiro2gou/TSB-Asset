@@ -34,6 +34,7 @@
         data modify storage api: Argument.Damage set value 60.0f
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.DamageType set value "Projectile"
         execute if score @s Temporary matches 1 run data modify storage api: Argument.Damage set value 120.0f
         execute if score @s Temporary matches 2 run data modify storage api: Argument.Damage set value 160.0f
         execute if score @s Temporary matches 3 run data modify storage api: Argument.Damage set value 180.0f

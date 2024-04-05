@@ -26,6 +26,7 @@
 # 被ダメージ時攻撃者にダメージ
     data modify storage api: Argument.Damage set value 75.0f
     data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Attacker,distance=..50] run function api:damage/
     function api:damage/reset

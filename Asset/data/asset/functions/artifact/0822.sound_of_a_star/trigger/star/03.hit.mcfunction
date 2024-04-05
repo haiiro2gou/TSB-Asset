@@ -21,6 +21,7 @@
     execute if entity @s[tag=MU.3] run data modify storage api: Argument.Damage set value 1200.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DamageType set value "Projectile"
     execute at @s as @a if score @s UserID = @e[type=marker,tag=MU.This,distance=..0.01,sort=nearest,limit=1] MU.UserID run function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0,sort=nearest,limit=1] run function api:damage/
 # リセット

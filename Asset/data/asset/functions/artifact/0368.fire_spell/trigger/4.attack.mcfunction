@@ -13,6 +13,7 @@
     data modify storage api: Argument.Damage set value 15f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DamageType set value "Projectile"
 # 補正functionを実行
     function api:damage/modifier
 # 攻撃した対象に実行

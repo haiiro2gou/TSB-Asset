@@ -34,6 +34,7 @@
 # ダメージへ代入
     execute store result storage api: Argument.Damage int 1 run scoreboard players get $LostHealth Temporary
     data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Attacker,distance=..50] run function api:damage/
     function api:damage/reset

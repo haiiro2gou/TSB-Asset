@@ -10,6 +10,7 @@
     execute if entity @s[tag=87.ShotFire] run data modify storage api: Argument.ElementType set value "Fire"
     execute if entity @s[tag=87.ShotThunder] run data modify storage api: Argument.ElementType set value "Thunder"
     execute if entity @s[tag=87.ShotWater] run data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/
 
 # 演出

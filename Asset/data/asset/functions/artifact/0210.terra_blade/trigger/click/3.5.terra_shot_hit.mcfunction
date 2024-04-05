@@ -8,6 +8,7 @@
     data modify storage api: Argument.Damage set value 70.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DamageType set value "Projectile"
     tag @s add this
     execute as @a if score @s UserID = @e[type=armor_stand,tag=this,distance=..1,limit=1] 5U.ID run function api:damage/modifier
     tag @s remove this

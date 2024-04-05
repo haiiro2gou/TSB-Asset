@@ -25,6 +25,7 @@
 # 魔法、無属性のダメージをぶちかます
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DamageType set value "Projectile"
 
 # マスターとして補正functionを実行
     execute as @p[tag=R9.OwnerPlayer] run function api:damage/modifier

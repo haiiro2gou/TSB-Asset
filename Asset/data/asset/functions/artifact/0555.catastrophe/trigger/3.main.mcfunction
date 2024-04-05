@@ -8,14 +8,16 @@
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
-    # 演出
-        execute at @e[type=#lib:living,tag=Attacker,limit=1] run particle soul_fire_flame ~ ~0.5 ~ 0.4 0.6 0.4 0 100 force @a
 
-    # ダメージ
-        data modify storage api: Argument.Damage set value 600f
-        data modify storage api: Argument.AttackType set value "Magic"
-        function api:damage/modifier
-        execute as @e[type=#lib:living,tag=Attacker,limit=1] run function api:damage/
+# 演出
+    execute at @e[type=#lib:living,tag=Attacker,limit=1] run particle soul_fire_flame ~ ~0.5 ~ 0.4 0.6 0.4 0 100 force @a
 
-    # リセット
-        function api:damage/reset
+# ダメージ
+    data modify storage api: Argument.Damage set value 600f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.DamageType set value "Projectile"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Attacker,limit=1] run function api:damage/
+
+# リセット
+    function api:damage/reset

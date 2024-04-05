@@ -12,6 +12,7 @@
     data modify storage api: Argument.Damage set value 1029f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DamageType set value "Projectile"
     execute as @p[tag=this] run function api:damage/modifier
     function api:damage/
 

@@ -11,15 +11,12 @@
 # 演出
     execute at @e[tag=LandingTarget,limit=1] run particle minecraft:block redstone_block ~ ~1.2 ~ 0.4 0.4 0.4 0 4
 
-# ダメージ設定
-    # ダメージ
-        data modify storage api: Argument.Damage set value 20.0f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # ダメージ
-        function api:damage/modifier
-        execute as @e[tag=LandingTarget] run function api:damage/
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set value 20.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.DamageType set value "Projectile"
+    function api:damage/modifier
+    execute as @e[tag=LandingTarget] run function api:damage/
     function api:damage/reset
 
 # 着弾タグを消す
