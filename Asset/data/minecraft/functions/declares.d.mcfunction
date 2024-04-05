@@ -872,16 +872,18 @@
 
 #> declare
 # @within
-#   **
 #   function core:patcher/load_once
 #   function asset_manager:island/dispel/successful
 #   function asset_manager:island/patcher/init
 #   function lib:message/common/*
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L41
+#   **
     # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L15
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L41
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v1.1.0/.mcfunction#L9
     #declare score_holder $Island
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L42
     # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L16
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L42
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v1.1.0/.mcfunction#L10
     #declare score_holder $IslandTotal
 
 #> declare
