@@ -18,7 +18,7 @@
     data modify storage asset:artifact Lore set value ['[{"text":"孤独が唯一の友人だった。"}]']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"onAttackByMelee",Slot:"chest",MPCost:5,Condition:'[{"text":"繋がる総てを身に纏い、蕭然の中に在る"}]',AttackInfo:{Damage:60,AttackType:[Physical],ElementType:[None],BypassResist:false}}
+    data modify storage asset:artifact Triggers append value {Trigger:"onAttackByMelee",Slot:"chest",MPCost:5,Condition:'[{"text":"繋がる総てを身に纏い、蕭然の中に在る"}]',AttackInfo:{Damage:60,AttackType:[Physical],ElementType:[None],BypassResist:false},DisableCooldownMessage:true,DisableMPMessage:true}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 236
 # 扱える神 (string[]) Wikiを参照
