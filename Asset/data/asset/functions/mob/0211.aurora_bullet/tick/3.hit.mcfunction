@@ -23,6 +23,3 @@
 
 # 自害
     kill @s
-
-# スケジュールループを開始
-    schedule function asset:mob/0210.aurora_eye/player_process/01.schedule_loop 1t replace
