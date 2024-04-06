@@ -6,7 +6,7 @@
         data modify storage api: Argument.UUID set value [I;1,3,243,0]
         data modify storage api: Argument.Amount set value 0.25
         data modify storage api: Argument.Operation set value "multiply_base"
-        function api:modifier/attack/fire/add
+        function api:modifier/attack/water/add
 
     # MP回復量-15%
         data modify storage api: Argument.UUID set value [I;1,3,243,0]
