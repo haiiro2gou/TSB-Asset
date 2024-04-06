@@ -1,8 +1,8 @@
-#> asset:artifact/0907.rod_of_rain/trigger/rain_cloud/04.effect
+#> asset:artifact/0907.rod_of_rain/trigger/rain_cloud/4.effect
 #
 # 雨のダメージ処理と回復処理
 #
-# @within function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/02.main
+# @within function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/2.main
 
 #> Private
 # @private
@@ -12,8 +12,8 @@
     playsound entity.dolphin.swim player @a ~ ~ ~ 0.7 1.5 0
     playsound entity.dolphin.swim player @a ~ ~ ~ 0.7 1.8 0
     playsound ogg:ambient.underwater.additions.bubbles6 player @a ~ ~ ~ 0.5 1.5 0
-    execute positioned ~ ~0.25 ~ run function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/05.effect_vfx
-    execute positioned ~ ~0.8 ~ run function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/05.effect_vfx
+    execute positioned ~ ~0.25 ~ run function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/5.effect_vfx
+    execute positioned ~ ~0.8 ~ run function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/5.effect_vfx
 
 # 自身を判別するTagを自身に付与
     tag @s add P8.This
@@ -40,10 +40,11 @@
         data modify storage api: Argument.Operation set value "multiply"
         execute as @p[tag=P8.Owner] run function api:modifier/heal/add
 
-    # 範囲内のプレイヤーを回復
-        data modify storage api: Argument.Heal set value 12.0f
+    # 範囲内のプレイヤーを使用者の最大体力の10%分回復
+        execute store result storage api: Argument.Heal float 0.1 run attribute @p[tag=P8.Owner] generic.max_health get
         execute as @p[tag=P8.Owner] run function api:heal/modifier
         execute as @a[tag=P8.TargetEntity,distance=..10] run function api:heal/
+        function api:heal/reset
 
     # 体力回復補正から水攻撃補正を取り除く
         data modify storage api: Argument.UUID set value [I;1,1,907,0]
@@ -53,5 +54,4 @@
     tag @e[type=#lib:living,tag=P8.TargetEntity,distance=..10] remove P8.TargetEntity
     tag @s remove P8.This
     tag @p[tag=P8.Owner] remove P8.Owner
-    function api:heal/reset
     scoreboard players reset $AttackWater Temporary
