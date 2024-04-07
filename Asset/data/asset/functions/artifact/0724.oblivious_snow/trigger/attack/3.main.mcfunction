@@ -16,7 +16,7 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run playsound minecraft:block.powder_snow.step player @a ~ ~ ~ 1 0.25 0
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 70.0f
+    data modify storage api: Argument.Damage set value 200.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
