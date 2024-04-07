@@ -52,7 +52,7 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # Modifier (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
-    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"hotbar",Amount:0.005d,Operation:"multiply_base",MaxStack:9}
+    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"hotbar",Amount:0.05d,Operation:"multiply_base",MaxStack:9}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
