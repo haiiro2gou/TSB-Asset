@@ -1,4 +1,4 @@
-#> asset:artifact/0664.soul_fire_armor/trigger/equip/4.1.particle
+#> asset:artifact/0664.soul_fire_armor/trigger/equip/4.particle
 # @within function asset:artifact/066*.soul_fire_armor/trigger/equip/3.main
 
 # 収束するパーティクル
