@@ -1,4 +1,4 @@
-#> asset:artifact/1057.great_demon_head/trigger/common/equip_vfx
+#> asset:artifact/1057.great_demon_head/trigger/vfx
 #
 # 装備時の演出
 #
@@ -61,4 +61,3 @@
     particle dust 0.3347 0.3347 0.3347 1.0 ^-0.67 ^0.0 ^0.873 0.0 0.0 0.0 0.5 1 normal
     particle dust 0.3347 0.3347 0.3347 1.0 ^-0.421 ^0.0 ^1.016 0.0 0.0 0.0 0.5 1 normal
     particle dust 0.3347 0.3347 0.3347 1.0 ^-0.144 ^0.0 ^1.091 0.0 0.0 0.0 0.5 1 normal
-

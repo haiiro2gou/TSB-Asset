@@ -1,4 +1,4 @@
-#> asset:artifact/0643.raimei_chestplate/trigger/attack/1.attacktrigger
+#> asset:artifact/0643.raimei_chestplate/trigger/attack/1.trigger
 #
 # 指定したイベントタイミングで実行されるfunction
 #
