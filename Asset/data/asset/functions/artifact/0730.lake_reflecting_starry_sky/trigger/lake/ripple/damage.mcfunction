@@ -9,7 +9,7 @@
     playsound block.amethyst_cluster.step neutral @a ~ ~ ~ 1.2 0.7 0
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 600f
+    data modify storage api: Argument.Damage set value 500f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DamageType set value "Projectile"
