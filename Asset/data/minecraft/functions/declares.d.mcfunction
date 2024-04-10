@@ -346,6 +346,7 @@
     #declare predicate lib:is_in_lava/include_flowing                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_in_lava/include_flowing.json#L1
     #declare predicate lib:is_in_water/                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_in_water/.json#L1
     #declare predicate lib:is_in_water/include_flowing                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_in_water/include_flowing.json#L1
+    #declare predicate lib:is_night                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_night.json#L1
     #declare predicate lib:is_passenger                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_passenger.json#L1
     #declare predicate lib:is_placeable_vehicle                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_placeable_vehicle.json#L1
     #declare predicate lib:is_player_moving                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/predicates/is_player_moving.json#L1
