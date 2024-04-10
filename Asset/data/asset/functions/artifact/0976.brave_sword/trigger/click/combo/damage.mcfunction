@@ -16,7 +16,6 @@
         execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
         data modify storage api: Argument.AttackType set value "Physical"
         data modify storage api: Argument.ElementType set value "None"
-        data modify storage api: Argument.DamageType set value "Projectile"
 # 補正functionを実行
     execute as @p[tag=this] run function api:damage/modifier
 # ダメージ実行
