@@ -54,10 +54,10 @@
     data modify storage asset:artifact EquipID set value 247
 # Modifier (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
-    data modify storage asset:artifact Modifiers append value {Type:"attackPhysical",Slot:"head",Amount:0.05d,Operation:"multiply_base"}
-    data modify storage asset:artifact Modifiers append value {Type:"defensePhysical",Slot:"head",Amount:0.075d,Operation:"multiply_base"}
-    data modify storage asset:artifact Modifiers append value {Type:"attackMagic",Slot:"head",Amount:-0.05d,Operation:"multiply_base"}
-    data modify storage asset:artifact Modifiers append value {Type:"defenseMagic",Slot:"head",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackPhysical",Slot:"feet",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defensePhysical",Slot:"feet",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackMagic",Slot:"feet",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defenseMagic",Slot:"feet",Amount:-0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
