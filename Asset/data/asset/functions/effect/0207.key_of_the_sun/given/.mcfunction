@@ -4,7 +4,5 @@
 #
 # @within function asset:effect/0207.key_of_the_sun/_/given
 
-tellraw @a "a"
-
 # 補正を付与する
     function asset:effect/0207.key_of_the_sun/modifier/add
