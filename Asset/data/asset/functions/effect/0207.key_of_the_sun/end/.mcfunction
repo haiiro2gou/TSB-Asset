@@ -4,7 +4,5 @@
 #
 # @within function asset:effect/0207.key_of_the_sun/_/end
 
-tellraw @a "a"
-
 # 補正を削除する
     function asset:effect/0207.key_of_the_sun/modifier/remove
