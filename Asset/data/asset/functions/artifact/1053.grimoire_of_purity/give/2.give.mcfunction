@@ -52,10 +52,10 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # Modifier (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
-    data modify storage asset:artifact Modifiers append value {Type:"attackBase",Slot:"offhand",Amount:0.30d,Operation:"multiply_base"}
-    data modify storage asset:artifact Modifiers append value {Type:"attackFire",Slot:"offhand",Amount:-0.45d,Operation:"multiply_base"}
-    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"offhand",Amount:-0.45d,Operation:"multiply_base"}
-    data modify storage asset:artifact Modifiers append value {Type:"attackThunder",Slot:"offhand",Amount:-0.45d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackBase",Slot:"offhand",Amount:0.20d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackFire",Slot:"offhand",Amount:-0.30d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"offhand",Amount:-0.30d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackThunder",Slot:"offhand",Amount:-0.30d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ['Wi-ki','Rumor']
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
