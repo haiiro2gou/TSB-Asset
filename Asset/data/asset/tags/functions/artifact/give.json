@@ -363,6 +363,7 @@
         "asset:artifact/1075.fairy_vial/give/1.trigger",
         "asset:artifact/1081.wandering_piece_of_dream/give/1.trigger",
         "asset:artifact/1082.cursed_straw_doll/give/1.trigger",
-        "asset:artifact/1083.tablet_of_oracle/give/1.trigger"
+        "asset:artifact/1083.tablet_of_oracle/give/1.trigger",
+        "asset:artifact/1089.antimatter_gatling_rifle/give/1.trigger"
     ]
 }

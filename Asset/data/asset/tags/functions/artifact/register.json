@@ -315,6 +315,7 @@
         "asset:artifact/1075.fairy_vial/register",
         "asset:artifact/1081.wandering_piece_of_dream/register",
         "asset:artifact/1082.cursed_straw_doll/register",
-        "asset:artifact/1083.tablet_of_oracle/register"
+        "asset:artifact/1083.tablet_of_oracle/register",
+        "asset:artifact/1089.antimatter_gatling_rifle/register"
     ]
 }
