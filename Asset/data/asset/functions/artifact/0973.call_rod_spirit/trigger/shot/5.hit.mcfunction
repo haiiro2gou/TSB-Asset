@@ -5,14 +5,14 @@
 # @within function asset:artifact/0973.call_rod_spirit/trigger/shot/4.move
 
 # ダメージ値設定
-    #ダメージブレのための処理
+    # ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~10の追加ダメージ
           scoreboard players operation $RandomDamage Temporary %= $50 Const
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 101
-    #ダメージセット
+    # ダメージセット
         execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 
 # 魔法、無属性のダメージをぶちかます

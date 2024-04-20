@@ -17,7 +17,7 @@
     tag @s add GX.This
 
 # ダメージ設定
-    #ダメージブレのための処理
+    # ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。追加ダメージが発生。

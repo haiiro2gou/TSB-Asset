@@ -46,7 +46,7 @@
         # メッセージ「A と体力を交換した！ x.xx => y.yy」
             tellraw @s [{"text":"","color": "yellow"},{"selector":"@a[tag=HasMaxHealth]","color": "yellow"},{"text": " と体力を交換した！ "},{"score":{"name": "$UserHealthInt","objective": "Temporary"}},".",{"score":{"name": "$UserHealthDecimal","objective": "Temporary"}},{"text": " => "},{"score":{"name": "$TargetHealthInt","objective": "Temporary"}},".",{"score":{"name": "$TargetHealthDecimal","objective": "Temporary"}}]
 
-        #パーティクル & 音
+        # パーティクル & 音
             particle totem_of_undying ~ ~ ~ 1 1 1 0 30 force @a
             execute as @a[tag=HasMaxHealth] at @s run particle totem_of_undying ~ ~ ~ 1 1 1 0 30 force @a
 

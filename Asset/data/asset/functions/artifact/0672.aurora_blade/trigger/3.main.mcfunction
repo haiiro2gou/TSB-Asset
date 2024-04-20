@@ -32,7 +32,7 @@
     playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.8 2 0
 
 # ダメージ
-    #ダメージブレのための処理
+    # ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~300の追加ダメージ
