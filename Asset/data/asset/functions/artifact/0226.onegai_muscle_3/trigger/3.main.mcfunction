@@ -18,5 +18,5 @@
         playsound entity.player.hurt player @a ~ ~ ~ 1 1
         playsound minecraft:entity.zombie_villager.cure player @s ~ ~ ~ 1 2
         particle sweep_attack ~ ~1 ~ 0.5 0.5 0.5 0 30 normal @s
-    #リセット
+    # リセット
         scoreboard players reset @s Temporary

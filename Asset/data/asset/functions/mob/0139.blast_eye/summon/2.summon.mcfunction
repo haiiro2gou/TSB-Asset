@@ -22,7 +22,7 @@
 # 武器ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
-    #頭 (Compound(Item)) (オプション)
+    # 頭 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Head set value {id:"minecraft:player_head",Count:1b,tag:{Enchantments:[{id:"blast_protection",lvl:11}],display:{Name:'{"text":"ブラストアイの頭","color":"yellow","italic":false}'},SkullOwner:{Id:[I;1,2,139,0],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNhMjQ0ZDIwMzYwYTVkOWMzNWUwZGViZjhhMjAwYzQ2OGE2YWE2M2U1OGQ2ZjAxNTA2ODRiNjhmYWI5OTE0NyJ9fX0="}]}}}}
     # 胴 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Chest set value

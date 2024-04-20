@@ -11,7 +11,7 @@
     tag @s add CU.This
 
 # ダメージ処理
-    #ダメージ設定
+    # ダメージ設定
         data modify storage api: Argument.Damage set value 50.0f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"

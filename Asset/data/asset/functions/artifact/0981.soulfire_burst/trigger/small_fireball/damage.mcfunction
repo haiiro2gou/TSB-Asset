@@ -5,14 +5,14 @@
 # @within function asset:artifact/0981.soulfire_burst/trigger/small_fireball/hit
 
 # ダメージ値設定
-    #ダメージブレのための処理
+    # ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。追加ダメージ発生
-          scoreboard players operation $RandomDamage Temporary %= $100 Const
+            scoreboard players operation $RandomDamage Temporary %= $100 Const
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 300
-    #ダメージセット
+    # ダメージセット
         execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 
 # 魔法火属性
