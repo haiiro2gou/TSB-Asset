@@ -10,7 +10,7 @@
 # 敵の元へテレポート
     tp @s @e[tag=Enemy,sort=nearest,limit=1]
 
-#演出
+# 演出
     execute at @e[tag=Enemy,sort=nearest,limit=1] run particle minecraft:block water ~ ~ ~ 0.3 0.3 0.3 10 100
     playsound entity.squid.death neutral @a ~ ~ ~ 1 2
 

@@ -8,7 +8,7 @@ scoreboard players add @s 1A.LifeTime 1
 
 execute if score @s 1A.LifeTime matches 01..06 run tp @s ~ ~ ~ ~4.5 ~
 
-#降りてくるところ見えないだろうど念のため
+# 降りてくるところ見えないだろうど念のため
 execute if score @s 1A.LifeTime matches 01 run item replace entity @s armor.head with stick{CustomModelData:20222}
 
 execute if score @s 1A.LifeTime matches 07..12 run tp @s ~ ~ ~ ~3.5 ~

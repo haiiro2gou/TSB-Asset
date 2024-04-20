@@ -11,6 +11,6 @@
 
     playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.7 2
 
-#再起
+# 再起
     function asset:artifact/0320.divine_thunder_sword/trigger/3.2.particle_line
     scoreboard players reset $Line Temporary

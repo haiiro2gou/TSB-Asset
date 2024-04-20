@@ -9,7 +9,7 @@
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
-#範囲内に敵がいるか確認
+# 範囲内に敵がいるか確認
     execute positioned ~-1 ~2 ~-1 unless entity @e[type=#lib:living,tag=Enemy,dx=1,dy=1,dz=1] run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
