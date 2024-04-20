@@ -32,5 +32,5 @@
 # リセット
     function api:damage/reset
     tag @e[type=#lib:living,type=!player,tag=N9.Target,distance=..2,sort=nearest,limit=1] remove N9.Target
-#自身を殺す
+# 自身を殺す
     kill @s

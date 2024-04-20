@@ -12,7 +12,7 @@
     execute store result score $RandomDamage Temporary run function lib:random/
 # 剰余算する
     scoreboard players operation $RandomDamage Temporary %= $31 Const
-#スコアセットセット
+# スコアセットセット
     scoreboard players operation @s 3U.Time = $RandomDamage Temporary
 
 

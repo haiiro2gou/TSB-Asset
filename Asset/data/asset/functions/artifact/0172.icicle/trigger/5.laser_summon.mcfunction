@@ -15,5 +15,5 @@
 # タグを消す
     tag @e[tag=4S.First] remove 4S.First
 
-#演出
+# 演出
     function asset:artifact/0172.icicle/trigger/particle

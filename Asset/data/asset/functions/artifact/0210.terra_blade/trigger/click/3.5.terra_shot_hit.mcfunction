@@ -19,5 +19,5 @@
     particle minecraft:crit ~ ~ ~ 0 0 0 0.5 10
     particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
 
-#ショット削除
+# ショット削除
     function asset:artifact/0210.terra_blade/trigger/click/terra_shot_break

@@ -17,7 +17,7 @@
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Water"
-#ダメージ
+# ダメージ
     function api:damage/modifier
     execute as @e[tag=Enemy,distance=..4] run function api:damage/
 # リセット
