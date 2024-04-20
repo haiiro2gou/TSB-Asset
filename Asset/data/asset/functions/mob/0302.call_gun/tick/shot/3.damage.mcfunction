@@ -7,10 +7,10 @@
 # ダメージ設定
     # 与えるダメージ
         data modify storage api: Argument.Damage set value 85f
-    # 物理属性
+    # 属性
         data modify storage api: Argument.AttackType set value "Physical"
-    # 無属性
         data modify storage api: Argument.ElementType set value "None"
+        data modify storage api: Argument.DamageType set value "Projectile"
     # ダメージ
         execute as @a if score @s UserID = @e[type=zombie,tag=8E.Gun,limit=1] 8E.UserID run function api:damage/modifier
         execute as @e[type=#lib:living,tag=LandingTarget,tag=Enemy,tag=!Uninterferable,distance=..30] at @s run function api:damage/
