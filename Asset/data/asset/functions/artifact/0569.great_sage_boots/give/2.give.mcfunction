@@ -30,7 +30,7 @@
     data modify storage asset:artifact Modifiers append value {Type:"defensePhysical",Slot:"feet",Amount:-0.1d,Operation:"multiply_base"}
     data modify storage asset:artifact Modifiers append value {Type:"mpRegen",Slot:"feet",Amount:0.1d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:14598115},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,569,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,569,3],Slot:"feet"}]}
 
