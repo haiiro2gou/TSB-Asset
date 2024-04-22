@@ -203,6 +203,7 @@
     #declare function debug:tps/watch                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/tps/watch.mcfunction#L1
     #declare function indexstorage:deprive/                                           from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/deprive/.mcfunction#L1
     #declare function indexstorage:gc/resize/data                                     from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/gc/resize/data.mcfunction#L1
+    #declare function indexstorage:hexadecimal/                                       from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/hexadecimal/.mcfunction#L1
     #declare function indexstorage:provide/                                           from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/provide/.mcfunction#L1
     #declare function indexstorage:pull/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/pull/.mcfunction#L1
     #declare function indexstorage:pull/from_id                                       from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/pull/from_id.mcfunction#L1
