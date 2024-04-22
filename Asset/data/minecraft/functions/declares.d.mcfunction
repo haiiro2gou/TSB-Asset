@@ -201,6 +201,12 @@
     #declare function debug:stopwatch.start                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/stopwatch.start.mcfunction#L1
     #declare function debug:stopwatch.stop                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/stopwatch.stop.mcfunction#L1
     #declare function debug:tps/watch                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/tps/watch.mcfunction#L1
+    #declare function indexstorage:deprive/                                           from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/deprive/.mcfunction#L1
+    #declare function indexstorage:gc/resize/data                                     from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/gc/resize/data.mcfunction#L1
+    #declare function indexstorage:provide/                                           from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/provide/.mcfunction#L1
+    #declare function indexstorage:pull/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/pull/.mcfunction#L1
+    #declare function indexstorage:pull/from_id                                       from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/pull/from_id.mcfunction#L1
+    #declare function indexstorage:push/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/push/.mcfunction#L1
     #declare function lib:array/compare                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/array/compare.mcfunction#L1
     #declare function lib:array/compare_single                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/array/compare_single.mcfunction#L1
     #declare function lib:array/mask                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/array/mask.mcfunction#L1
@@ -253,15 +259,6 @@
     #declare function natural_merge_sort:sys/descend/take2                            from home/runner/work/TSB-Patcher/TSB-Patcher/NaturalMergeSort/data/natural_merge_sort/functions/sys/descend/take2.mcfunction#L1
     #declare function natural_merge_sort:sys/setup                                    from home/runner/work/TSB-Patcher/TSB-Patcher/NaturalMergeSort/data/natural_merge_sort/functions/sys/setup.mcfunction#L1
     #declare function natural_merge_sort:sys/sort                                     from home/runner/work/TSB-Patcher/TSB-Patcher/NaturalMergeSort/data/natural_merge_sort/functions/sys/sort.mcfunction#L1
-    #declare function oh_its_dat:please                                               from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_its_dat/functions/please.mcfunction#L1
-    #declare function oh_my_dat:please                                                from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/please.mcfunction#L1
-    #declare function oh_my_dat:release                                               from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/release.mcfunction#L1
-    #declare function oh_my_dat:sys/allocate                                          from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/allocate.mcfunction#L1
-    #declare function oh_my_dat:sys/gc                                                from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/gc.mcfunction#L1
-    #declare function oh_my_dat:sys/gc_loop                                           from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/gc_loop.mcfunction#L1
-    #declare function oh_my_dat:sys/init                                              from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L1
-    #declare function oh_my_dat:sys/load                                              from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/load.mcfunction#L1
-    #declare function oh_my_dat:sys/provide                                           from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/provide.mcfunction#L1
     #declare function score_to_health:anti_glitch/modify                              from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/modify.mcfunction#L1
     #declare function score_to_health:anti_glitch/protect                             from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/protect.mcfunction#L1
     #declare function score_to_health:anti_glitch/restore                             from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/restore.mcfunction#L1
@@ -314,6 +311,8 @@
     #declare loot_table player_manager:lost_item/give_all/name_to_textcomponent       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/loot_tables/lost_item/give_all/name_to_textcomponent.json#L1
     #declare objective Const                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L116
     #declare objective Global                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L104
+    #declare objective IndexStorage                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/init.mcfunction#L15
+    #declare objective IndexStorageID                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/init.mcfunction#L14
     #declare objective Lib                                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L200
     #declare objective MobHealth                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L37
     #declare objective MobID                                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L157
@@ -539,9 +538,13 @@
     #declare predicate world_manager:area/04-03.end_forgotten_star_higher             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/predicates/area/04-03.end_forgotten_star_higher.json#L1
     #declare predicate world_manager:area/04.end                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/predicates/area/04.end.json#L1
     #declare recipe minecraft:enchanting_table                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/recipes/enchanting_table.json#L1
+    #declare score_holder $GCInterval                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/init.mcfunction#L13
     #declare score_holder $LoadTime                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L7
     #declare score_holder $PlayerCount                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L6
+    #declare score_holder $StorageIDIndex                                             from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/init.mcfunction#L12
     #declare storage api:                                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/_index.d.mcfunction#L6
+    #declare storage indexstorage:                                                    from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/init.mcfunction#L9
+    #declare storage indexstorage:core                                                from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/init.mcfunction#L10
     #declare storage lib:                                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/_index.d.mcfunction#L6
     #declare storage minecraft:global                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L57
     #declare tag AttackedEntity                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacked_entity/_index.d.mcfunction#L11
@@ -553,6 +556,7 @@
     #declare tag Enemy.Boss                                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L8
     #declare tag FallDamageImmunity                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/functions/fall_damage/_index.d.mcfunction#L10
     #declare tag Friend                                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L6
+    #declare tag HasStorage                                                           from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/indexstorage/functions/init.mcfunction#L11
     #declare tag Npc                                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L10
     #declare tag Object                                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L11
     #declare tag PlayerShouldInvulnerable                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/functions/manage_tag/_index.d.mcfunction#L6
@@ -655,11 +659,10 @@
     #declare tag/function asset:teleporter/register                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/teleporter/register.json#L1
     #declare tag/function asset:trader/register                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/trader/register.json#L1
     #declare tag/function core:patcher/load                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/tags/functions/patcher/load.json#L1
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/minecraft/tags/functions/load.json#L1
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/load.json#L1
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
-    #declare tag/function minecraft:load
-    #declare tag/function minecraft:tick                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
+    #declare tag/function minecraft:load                                              from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/load.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/tick.json#L1
+    #declare tag/function minecraft:tick
     #declare tag/item lib:all                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/all.json#L1
     #declare tag/item lib:consumable                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/consumable.json#L1
     #declare tag/item lib:edible                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/edible.json#L1
@@ -789,20 +792,6 @@
 #   asset:spawner/*/*
 #   asset_manager:spawner/**
 #declare storage asset:spawner from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L8
-
-#> declare
-# @within
-#   function oh_*:**
-#   function lib:**
-#   function api:**
-#   function debug:**
-#   function core:**
-#   function asset:**
-#   function asset_manager:**
-#   function player_manager:**
-#   function world_manager:**
-    #declare objective OhMyDatID from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L30
-    #declare storage oh_my_dat:  from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L29
 
 #> declare
 # @within
