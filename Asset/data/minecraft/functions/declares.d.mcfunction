@@ -264,6 +264,15 @@
     #declare function natural_merge_sort:sys/descend/take2                            from home/runner/work/TSB-Patcher/TSB-Patcher/NaturalMergeSort/data/natural_merge_sort/functions/sys/descend/take2.mcfunction#L1
     #declare function natural_merge_sort:sys/setup                                    from home/runner/work/TSB-Patcher/TSB-Patcher/NaturalMergeSort/data/natural_merge_sort/functions/sys/setup.mcfunction#L1
     #declare function natural_merge_sort:sys/sort                                     from home/runner/work/TSB-Patcher/TSB-Patcher/NaturalMergeSort/data/natural_merge_sort/functions/sys/sort.mcfunction#L1
+    #declare function oh_its_dat:please                                               from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_its_dat/functions/please.mcfunction#L1
+    #declare function oh_my_dat:please                                                from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/please.mcfunction#L1
+    #declare function oh_my_dat:release                                               from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/release.mcfunction#L1
+    #declare function oh_my_dat:sys/allocate                                          from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/allocate.mcfunction#L1
+    #declare function oh_my_dat:sys/gc                                                from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/gc.mcfunction#L1
+    #declare function oh_my_dat:sys/gc_loop                                           from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/gc_loop.mcfunction#L1
+    #declare function oh_my_dat:sys/init                                              from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L1
+    #declare function oh_my_dat:sys/load                                              from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/load.mcfunction#L1
+    #declare function oh_my_dat:sys/provide                                           from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/provide.mcfunction#L1
     #declare function score_to_health:anti_glitch/modify                              from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/modify.mcfunction#L1
     #declare function score_to_health:anti_glitch/protect                             from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/protect.mcfunction#L1
     #declare function score_to_health:anti_glitch/restore                             from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/restore.mcfunction#L1
@@ -664,9 +673,11 @@
     #declare tag/function asset:teleporter/register                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/teleporter/register.json#L1
     #declare tag/function asset:trader/register                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/tags/functions/trader/register.json#L1
     #declare tag/function core:patcher/load                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/tags/functions/patcher/load.json#L1
-    #declare tag/function minecraft:load                                              from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/load.json#L1
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/load.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/minecraft/tags/functions/load.json#L1
+    #declare tag/function minecraft:load
     # from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/tick.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
     #declare tag/function minecraft:tick
     #declare tag/item lib:all                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/all.json#L1
     #declare tag/item lib:consumable                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/consumable.json#L1
@@ -860,6 +871,20 @@
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L19
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L21
 #declare storage asset:trader
+
+#> declare
+# @within
+#   function oh_*:**
+#   function lib:**
+#   function api:**
+#   function debug:**
+#   function core:**
+#   function asset:**
+#   function asset_manager:**
+#   function player_manager:**
+#   function world_manager:**
+    #declare objective OhMyDatID from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L30
+    #declare storage oh_my_dat:  from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L29
 
 #> declare
 # @within
