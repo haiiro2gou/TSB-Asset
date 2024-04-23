@@ -19,8 +19,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DamageType set value "Projectile"
     execute at @a if score @s LD.UserID = @p UserID as @p run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,distance=..2.5] run function api:damage/
-# リセット
+    execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living,tag=Enemy,dx=2.5,dy=2.5,dz=2.5] run function api:damage/
     function api:damage/reset
 
 # ついでに火を消す
