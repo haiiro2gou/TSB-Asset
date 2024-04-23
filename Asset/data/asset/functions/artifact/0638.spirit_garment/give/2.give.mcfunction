@@ -50,6 +50,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# トリガーを隠蔽するか否か (boolean) (オプション)
+    data modify storage asset:artifact Secret set value true
 # Modifiers (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
     data modify storage asset:artifact Modifiers append value {Type:"maxHealth",Slot:"head",Amount:8,Operation:"add"}

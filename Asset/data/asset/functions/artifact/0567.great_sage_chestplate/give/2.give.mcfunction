@@ -18,8 +18,8 @@
     data modify storage asset:artifact Lore set value ['[{"text":"大賢者エリュサスの祈りが込められたローブ","color":"#FED4FF"}]','{"text":"この衣服はエリュサスの写し身そのものだ","color":"#FED4FF"}']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"onKilled",Slot:"chest",MPCost:0}
-    data modify storage asset:artifact Triggers append value {Trigger:"onDamage",Slot:"chest",Condition:'{"text":"体力が20%以下"}',MPCost:0,LocalCooldown:50,DisableCooldownMessage:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onKilled",Slot:"chest",MPCost:0,Secret:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onDamage",Slot:"chest",Condition:'{"text":"体力が20%以下"}',MPCost:0,Secret:true,LocalCooldown:50,DisableCooldownMessage:true}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 256
 # Modifiers (Component[]) (オプション)

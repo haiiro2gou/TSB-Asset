@@ -48,6 +48,8 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# トリガーを隠蔽するか否か (boolean) (オプション)
+    data modify storage asset:artifact Secret set value true
 # Modifier (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
     data modify storage asset:artifact Modifiers append value {Type:"attackWater",Slot:"head",Amount:0.05d,Operation:"multiply_base"}

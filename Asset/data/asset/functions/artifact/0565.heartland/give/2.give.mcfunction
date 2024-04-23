@@ -18,7 +18,7 @@
     data modify storage asset:artifact Lore set value ['[{"text":"大地の加護を得た衣"}]','[{"text":"駆け出すものに"},{"text":"祝福","color":"light_purple"},{"text":"を。","color":"white"}]']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"feet",MPCost:0}
+    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"feet",MPCost:0,Secret:true}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 237
 # 装備時効果 (Component[]) (オプション)

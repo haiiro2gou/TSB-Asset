@@ -18,8 +18,8 @@
     data modify storage asset:artifact Lore set value ['[{"text":"「憎いのだろう？ アイツのことが」","color":"#C71585","italic":true}]']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"chest",MPCost:0}
-    data modify storage asset:artifact Triggers append value {Trigger:"onDamageFromEntity",Slot:"chest",MPCost:0,LocalCooldown:100}
+    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"chest",MPCost:0,Secret:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onDamageFromEntity",Slot:"chest",MPCost:0,Secret:true,LocalCooldown:100}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 246
 # Modifier (Component[]) (オプション)

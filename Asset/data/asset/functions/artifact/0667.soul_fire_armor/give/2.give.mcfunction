@@ -17,8 +17,8 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"魂炎を纏う者に代償を。","color":"#017C80","italic":true}','{"text":"代償背負いし者へ力を。","color":"#017C80","italic":true}']
 # トリガー (Component[])
-    data modify storage asset:artifact Triggers set value [{Slot:"feet",Trigger:"equipping",MPCost:0}]
-    data modify storage asset:artifact Triggers append value {Slot:"feet",Trigger:"onAttack",AttackInfo:{Damage:"80",AttackType:[Physical],ElementType:[Fire],IsRangeAttack:"never"},MPCost:0,LocalCooldown:20,DisableCooldownMessage:true,DisableMPMessage:true}
+    data modify storage asset:artifact Triggers set value [{Slot:"feet",Trigger:"equipping",MPCost:0,Secret:true}]
+    data modify storage asset:artifact Triggers append value {Slot:"feet",Trigger:"onAttack",AttackInfo:{Damage:"80",AttackType:[Physical],ElementType:[Fire],IsRangeAttack:"never"},MPCost:0,Secret:true,LocalCooldown:20,DisableCooldownMessage:true,DisableMPMessage:true}
 # 装備セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 232
 # 装備時効果 (Component[]) (オプション)

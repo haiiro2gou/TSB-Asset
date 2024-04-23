@@ -18,8 +18,8 @@
     data modify storage asset:artifact Lore set value []
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"feet",MPCost:0}
-    data modify storage asset:artifact Triggers append value {Trigger:"onAttackByMelee",Slot:"feet",MPCost:0,AttackInfo:{Damage:40,AttackType:[Physical],ElementType:[Thunder]}}
+    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"feet",MPCost:0,Secret:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onAttackByMelee",Slot:"feet",MPCost:0,Secret:true,AttackInfo:{Damage:40,AttackType:[Physical],ElementType:[Thunder]}}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 238
 # Modifiers (Component[]) (オプション)

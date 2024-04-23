@@ -18,8 +18,8 @@
     data modify storage asset:artifact Lore set value ['[{"text":"全てを貫くような鋭い荊で覆われた鎧。","color":"gray"}]']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"head",MPCost:0}
-    data modify storage asset:artifact Triggers append value {Trigger:"onDamageFromEntity",Slot:"head",MPCost:0,LocalCooldown:20,AttackInfo:{Damage:75,AttackType:[Physical],ElementType:[None]}}
+    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"head",MPCost:0,Secret:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onDamageFromEntity",Slot:"head",MPCost:0,Secret:true,LocalCooldown:20,AttackInfo:{Damage:75,AttackType:[Physical],ElementType:[None]}}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 239
 # Modifiers (Component[]) (オプション)

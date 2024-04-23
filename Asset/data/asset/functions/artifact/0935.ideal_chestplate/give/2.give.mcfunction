@@ -50,6 +50,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# トリガーを隠蔽するか否か (boolean) (オプション)
+    data modify storage asset:artifact Secret set value true
 # Modifier (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value [{Type:"defenseBase",Slot:"chest",Amount:0.05d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
