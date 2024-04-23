@@ -20,7 +20,7 @@
     data modify storage asset:artifact RemainingCount set value 1
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"passive",Slot:"chest",MPCost:0}
+    data modify storage asset:artifact Triggers append value {Trigger:"passive",Slot:"chest",MPCost:0,Secret:true}
 # Modifiers (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
     data modify storage asset:artifact Modifiers append value {Type:"maxHealth",Slot:"chest",Amount:0.20d,Operation:"multiply_base"}

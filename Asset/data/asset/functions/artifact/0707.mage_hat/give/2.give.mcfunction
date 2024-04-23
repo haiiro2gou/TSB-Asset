@@ -48,6 +48,8 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# トリガーを隠蔽するか否か (boolean) (オプション)
+    data modify storage asset:artifact Secret set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # Modifier (Component[]) (オプション)

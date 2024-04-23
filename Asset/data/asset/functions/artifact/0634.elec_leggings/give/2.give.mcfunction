@@ -50,6 +50,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# トリガーを隠蔽するか否か (boolean) (オプション)
+    data modify storage asset:artifact Secret set value true
 # EquipID (int) (オプション)
     data modify storage asset:artifact EquipID set value 235
 # Modifiers (Component[]) (オプション)

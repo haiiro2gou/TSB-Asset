@@ -20,7 +20,7 @@
     data modify storage asset:artifact RemainingCount set value 1
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"passive",Slot:"legs",MPCost:0}
+    data modify storage asset:artifact Triggers append value {Trigger:"passive",Slot:"legs",MPCost:0,Secret:true}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

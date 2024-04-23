@@ -18,8 +18,8 @@
     data modify storage asset:artifact Lore set value ['[{"text":"「故郷の面影はなく、白銀の荒野が広がるのみ。","color":"gray","italic":true}]','[{"text":" ただ氷風と深雪だけの地と化していた。」","color":"gray","italic":true}]']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"legs",MPCost:0}
-    data modify storage asset:artifact Triggers append value {Trigger:"onAttack",Slot:"legs",MPCost:0,LocalCooldown:20,AttackInfo:{Damage:70,AttackType:[Physical],ElementType:[Water]},DisableCooldownMessage:true,DisableMPMessage:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"legs",MPCost:0,Secret:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onAttack",Slot:"legs",MPCost:0,Secret:true,LocalCooldown:20,AttackInfo:{Damage:70,AttackType:[Physical],ElementType:[Water]},DisableCooldownMessage:true,DisableMPMessage:true}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 243
 # Modifier (Component[]) (オプション)

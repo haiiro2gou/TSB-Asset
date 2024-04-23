@@ -18,8 +18,8 @@
     data modify storage asset:artifact Lore set value ['{"text":"「ある者が故郷へと深雪の地を歩いていた。","color":"gray","italic":true}','{"text":" けれど記憶の地には故郷はなかった。」","color":"gray","italic":true}']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"head",MPCost:0}
-    data modify storage asset:artifact Triggers append value {Trigger:"onAttack",Slot:"head",MPCost:0,LocalCooldown:20,AttackInfo:{Damage:200,AttackType:[Physical],ElementType:[Water]},DisableCooldownMessage:true,DisableMPMessage:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"equipping",Slot:"head",MPCost:0,Secret:true}
+    data modify storage asset:artifact Triggers append value {Trigger:"onAttack",Slot:"head",MPCost:0,Secret:true,LocalCooldown:20,AttackInfo:{Damage:200,AttackType:[Physical],ElementType:[Water]},DisableCooldownMessage:true,DisableMPMessage:true}
 # セットID (int) (オプション)
     data modify storage asset:artifact EquipID set value 243
 # Modifier (Component[]) (オプション)

@@ -18,7 +18,7 @@
     data modify storage asset:artifact Lore set value ['{"text":"オフハンドに持っている間"}','{"text":"最大HPが1になり透明状態になる"}']
 # トリガー (Component[])
     data modify storage asset:artifact Triggers set value []
-    data modify storage asset:artifact Triggers append value {Trigger:"passive",Slot:"offhand",MPCost:0}
+    data modify storage asset:artifact Triggers append value {Trigger:"passive",Slot:"offhand",MPCost:0,Secret:true}
 # Modifiers (Component[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
     data modify storage asset:artifact Modifiers append value {Type:"maxHealth",Slot:"offhand",Amount:-0.99d,Operation:"multiply"}
