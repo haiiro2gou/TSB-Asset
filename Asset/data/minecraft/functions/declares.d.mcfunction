@@ -198,6 +198,10 @@
     #declare function api:teleporter/set_activation_state/from_nearest                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_nearest.mcfunction#L1
     #declare function api:version/check/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/version/check/.mcfunction#L1
     #declare function api:version/parser/                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/version/parser/.mcfunction#L1
+    #declare function asset_manager:artifact/create/trigger/attack_info               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/create/trigger/attack_info.mcfunction#L1
+    #declare function asset_manager:artifact/create/trigger/cooltime                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/create/trigger/cooltime.mcfunction#L1
+    #declare function asset_manager:artifact/create/trigger/special_cooltime          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/create/trigger/special_cooltime.mcfunction#L1
+    #declare function asset_manager:artifact/create/trigger/trigger                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/artifact/create/trigger/trigger.mcfunction#L1
     #declare function debug:stopwatch.start                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/stopwatch.start.mcfunction#L1
     #declare function debug:stopwatch.stop                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/stopwatch.stop.mcfunction#L1
     #declare function debug:tps/watch                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/debug/functions/tps/watch.mcfunction#L1
