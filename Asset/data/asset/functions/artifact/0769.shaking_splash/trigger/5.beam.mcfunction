@@ -22,7 +22,6 @@
     data modify storage api: Argument.DamageType set value "Projectile"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=LandingTarget,distance=..15] run function api:damage/
-# リセット
     function api:damage/reset
 
 # Tag消し
