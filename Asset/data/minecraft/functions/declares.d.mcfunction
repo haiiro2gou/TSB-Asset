@@ -851,8 +851,10 @@
 #   asset:teleporter/*/*
 #   asset:teleporter/common/register
 #   asset_manager:teleporter/**
+#   function core:patcher/migration/v1.2.1/
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/migration/v0.1.4/.mcfunction#L12
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/teleporter/_index.d.mcfunction#L9
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v1.2.1/.mcfunction#L9
 #declare storage asset:teleporter
 
 #> declare
