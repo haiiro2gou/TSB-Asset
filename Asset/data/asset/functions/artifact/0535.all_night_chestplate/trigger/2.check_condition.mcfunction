@@ -13,7 +13,7 @@
     function api:entity/mob/effect/get/from_id
 
 # 装備をすべて着ているが、夜じゃない場合
-    execute if data storage api: Return.Effect{Stack:4} if predicate lib:is_day run tag @s remove CanUsed
+    execute if data storage api: Return.Effect{Stack:4} unless predicate lib:is_night run tag @s remove CanUsed
 # 演出（使用できないときのメッセージだすとうるさいのでなし）
     execute unless entity @s[tag=CanUsed] run particle minecraft:smoke ~ ~1 ~ 0.3 0.3 0.3 0 20 normal @s
     execute unless entity @s[tag=CanUsed] run playsound minecraft:block.stone_button.click_off player @s ~ ~ ~ 1 2
