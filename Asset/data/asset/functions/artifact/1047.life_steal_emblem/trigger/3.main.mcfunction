@@ -25,7 +25,6 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b
-    function api:damage/modifier
     function api:damage/
     function api:damage/reset
 
