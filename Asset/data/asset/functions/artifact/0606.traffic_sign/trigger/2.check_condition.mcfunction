@@ -5,7 +5,7 @@
 # @within function asset:artifact/0606.traffic_sign/trigger/1.trigger
 
 # 先にLatestUseTickを取っておく
-    execute store result score $GU.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
+    execute store result score $GU.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.Triggers[0].LatestUseTick
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/mainhand

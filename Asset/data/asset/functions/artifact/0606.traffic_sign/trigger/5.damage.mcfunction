@@ -16,6 +16,7 @@
 # ダメージ
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DamageType set value "Projectile"
     execute as @p[tag=GU.Owner] run function api:damage/modifier
     function api:damage/
 
@@ -24,4 +25,3 @@
 
 # リセット
     function api:damage/reset
-
