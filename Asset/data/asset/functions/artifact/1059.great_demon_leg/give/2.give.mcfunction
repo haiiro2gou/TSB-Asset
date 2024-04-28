@@ -9,7 +9,7 @@
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 1058
+    data modify storage asset:artifact ID set value 1059
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:leather_leggings"
 # 神器の名前 (TextComponentString)
