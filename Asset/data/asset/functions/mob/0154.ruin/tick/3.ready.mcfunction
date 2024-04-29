@@ -16,4 +16,4 @@
 # 演出
     particle dragon_breath ~ ~1 ~ 0.4 0.4 0.4 0.1 100
     particle dust 0.255 0.039 0.039 1 ~ ~1 ~ 0.3 0.3 0.3 1 100
-    playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 1
+    playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 1 1
