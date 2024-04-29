@@ -36,10 +36,10 @@
         "asset:effect/0251.oracle_magic_defense/_/register",
         "asset:effect/0252.key_of_another_world/_/register",
         "asset:effect/0253.purifying_indigo/_/register",
+        "asset:effect/0256.great_sage_robe/_/register",
         "asset:effect/0603.domination/_/register",
         "asset:effect/0605.aurora_corrosion/_/register",
         "asset:effect/0608.sinking/_/register",
-        "asset:effect/0612.infringement/_/register",
-        "asset:effect/0256.great_sage_robe/_/register"
+        "asset:effect/0612.infringement/_/register"
     ]
 }
