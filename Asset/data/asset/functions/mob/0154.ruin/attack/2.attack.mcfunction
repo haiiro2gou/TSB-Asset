@@ -13,6 +13,7 @@
 
 # 腕振るやつ(タグあり)
     execute if entity @s[tag=4A.Madness] run item replace entity @s weapon.mainhand with stick{CustomModelData:20065}
+
 # 演出
     execute at @p[tag=Victim] run particle block redstone_block ~ ~1 ~ 0.1 0 0.1 4.2 80
     playsound minecraft:entity.zombie.break_wooden_door hostile @a ~ ~ ~ 2 2
@@ -30,19 +31,14 @@
     execute if entity @s[tag=4A.Madness] store result score $DamageValue Temporary run data get storage api: Return.Difficulty 10
     execute if entity @s[tag=4A.Madness] run scoreboard players add $DamageValue Temporary 40
 
-# 与えるダメージ
+# ダメージ
     execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageValue Temporary
-# 属性
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-# デスログ
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって存在が崩壊した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにより跡形もなく破壊された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-# 補正functionを実行
     function api:damage/modifier
-# 対象
     execute as @p[tag=Victim,distance=..6] run function api:damage/
-# リセット
     function api:damage/reset
 
 # スコアリセット
