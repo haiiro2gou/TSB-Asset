@@ -22,8 +22,12 @@
 # 失った体力10につき、火攻撃+5%(最大25%)
 # 補正はEffectAsset側で実装する
 
-# $LostHealthは条件チェックで取得済み
-# $LostHealthの0.1倍をStackとして燃える蝶の夢エフェクトを付与
+
+# $LostHealthは2.check_conditionで計算済み
+
+# $LostHealthの0.1倍の数値をStackとして燃える蝶の夢エフェクトを付与
     data modify storage api: Argument.ID set value 220
     execute store result storage api: Argument.Stack int 0.1 run scoreboard players get $LostHealth Temporary
     function api:entity/mob/effect/give
+
+# リセットはcheck_conditionで行っているので不要

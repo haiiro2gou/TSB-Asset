@@ -11,9 +11,9 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"燃える蝶の夢","color":"dark_red"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"与える火属性ダメージが上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"与える火属性ダメージが上昇する"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 200
+    data modify storage asset:effect Duration set value 320
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
@@ -21,7 +21,7 @@
 # スタックの操作方法 (default = API || "replace")
     # data modify storage asset:effect StackOperation set value
 # 最大効果時間 (int) (default = 2147483647)
-    data modify storage asset:effect MaxDuration set value 200
+    data modify storage asset:effect MaxDuration set value 320
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 5
 # 悪い効果か否か (boolean)
