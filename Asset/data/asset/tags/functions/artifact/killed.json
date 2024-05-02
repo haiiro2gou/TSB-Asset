@@ -2,6 +2,7 @@
     "values": [
         "asset:artifact/0566.great_sage_helmet/killed/1.trigger",
         "asset:artifact/0928.ankh/trigger/1.trigger",
+        "asset:artifact/0950.residue_of_pumpkin/trigger/1.trigger",
         "asset:artifact/1083.tablet_of_oracle/trigger/1.trigger"
     ]
 }
