@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:leather_leggings"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"魔導士のローブ(下)","color":"#360F57"}'
+    data modify storage asset:artifact Name set value '{"text":"魔導士のローブ(下)","color":"#621B9E"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"魔導士が普段身に着けているローブ。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
@@ -62,7 +62,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:3542871},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;1,1,709,4],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1,Operation:0,UUID:[I;1,1,709,4],Slot:"legs"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:6429598},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;1,1,709,4],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1,Operation:0,UUID:[I;1,1,709,4],Slot:"legs"}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
