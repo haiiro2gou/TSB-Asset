@@ -280,7 +280,6 @@
     #declare function score_to_health:check                                           from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/check.mcfunction#L1
     #declare function score_to_health:load                                            from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/load.mcfunction#L1
     #declare function score_to_health:modify                                          from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/modify.mcfunction#L1
-    #declare function score_to_health:modify_max_health                               from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/modify_max_health.mcfunction#L1
     #declare function score_to_health:player_tick                                     from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/player_tick.mcfunction#L1
     #declare function score_to_health:restore                                         from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/restore.mcfunction#L1
     #declare function world_manager:gimmick/ending_portal/close                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/close.mcfunction#L1
@@ -675,6 +674,7 @@
     #declare tag/function core:patcher/load                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/tags/functions/patcher/load.json#L1
     # from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/load.json#L1
     # from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/minecraft/tags/functions/load.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
     #declare tag/function minecraft:load
     # from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/tick.json#L1
     # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
