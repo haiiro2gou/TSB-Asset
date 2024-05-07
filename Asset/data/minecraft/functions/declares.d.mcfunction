@@ -844,7 +844,7 @@
 
 #> declare
 # @within asset:**
-#declare storage asset:temp from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L14
+#declare storage asset:temp from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L13
 
 #> declare
 # @within
@@ -955,11 +955,10 @@
 
 #> declare
 # @within
-#   function asset:artifact/*/**check_condition
-#   function asset:artifact/*/**check_condition/**
+#   function asset:artifact/*/**check**
 #   function asset_manager:artifact/check/.m
 #   function asset:artifact/common/use/*
-#declare tag CanUsed from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L10
+#declare tag CanUsed from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L9
 
 #> declare
 # @within
