@@ -10,7 +10,7 @@
     data modify storage api: Argument.Damage set value 9999f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.FixedDamage set value true
-    function api:damage/modifier
+    execute as @p[tag=this] run function api:damage/modifier
     function api:damage/
     function api:damage/reset
 
