@@ -17,7 +17,7 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"朝を知らせるラッパ。"}','{"text":"この音色を聞いたら活動を始めなければならない。"}']
 # MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact CostText set value '{"text":"夜","color":"white"}'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
