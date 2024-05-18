@@ -20,6 +20,6 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run function api:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64,sort=nearest,limit=1] run function api:damage/
 # リセット
     function api:damage/reset
