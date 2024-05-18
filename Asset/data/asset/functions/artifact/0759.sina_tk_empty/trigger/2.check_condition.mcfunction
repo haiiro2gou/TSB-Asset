@@ -1,4 +1,4 @@
-#> asset:artifact/0759.sina_tk_empty/trigger/2.check_condition/
+#> asset:artifact/0759.sina_tk_empty/trigger/2.check_condition
 #
 # 神器の発動条件をチェックします
 #
