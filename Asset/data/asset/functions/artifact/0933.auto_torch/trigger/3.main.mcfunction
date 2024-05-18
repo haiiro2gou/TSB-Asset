@@ -7,6 +7,8 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/hotbar
 
-# ここから先は神器側の効果の処理を書く
-    setblock ~ ~ ~ torch keep
+# 松明一個消す
     clear @s torch 1
+# 前方におけるなら置く、おけなかったら足元に置く
+    execute if entity @s[tag=CanSetFront] anchored eyes positioned ^ ^ ^4 run setblock ~ ~ ~ torch
+    execute if entity @s[tag=CanSetStep] run setblock ~ ~ ~ torch
