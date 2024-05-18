@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"4","color":"light_purple","obfuscated":true},{"text":"生命、宇宙、そして万物についての究極の疑問の答え","color":"dark_purple","obfuscated":false},{"text":"2","color":"light_purple","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '{"text":"","color":"light_purple","obfuscated":true,"extra":["4",{"text":"生命、宇宙、そして万物についての究極の疑問の答え","color":"purple","obfuscated":false},"2"}]}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"750万年かけて計算した生命、宇宙、そして万物についての","color":"white","italic":false}]','[{"text":"究極の疑問の答えを自身のMPに代入する","color":"white","italic":false}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"750万年かけて計算した生命、宇宙、そして万物についての","color":"white","italic":false}]','[{"text":"究極の疑問の答えが一定時間自身のMPとして現れる","color":"white","italic":false}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -45,7 +45,7 @@
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # グローバルクールダウン (int) (オプション)
-    # data modify storage asset:artifact SpecialCooldown set value
+    data modify storage asset:artifact SpecialCooldown set value 8400
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
