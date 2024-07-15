@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魂喰らいの勾玉","color":"dark_aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、体力を最大体力の値に応じて回復する。","color":"white"}','{"text":"多く持つほど回復量が増加する。","color":"white"}','{"text":"不気味な暗い青緑色をした勾玉。","color":"gray"}','{"text":"見つめると魂が吸われているような感覚がする。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を最大体力の値に応じて回復する。","color":"white"}','{"text":"不気味な暗い青緑色をした勾玉。","color":"gray"}','{"text":"見つめると魂が吸われているような感覚がする。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -24,6 +24,8 @@
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onKilledByMelee"
+# 効果が重複可能か否か (boolean) (オプション)
+    data modify storage asset:artifact EnableDuplication set value true
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -49,9 +51,11 @@
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    data modify storage asset:artifact DisableMPMessage set value true
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)
+    # data modify storage asset:artifact DisableBreakSound set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 
