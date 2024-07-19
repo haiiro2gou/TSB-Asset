@@ -251,6 +251,7 @@
         "asset:artifact/1083.tablet_of_oracle/register",
         "asset:artifact/1088.purifying_hydrangea/register",
         "asset:artifact/1089.antimatter_gatling_rifle/register",
-        "asset:artifact/1098.mirror_piece_of_bygone_days/register"
+        "asset:artifact/1098.mirror_piece_of_bygone_days/register",
+        "asset:artifact/1106.rainbow_candy/register"
     ]
 }
