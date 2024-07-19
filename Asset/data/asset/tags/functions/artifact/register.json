@@ -250,6 +250,7 @@
         "asset:artifact/1082.cursed_straw_doll/register",
         "asset:artifact/1083.tablet_of_oracle/register",
         "asset:artifact/1088.purifying_hydrangea/register",
-        "asset:artifact/1089.antimatter_gatling_rifle/register"
+        "asset:artifact/1089.antimatter_gatling_rifle/register",
+        "asset:artifact/1098.mirror_piece_of_bygone_days/register"
     ]
 }

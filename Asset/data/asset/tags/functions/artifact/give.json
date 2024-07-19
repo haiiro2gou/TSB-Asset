@@ -376,6 +376,7 @@
         "asset:artifact/1082.cursed_straw_doll/give/1.trigger",
         "asset:artifact/1083.tablet_of_oracle/give/1.trigger",
         "asset:artifact/1088.purifying_hydrangea/give/1.trigger",
-        "asset:artifact/1089.antimatter_gatling_rifle/give/1.trigger"
+        "asset:artifact/1089.antimatter_gatling_rifle/give/1.trigger",
+        "asset:artifact/1098.mirror_piece_of_bygone_days/give/1.trigger"
     ]
 }
