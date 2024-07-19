@@ -1,8 +1,8 @@
-#> asset:mob/0085.soul_bullet/tick/3.hit
+#> asset:mob/0085.soul_bullet/tick/hit
 #
-# ヒット処理
+# ヒット時の処理
 #
-# @within function asset:mob/0085.soul_bullet/tick/2.tick
+# @within function asset:mob/0085.soul_bullet/tick/
 
 # ダメージ
     data modify storage api: Argument.Damage set value 36f
