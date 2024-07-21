@@ -93,6 +93,8 @@
         "asset:mob/0287.burning_stomper/tick/1.trigger",
         "asset:mob/0292.trample_bot/tick/1.trigger",
         "asset:mob/0302.call_gun/tick/1.trigger",
+        "asset:mob/0363.white_spellbook/_/tick",
+        "asset:mob/0364.white_magic/_/tick",
         "asset:mob/1004.tultaria/tick/1.trigger",
         "asset:mob/1005.blue_star/tick/1.trigger",
         "asset:mob/1006.green_star/tick/1.trigger",

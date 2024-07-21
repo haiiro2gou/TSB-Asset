@@ -147,6 +147,8 @@
         "asset:mob/0287.burning_stomper/summon/1.trigger",
         "asset:mob/0292.trample_bot/summon/1.trigger",
         "asset:mob/0302.call_gun/summon/1.trigger",
+        "asset:mob/0363.white_spellbook/_/summon",
+        "asset:mob/0364.white_magic/_/summon",
         "asset:mob/1004.tultaria/summon/1.trigger",
         "asset:mob/1005.blue_star/summon/1.trigger",
         "asset:mob/1006.green_star/summon/1.trigger",
