@@ -52,7 +52,7 @@
         "asset:mob/0219.aorta/hurt/1.trigger",
         "asset:mob/0220.vena_cana/hurt/1.trigger",
         "asset:mob/0224.pumpkin_ghost/hurt/1.trigger",
-        "asset:mob/0228.frost_eye/hurt/1.trigger",
+        "asset:mob/0227.frost_eye/_/hurt",
         "asset:mob/0232.honey_leader/hurt/1.trigger",
         "asset:mob/0233.honey_flyer/hurt/1.trigger",
         "asset:mob/0237.lunatic_mage/hurt/1.trigger",
