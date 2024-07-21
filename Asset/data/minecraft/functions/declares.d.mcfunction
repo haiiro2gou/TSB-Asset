@@ -118,6 +118,7 @@
     #declare function api:inventory/refer_selected_item_slot/replace_from_shulker_box from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/inventory/refer_selected_item_slot/replace_from_shulker_box.mcfunction#L1
     #declare function api:lost_items/get_length                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/lost_items/get_length.mcfunction#L1
     #declare function api:lost_items/give                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/lost_items/give.mcfunction#L1
+    #declare function api:mob/get_health                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mob/get_health.mcfunction#L1
     #declare function api:mob/get_health_percent                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mob/get_health_percent.mcfunction#L1
     #declare function api:mob/get_max_health                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mob/get_max_health.mcfunction#L1
     #declare function api:mob/get_max_health_multiplier                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/mob/get_max_health_multiplier.mcfunction#L1
