@@ -39,7 +39,7 @@
         "asset:mob/0174.burning_blaze/hurt/1.trigger",
         "asset:mob/0175.queen_bee/hurt/1.trigger",
         "asset:mob/0176.killer_bee/hurt/1.trigger",
-        "asset:mob/0181.magic_bookshelf/hurt/1.trigger",
+        "asset:mob/0181.magic_bookshelf/_/hurt",
         "asset:mob/0182.skull_raven/hurt/1.trigger",
         "asset:mob/0186.ferocious_bee/hurt/1.trigger",
         "asset:mob/0187.flame_mage/hurt/1.trigger",

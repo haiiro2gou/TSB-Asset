@@ -50,7 +50,7 @@
         "asset:mob/0177.pillager/attack/1.trigger",
         "asset:mob/0178.vindicator/attack/1.trigger",
         "asset:mob/0179.trindicator/attack/1.trigger",
-        "asset:mob/0181.magic_bookshelf/attack/1.trigger",
+        "asset:mob/0181.magic_bookshelf/_/attack",
         "asset:mob/0182.skull_raven/attack/1.trigger",
         "asset:mob/0202.hunters_dream/attack/1.trigger",
         "asset:mob/0219.aorta/attack/1.trigger",
