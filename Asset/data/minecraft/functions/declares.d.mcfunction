@@ -259,6 +259,7 @@
     #declare function oh_my_dat:sys/init                                              from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L1
     #declare function oh_my_dat:sys/load                                              from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/load.mcfunction#L1
     #declare function oh_my_dat:sys/provide                                           from home/runner/work/TSB-Patcher/TSB-Patcher/OhMyDat/data/oh_my_dat/functions/sys/provide.mcfunction#L1
+    #declare function player_manager:vanilla_attack                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/functions/vanilla_attack.mcfunction#L1
     #declare function score_to_health:anti_glitch/modify                              from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/modify.mcfunction#L1
     #declare function score_to_health:anti_glitch/protect                             from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/protect.mcfunction#L1
     #declare function score_to_health:anti_glitch/restore                             from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/score_to_health/functions/anti_glitch/restore.mcfunction#L1
@@ -664,8 +665,8 @@
     # from home/runner/work/TSB-Patcher/TSB-Patcher/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
     # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/load.json#L1
     #declare tag/function minecraft:load
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
     # from home/runner/work/TSB-Patcher/TSB-Patcher/IndexStorage/data/minecraft/tags/functions/tick.json#L1
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
     #declare tag/function minecraft:tick
     #declare tag/item lib:all                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/all.json#L1
     #declare tag/item lib:consumable                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/tags/items/consumable.json#L1
