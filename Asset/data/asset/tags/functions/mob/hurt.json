@@ -42,7 +42,7 @@
         "asset:mob/0181.magic_bookshelf/_/hurt",
         "asset:mob/0182.skull_raven/hurt/1.trigger",
         "asset:mob/0186.ferocious_bee/hurt/1.trigger",
-        "asset:mob/0187.flame_mage/hurt/1.trigger",
+        "asset:mob/0187.flame_mage/_/hurt",
         "asset:mob/0189.water_mage/hurt/1.trigger",
         "asset:mob/0190.thunder_mage/hurt/1.trigger",
         "asset:mob/0204_infernal_watcher/hurt/1.trigger",

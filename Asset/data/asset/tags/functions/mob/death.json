@@ -41,7 +41,7 @@
         "asset:mob/0181.magic_bookshelf/_/death",
         "asset:mob/0185.tutankhamen/death/1.trigger",
         "asset:mob/0186.ferocious_bee/death/1.trigger",
-        "asset:mob/0187.flame_mage/death/1.trigger",
+        "asset:mob/0187.flame_mage/_/death",
         "asset:mob/0189.water_mage/death/1.trigger",
         "asset:mob/0190.thunder_mage/death/1.trigger",
         "asset:mob/0202.hunters_dream/death/1.trigger",
