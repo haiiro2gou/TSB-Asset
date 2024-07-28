@@ -1,8 +1,8 @@
-#> asset:mob/0219.aorta/attack/2.attack
+#> asset:mob/0219.aorta/attack/
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0219.aorta/attack/1.trigger
+# @within function asset:mob/0219.aorta/_/attack
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run particle dust 0.769 0 0 2 ~ ~1 ~ 0.6 0.6 0.6 0 50 normal @a
@@ -11,20 +11,19 @@
 # ダメージ
     data modify storage api: Argument.Damage set value 37f
     data modify storage api: Argument.AttackType set value "Physical"
-# 補正functionを実行
     function api:damage/modifier
-# 対象
     execute as @p[tag=Victim,distance=..6] run function api:damage/
-# リセット
     function api:damage/reset
 
+# 難易度値を取得
+    function api:global_vars/get_difficulty
 
 # 自身を回復
-    data modify storage api: Argument.Heal set value 500f
+# 難易度値に比例して回復量を増加させる
+    execute store result storage api: Argument.Heal int 250 run data get storage api: Return.Difficulty
     function api:heal/modifier
     function api:heal/
-# リセット
     function api:heal/reset
 
-# 周囲に移動速度上昇を付与
-    effect give @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] speed 3 1 true
+# ノーマル以上なら周囲に移動速度上昇を付与
+    execute if predicate api:global_vars/difficulty/min/normal run effect give @e[type=#lib:living,tag=Enemy,distance=..5] speed 3 1 true

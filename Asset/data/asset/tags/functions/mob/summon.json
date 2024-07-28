@@ -104,7 +104,7 @@
         "asset:mob/0214.water_magic/summon/1.trigger",
         "asset:mob/0216.gray_guardian/summon/1.trigger",
         "asset:mob/0217.medousa_eye/summon/1.trigger",
-        "asset:mob/0219.aorta/summon/1.trigger",
+        "asset:mob/0219.aorta/_/summon",
         "asset:mob/0220.vena_cana/summon/1.trigger",
         "asset:mob/0224.pumpkin_ghost/summon/1.trigger",
         "asset:mob/0227.frost_eye/_/summon",

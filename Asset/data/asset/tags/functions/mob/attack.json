@@ -53,7 +53,7 @@
         "asset:mob/0181.magic_bookshelf/_/attack",
         "asset:mob/0182.skull_raven/attack/1.trigger",
         "asset:mob/0202.hunters_dream/attack/1.trigger",
-        "asset:mob/0219.aorta/attack/1.trigger",
+        "asset:mob/0219.aorta/_/attack",
         "asset:mob/0220.vena_cana/attack/1.trigger",
         "asset:mob/0233.honey_flyer/attack/1.trigger",
         "asset:mob/0235.orange_thrower/attack/1.trigger",
