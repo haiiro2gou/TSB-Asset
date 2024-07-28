@@ -14,6 +14,9 @@
         "asset:mob/0219.aorta/_/register",
         "asset:mob/0227.frost_eye/_/register",
         "asset:mob/0228.frost_eye/_/register",
+        "asset:mob/0264.dark_summoner/_/register",
+        "asset:mob/0265.dark_familiar/_/register",
+        "asset:mob/0266.small_dark_ball/_/register",
         "asset:mob/0363.white_spellbook/_/register",
         "asset:mob/0364.white_magic/_/register"
     ]
