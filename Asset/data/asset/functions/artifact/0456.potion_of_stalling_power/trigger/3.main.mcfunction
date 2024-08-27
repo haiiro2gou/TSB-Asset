@@ -14,7 +14,7 @@
         data modify storage api: Argument.Damage set value 10.0f
         data modify storage api: Argument.AttackType set value "Physical"
         data modify storage api: Argument.FixedDamage set value true
-    # ダメージを与える
+        function api:damage/modifier
         execute as @s[scores={CO.Tick=1..}] run function api:damage/
     # リセット
         function api:damage/reset

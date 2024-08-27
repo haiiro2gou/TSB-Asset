@@ -15,6 +15,8 @@
     data modify storage api: Argument.AttackType set value "Physical"
 # 耐性を無視する
     data modify storage api: Argument.FixedDamage set value true
+# 補正する
+    function api:damage/modifier
 # 自爆する
     function api:damage/
 # リセット

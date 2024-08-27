@@ -9,6 +9,7 @@
         data modify storage api: Argument.Damage set value 15f
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.FixedDamage set value true
+        function api:damage/modifier
         function api:damage/
     # リセット
         function api:damage/reset

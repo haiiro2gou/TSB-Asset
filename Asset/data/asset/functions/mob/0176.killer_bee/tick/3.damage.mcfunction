@@ -30,6 +30,8 @@
     data modify storage api: Argument.AttackType set value "Magic"
 # 耐性を無視する
     data modify storage api: Argument.FixedDamage set value true
+# 補正functionを実行
+    function api:damage/modifier
 # 自爆する
     function api:damage/
 # リセット

@@ -14,13 +14,10 @@
     playsound minecraft:block.anvil.place player @a[distance=..10] ~ ~ ~ 0.8 2
 
 # ダメージ
-    # 与えるダメージ = 28
-        data modify storage api: Argument.Damage set value 28f
-    # 物理属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 属性耐性・防御力/防具強度・耐性エフェクトを無視するか否か
-        data modify storage api: Argument.FixedDamage set value true
-# 攻撃した対象に実行
+    data modify storage api: Argument.Damage set value 28f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.FixedDamage set value true
+    function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10,limit=1] run function api:damage/
 # リセット
     function api:damage/reset
