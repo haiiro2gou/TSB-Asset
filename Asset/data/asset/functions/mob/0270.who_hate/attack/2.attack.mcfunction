@@ -9,7 +9,7 @@
     playsound block.lava.extinguish hostile @a ~ ~ ~ 2 1 0
 
 # 属性ダメージ
-   # 与えるダメージ
+    # 与えるダメージ
         data modify storage api: Argument.Damage set value 10.4f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
