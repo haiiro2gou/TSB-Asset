@@ -38,6 +38,7 @@
     #declare function api:damage/                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/damage/.mcfunction#L1
     #declare function api:damage/modifier                                             from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/damage/modifier.mcfunction#L1
     #declare function api:damage/modifier_continuation                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/damage/modifier_continuation.mcfunction#L1
+    #declare function api:damage/modifier_manual                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/damage/modifier_manual.mcfunction#L1
     #declare function api:damage/reset                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/damage/reset.mcfunction#L1
     #declare function api:data_get/abilities                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/abilities.mcfunction#L1
     #declare function api:data_get/absorption_amount                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/data_get/absorption_amount.mcfunction#L1
@@ -107,7 +108,10 @@
     #declare function api:entity/mob/effect/give                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/give.mcfunction#L1
     #declare function api:entity/mob/effect/remove/from_id                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_id.mcfunction#L1
     #declare function api:entity/mob/effect/remove/from_level                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_level.mcfunction#L1
+    #declare function api:entity/player/get_health_per                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/entity/player/get_health_per.mcfunction#L1
+    #declare function api:global_vars/game_progress                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/global_vars/game_progress.mcfunction#L1
     #declare function api:global_vars/get_difficulty                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/global_vars/get_difficulty.mcfunction#L1
+    #declare function api:global_vars/islands_purified                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/global_vars/islands_purified.mcfunction#L1
     #declare function api:heal/                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/heal/.mcfunction#L1
     #declare function api:heal/modifier                                               from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/heal/modifier.mcfunction#L1
     #declare function api:heal/reset                                                  from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/api/functions/heal/reset.mcfunction#L1
@@ -233,6 +237,7 @@
     #declare function lib:random/with_biased/m                                        from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/with_biased/m.mcfunction#L1
     #declare function lib:random/with_biased/manual.m                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/random/with_biased/manual.m.mcfunction#L1
     #declare function lib:reflection_bullet/                                          from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/reflection_bullet/.mcfunction#L1
+    #declare function lib:rotatable_dxyz/m                                            from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/rotatable_dxyz/m.mcfunction#L1
     #declare function lib:score_to_health_wrapper/set                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/score_to_health_wrapper/set.mcfunction#L1
     #declare function lib:score_to_move/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/score_to_move/.mcfunction#L1
     #declare function lib:spread_entity/                                              from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/spread_entity/.mcfunction#L1
@@ -552,8 +557,9 @@
     #declare tag AttackedEntity                                                       from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacked_entity/_index.d.mcfunction#L11
     #declare tag AttackingEntity                                                      from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacking_entity/_index.d.mcfunction#L10
     #declare tag BetaEndingPortal                                                     from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/_index.d.mcfunction#L7
-    #declare tag Death                                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L32
+    #declare tag Death                                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L34
     #declare tag DevPrivilege                                                         from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/load_once.mcfunction#L56
+    #declare tag DXYZ                                                                 from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/lib/functions/rotatable_dxyz/m.mcfunction#L22
     #declare tag Enemy                                                                from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L7
     #declare tag Enemy.Boss                                                           from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L8
     #declare tag FallDamageImmunity                                                   from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/player_manager/functions/fall_damage/_index.d.mcfunction#L10
@@ -799,17 +805,17 @@
 # @within
 #   **
 #   function core:patcher/load_once
+#   function api:global_vars/islands_purified
+#   function api:global_vars/game_progress
 #   function asset_manager:island/dispel/successful
 #   function asset_manager:island/patcher/init
 #   function lib:message/common/*
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v1.1.0/.mcfunction#L9
     # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L41
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L15
-    #declare score_holder $Island
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/migration/v1.1.0/.mcfunction#L10
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L17
+    #declare score_holder $PurifiedIslands
     # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L42
-    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L16
-    #declare score_holder $IslandTotal
+    # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L18
+    #declare score_holder $TotalIslands
 
 #> declare
 # @within
@@ -972,12 +978,12 @@
 
 #> declare
 # @within
-#   function core:patcher/load_once
 #   asset_manager:trader/**
 #   asset:trader/*/register/*
 #   asset:trader/common/register
-# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L21
+#   function core:patcher/load_once
 # from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L19
+# from home/runner/work/TSB-Patcher/TSB-Patcher/TheSkyBlessing/data/core/functions/patcher/load_once.mcfunction#L21
 #declare storage asset:trader
 
 #> declare
